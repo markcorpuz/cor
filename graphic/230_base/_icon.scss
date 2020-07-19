@@ -1,0 +1,80 @@
+/* BASE_230 | GRAPHIC | 230_BASE | ICON - 2017-01-12 */
+
+// -------------------------------------
+// USAGE
+// -------------------------------------
+
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+	%icon-20 {}
+	%icon-30 {}
+	%icon-32 {}
+	%icon-60 {}
+	%icon-64 {}
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+	.icon-20 {
+		@extend %icon-20 !optional;		
+	}
+
+	.icon-30 {
+		@extend %icon-30 !optional;
+	}
+
+	.icon-32 {
+		@extend %icon-32 !optional;
+	}
+
+	.icon-60 {
+		@extend %icon-60 !optional;
+	}
+
+	.icon-64 {
+		@extend %icon-64 !optional;
+	}
+
+	.icon-default.material-icons {
+		@extend %fontsize-default !optional;
+	}
+
+	.icon-tiny.material-icons {
+		@extend %fontsize-tiny !optional;
+	}
+
+	.icon-xxxsml.material-icons {
+		@extend %fontsize-xxxsml !optional;
+	}
+
+	.icon-xxsml.material-icons {
+		@extend %fontsize-xxsml !optional;
+	}
+
+	.icon-xsml.material-icons {
+		@extend %fontsize-xsml !optional;
+	}
+
+	.icon-sml.material-icons {
+		@extend %fontsize-sml !optional;
+	}
+
+	.icon-med.material-icons {
+		@extend %fontsize-med !optional;
+	}
+
+	.icon-lrg.material-icons {
+		@extend %fontsize-lrg !optional;
+	}
+
+	.icon-xlrg.material-icons {
+		@extend %fontsize-xlrg !optional;
+	}
+
+	.icon-huge.material-icons {
+		@extend %fontsize-huge !optional;
+	}

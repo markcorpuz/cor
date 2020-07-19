@@ -1,0 +1,13 @@
+/* BASE_230 | LAYOUT | 230_BASE | INSIDE - 2016-08-18 */
+
+// -------------------------------------
+// EXTEND
+
+	%inside {}
+
+// -------------------------------------
+// SELECTORS
+
+	.inside {
+		@extend %inside !optional;
+	}

@@ -1,0 +1,128 @@
+/* BASE_226 | PLUGIN | 227_CORMAIN | SPK-YOUTUBEEMBEDS - 2016-04-20 */
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+#video-main::before,
+#video-main::after {}
+
+#video-main {}
+
+#thumbnail_div {}
+
+#thumbnail {}
+
+#thumbnail_div {}
+
+#video_iframe {}
+
+#video_iframe {}
+
+#video-main::before,
+#video-main::after {
+    clear: both;
+}
+
+#video-main {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    border-top: 1px solid yellow;
+    border-bottom: 1px solid green;
+    background-color: red;
+}
+
+#thumbnail_div {
+    overflow: hidden;
+    position: relative;
+}
+
+#thumbnail {
+    cursor: pointer;
+    cursor: hand;
+    max-width: 564px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -54px;
+}
+
+#thumbnail_div, #video_iframe {
+    // width="560" height="315"
+    max-width: 560px;
+    max-height: 315px;
+}
+
+#video_iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+// MAKING UPDATES SEPARATING THE STYLING OF THE VIDEO VS THE GRAPHIC
+
+#video-main::before,
+#video-main::after {}
+
+#video-main {
+    background-color: red;
+    max-width: 560px;
+    width: 100%;
+    height: auto;
+
+    position: relative;
+    //padding-bottom: 56.25%;
+    //padding-top: 30px;
+    //height: 0;
+    //overflow: hidden;
+    //border-top: 1px solid yellow;
+    //border-bottom: 1px solid green;
+}
+
+#thumbnail_div {
+    width: 100%;
+    height: auto;
+    background-color: green;
+
+    overflow: hidden;
+    position: relative;
+}
+
+#thumbnail_div img {
+    max-width: 480px;
+    width: 100%;
+    height: auto;
+}
+
+#thumbnail {
+    cursor: pointer;
+    cursor: hand;
+    max-width: 564px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: -54px;
+}
+
+#thumbnail_div {
+    max-width: 560px;
+    max-height: 315px;
+}
+
+#video_iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

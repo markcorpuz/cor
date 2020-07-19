@@ -1,0 +1,211 @@
+/* BASE_227 | ITEM | 227_COR | ITEM-AUDIO - 2016-5-17 */
+
+// -------------------------------------
+// UNIVERSAL
+// -------------------------------------
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+// ITEM-AUDIO
+
+	%item-audio {
+		padding: 30px 40px 10px 50px;
+		background-color: #f0f0f0;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+
+		//@extend %item-audio-responsive !optional;
+		@include responsive-range(meddown) {
+			padding: 0;
+			background-color: #fff;
+			border: 0;
+			margin-top: 10px;
+		}
+	}
+
+	%item-ebook {
+		padding: 30px 40px 10px 50px;
+		background-color: #f0f0f0;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+
+		//@extend %item-ebook-responsive !optional;
+		@include responsive-range(meddown) {
+			padding: 0;
+			background-color: #fff;
+			border: 0;
+			margin-top: 10px;
+		}
+	}
+
+	%item-productpreview {
+		padding: 30px 40px 10px 50px;
+		background-color: #f0f0f0;
+		box-sizing: border-box;
+
+		//@extend %item-audio-responsive !optional;
+		@include responsive-range(meddown) {
+			padding: 0;
+			background-color: #fff;
+			border: 0;
+			margin-top: 10px;
+		}
+	}
+
+	%item-audiotitle {
+		background-color: #333;
+		color: #fff;
+		line-height: 1;
+		font-size: $fontsize-med;
+		font-weight: $fontweight-thick;
+		padding: 15px 20px;
+
+		//@extend %item-audiotitle-responsive !optional;
+		@include responsive-range(meddown) {
+			padding: 10px;
+		}
+	}
+
+	%item-chapter {
+		float: left;
+		width: 47%;
+		margin-right: 3%;
+		border: 1px solid #ccc;
+		padding: 20px;
+		margin-bottom: 20px;
+		box-sizing: border-box;
+		background-color: #fff;
+		box-shadow: 2px 2px 2px 0 #bbbbbb;
+
+		//@extend %item-chapter-responsive !optional;
+		@include responsive-range(meddown) {
+			float: none;
+			width: 100%;
+			margin-right: 0;
+			border: 1px solid #ccc;
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+	}
+
+	%item-chapter-full {
+		width: 97%;
+		margin-right: 3%;
+	}
+
+	%item-chapter-threecol {
+		width: 32%;
+		margin-right: 2%;
+	}
+	%item-chapter-last {
+		margin-right: 0;
+	}
+
+	%item-chapter-button {
+		width: 100%;
+		margin-top: 15px;
+		box-sizing: border-box;
+	}
+
+	%item-chapterwide {
+		float: left;
+		width: 97%;
+		margin-right: 3%;
+		border: 1px solid #ccc;
+		padding: 20px;
+		margin-bottom: 20px;
+		box-sizing: border-box;
+		background-color: #fff;
+
+		//@extend %item-chapter-responsive !optional;
+		@include responsive-range(meddown) {
+			float: none;
+			width: 100%;
+			margin-right: 0;
+			border: 1px solid #ccc;
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+	}
+
+	%item-chapterblank {
+		float: left;
+		width: 47%;
+		margin-right: 3%;
+		box-sizing: border-box;
+
+		//@extend %item-chapterblank-responsive !optional;
+		@include responsive-range(meddown) {
+			float: none;
+			width: 100%;
+			margin-right: 0;
+			padding: 10px;
+			margin-bottom: 10px;
+		}	
+	}
+
+	%item-chaptertitle {
+		background-color: #1072b6;
+		//background-color: #3045CF;
+		color: #fff;
+		//background-color: #ccc;
+		//color: #666;
+		padding: 10px 10px 8px;
+		font-size: $fontsize-xsml;
+		font-weight: $fontweight-thick;
+		margin-bottom: 10px;
+		line-height: 1;
+
+		// @extend %item-chaptertitle-responsive !optional;
+		// none
+	}
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+// ITEM-AUDIO
+
+	.item-ebook {
+		@extend %item-ebook !optional;
+	}
+	.item-audio {
+		@extend %item-audio !optional;
+	}
+	.item-audiotitle {
+		@extend %item-audiotitle !optional;
+	}
+	.item-productpreview {
+		@extend %item-productpreview !optional;
+	}
+
+	.item-chapter {
+		@extend %item-chapter !optional;
+	}
+	.item-chapter.full {
+		@extend %item-chapter-full !optional;
+	}
+	.item-chapter.threecol {
+		@extend %item-chapter-threecol !optional;
+	}
+	.item-chapter.threecol.last {
+		@extend %item-chapter-last !optional;
+	}
+	.item-chapter.last {
+		@extend %item-chapter-last !optional;
+	}
+	.item-chapterwide {
+		@extend %item-chapterwide !optional;
+	}
+	.item-chapter .button {
+		@extend %item-chapter-button !optional;
+	}
+	.item-chapterblank {
+		@extend %item-chapterblank !optional;
+	}
+
+	.item-chaptertitle {
+		@extend %item-chaptertitle !optional;
+	}

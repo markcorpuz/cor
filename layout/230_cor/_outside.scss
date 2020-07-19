@@ -1,0 +1,13 @@
+/* BASE_230 | LAYOUT | 230_BASE | OUTSIDE - 2016-07-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%outside {}
+
+// -------------------------------------
+// SELECTORS
+
+	.outside {
+		@extend %outside !optional;
+	}

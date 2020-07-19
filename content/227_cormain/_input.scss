@@ -1,0 +1,54 @@
+/* BASE_227 | CONTENT | 227_BASE | INPUT - 2016-06-01 */
+
+// -------------------------------------
+// EXTEND
+
+// INPUT
+
+	%input {}
+
+	%input-minus {
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+		box-shadow: inset 2px 2px 0 0 #333;
+	}
+
+// TEXTAREA
+
+	%textarea {}
+
+// SELECT
+
+	%select {
+		-webkit-appearance: menulist;
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+// INPUT
+
+	input {
+		@extend %input !optional;
+	}
+
+// INPUT (MINUS SUBMIT & FILE)
+
+	input:not([type=submit]):not([type=file]):not([type=image]) {
+		@extend %input-minus !optional;
+	}
+
+// TEXTAREA
+
+	textarea {
+		@extend %input-minus !optional;
+		@extend %textarea !optional;
+	}
+
+// SELECT
+
+	select {
+		@extend %input-minus !optional;
+		@extend %select !optional;
+	}

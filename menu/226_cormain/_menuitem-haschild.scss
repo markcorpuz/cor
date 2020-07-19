@@ -1,0 +1,85 @@
+/* BASE_226 | MENU | 226_BASE | MENUITEM - 2016-01-12 */
+
+// -------------------------------------
+// FORMULA
+
+	// MENU-ITEM MENU-ITEM-HAS-CHILDREN
+	%menuitemhaschildren-formula {}
+	%menuitemhaschildren-a-formula {}
+	%menuitemhaschildren-hvr-formula {}
+
+		// MENU-PRIMARY
+		%menuprimary-menuitemhaschildren-formula {}
+		%menuprimary-menuitemhaschildren-a-formula {}
+		%menuprimary-menuitemhaschildren-hvr-formula {}
+
+		// MENU-SECONDARY
+		%menusecondary-menuitemhaschildren-formula {}
+		%menusecondary-menuitemhaschildren-a-formula {}
+		%menusecondary-menuitemhaschildren-hvr-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	// MENU-ITEM MENU-ITEM-HAS-CHILDREN
+	%menuitemhaschildren {}
+	%menuitemhaschildren-a {}
+	%menuitemhaschildren-hvr {}
+
+		// MENU-PRIMARY
+		%menuprimary-menuitemhaschildren {}
+		%menuprimary-menuitemhaschildren-a {}
+		%menuprimary-menuitemhaschildren-hvr {}
+
+		// MENU-SECONDARY
+		%menusecondary-menuitemhaschildren {}
+		%menusecondary-menuitemhaschildren-a {}
+		%menusecondary-menuitemhaschildren-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+// MENU-ITEM.MENU-ITEM-HAS-CHILDREN
+
+		.menu-item.menu-item-has-children {
+			@extend %menuitemhaschildren-formula !optional;
+			@extend %menuitemhaschildren !optional;
+		}
+		.menu-item.menu-item-has-children > a {
+			@extend %menuitemhaschildren-a-formula !optional;
+			@extend %menuitemhaschildren-a !optional;
+		}
+		.menu-item.menu-item-has-children > a:hover {
+			@extend %menuitemhaschildren-hvr-formula !optional;
+			@extend %menuitemhaschildren-hvr !optional;
+		}
+
+			// MENU-PRIMARY
+
+			.menu-primary .menu-item.menu-item-has-children {
+				@extend %menuprimary-menuitemhaschildren-formula !optional;
+				@extend %menuprimary-menuitemhaschildren !optional;
+			}
+			.menu-primary .menu-item.menu-item-has-children > a {
+				@extend %menuprimary-menuitemhaschildren-a-formula !optional;
+				@extend %menuprimary-menuitemhaschildren-a !optional;
+			}
+			.menu-primary .menu-item.menu-item-has-children > a:hover {
+				@extend %menuprimary-menuitemhaschildren-hvr-formula !optional;
+				@extend %menuprimary-menuitemhaschildren-hvr !optional;
+			}
+
+			// MENU-SECONDARY
+
+			.menu-secondary .menu-item.menu-item-has-children {
+				@extend %menusecondary-menuitemhaschildren-formula !optional;
+				@extend %menusecondary-menuitemhaschildren !optional;
+			}
+			.menu-secondary .menu-item.menu-item-has-children > a {
+				@extend %menusecondary-menuitemhaschildren-a-formula !optional;
+				@extend %menusecondary-menuitemhaschildren-a !optional;
+			}
+			.menu-secondary .menu-item.menu-item-has-children > a:hover {
+				@extend %menusecondary-menuitemhaschildren-hvr-formula !optional;
+				@extend %menusecondary-menuitemhaschildren-hvr !optional;
+			}

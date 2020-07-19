@@ -1,0 +1,41 @@
+/* BASE_230 | ITEM | COR_250 | ITEM-TRANSFER - 2017-08-07 */
+
+// -------------------------------------
+// UNIVERSAL
+// -------------------------------------
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+	%item-transfer-widget {
+		@include responsive-range(meddown) {
+		    padding: 1rem;
+		    margin-top: 1rem;
+		    //margin-right: 1rem;
+		    //margin-left: 1rem;
+		    overflow: hidden;
+		    background-color: #fff;
+		    color: #333;
+		    border: 1px solid #ccc;
+		    box-shadow: 2px 2px 2px 0px #bbbbbb;
+		}
+	}
+
+	%item-transfer-subscribeto {}
+
+	%item-transfer-booksto {}
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+	.item-subscribeto {
+		@extend %item-transfer-widget !optional;
+		@extend %item-transfer-subscribeto !optional;
+	}
+
+	.item-booksto {
+		@extend %item-transfer-widget !optional;
+		@extend %item-transfer-booksto !optional;
+	}

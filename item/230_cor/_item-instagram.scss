@@ -1,0 +1,51 @@
+/* BASE_230 | ITEM | 230_COR | ITEM-INSTAGRAM - 2016-12-28 */
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+	%item-instagram {
+		background-color: #f3f3f3;
+	}
+	%item-instagram-itemwrap {
+		padding: 0.5rem;
+		text-align: center;
+	}
+	%item-instagram-iframe {
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+
+	%img-instagram {}
+	%img-instagramimage {
+		display: block;
+		max-width: 500px;
+		height: auto;
+		width: 100%;
+	}
+	%item-instagramimage {}
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+	.item-instagram {
+		@extend %item-instagram !optional;
+	}
+	.item-instagram > .item-wrap {
+		@extend %item-instagram-itemwrap !optional;
+	}
+	.item-instagram iframe {
+		@extend %item-instagram-iframe !optional;
+	}
+
+	.img-instagram {
+		@extend %img-instagram !optional;
+	}
+
+	.img-instagram img {
+		@extend %img-instagramimage !optional;
+	}
+	.item-instagram img {
+		@extend %item-instagramimage !optional;
+	}

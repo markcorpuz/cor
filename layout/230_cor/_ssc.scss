@@ -1,0 +1,47 @@
+/* BASE_230 | LAYOUT | 230_BASE | SSC - 2016-07-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%ssc-csw_layout {
+		float: right;
+		width: 80%;
+		@extend %responsive-layout-max !optional;
+	}
+
+	%ssc-content_layout {
+		float: right;
+		width: 70%;
+		@extend %responsive-layout-max !optional;
+	}
+
+	%ssc-sidebarprimary_layout {
+		float: left;
+		width: 30%;
+		@extend %responsive-layout-max !optional;
+	}
+
+	%ssc-sidebarsecondary_layout {
+		float: left;
+		width: 20%;
+		@extend %responsive-layout-max !optional;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.sidebar-sidebar-content .content-sidebar-wrap {
+		@extend %ssc-csw_layout !optional;
+	}
+
+	.sidebar-sidebar-content .content {
+		@extend %ssc-content_layout !optional;
+	}
+
+	.sidebar-sidebar-content .sidebar-primary {
+		@extend %ssc-sidebarprimary_layout !optional;
+	}
+
+	.sidebar-sidebar-content .sidebar-secondary {
+		@extend %ssc-sidebarsecondary_layout !optional;
+	}

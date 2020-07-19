@@ -1,0 +1,28 @@
+/* BASE_230 | CONTENT | 230_BASE | BLOCKQUOTE - 2016-08-05 */
+
+// -------------------------------------
+// EXTEND
+
+	%blockquote {
+		padding-left: #{$space}rem;
+		margin: 0;
+		margin-left: #{$space}rem;
+		font-weight: $fontweight-thin;
+	}
+	%blockquote-p {
+		font-family: $fontfamily-blockquote;
+		font-size: #{$fontsize-blockquote}rem;
+		line-height: $lineheight-blockquote;
+		font-weight: $fontweight-thin;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	blockquote {
+		@extend %blockquote !optional;
+	}
+
+	blockquote p {
+		@extend %blockquote-p !optional;
+	}

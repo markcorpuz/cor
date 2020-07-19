@@ -1,0 +1,318 @@
+/* BASE_230 | LINE | 250_SETUP | BORDER - 2017-07-19 */
+
+// -------------------------------------
+// EXTEND
+
+// BORDER STYLE
+
+	%border-style-default {
+		border-style: solid;
+	}
+
+	%border-style-solid {
+		border-style: solid;
+	}
+	%border-style-dashed {
+		border-style: dashed;
+	}
+	%border-style-dotted {
+		border-style: dotted;
+	}
+	%border-style-double {
+		border-style: double;
+	}
+
+// BORDER WIDTH
+
+	%border-width-default {
+		border-width: #{$line-tiny}rem;					// 1px
+	}
+
+		%bordertop-width-default {
+			border-top-width: #{$line-tiny}rem;			// 1px
+		}
+		%borderright-width-default {
+			border-right-width: #{$line-tiny}rem;		// 1px
+		}
+		%borderbottom-width-default {
+			border-bottom-width: #{$line-tiny}rem;		// 1px
+		}
+		%borderleft-width-default {
+			border-left-width: #{$line-tiny}rem;		// 1px
+		}
+	
+	%border-width-tiny {
+		border-width: #{$line-tiny}rem;					// 1px
+	}
+	%border-width-xxxsml {
+		border-width: #{$line-xxxsml}rem;				// 2px
+	}
+	%border-width-xxsml {
+		border-width: #{$line-xxsml}rem;				// 5px
+	}
+	%border-width-xsml {
+		border-width: #{$line-xsml}rem;					// 10px
+	}
+	%border-width-sml {
+		border-width: #{$line-sml}rem;					// 15px
+	}
+	%border-width-med {
+		border-width: #{$line-med}rem;					// 25px
+	}
+	%border-width-lrg {
+		border-width: #{$line-lrg}rem;					// 50px
+	}
+
+	%border-width-double {
+		border-width: #{$line-quarter}rem;				// 4px
+	}
+
+// BORDER COLOR
+
+	%border-color-default {
+		border-color: $color-gray;
+	}
+
+		%bordertop-color-default {
+			border-top-color: $color-gray;
+		}
+		%borderright-color-default {
+			border-right-color: $color-gray;
+		}
+		%borderbottom-color-default {
+			border-bottom-color: $color-gray;
+		}
+		%borderleft-color-default {
+			border-left-color: $color-gray;
+		}
+
+	%border-color-lightest {
+		border-color: $color-lightest;
+	}
+	%border-color-lighter {
+		border-color: $color-lighter;
+	}
+	%border-color-light {
+		border-color: $color-light;
+	}
+	%border-color-normal {
+		border-color: $color-mid;
+	}
+	%border-color-dark {
+		border-color: $color-dark;
+	}
+	%border-color-darker {
+		border-color: $color-darker;
+	}
+	%border-color-darkest {
+		border-color: $color-darkest;
+	}
+
+	%border-color-black {
+		border-color: $color-black;
+	}
+	%border-color-white {
+		border-color: $color-white;
+	}
+	%border-color-gray {
+		border-color: $color-gray;
+	}
+
+// BORDER ZERO
+
+	// ALL
+	%border-zero {
+		border: 0;
+	}
+
+	// TOP, RIGHT, BOTTOM, LEFT
+	%bordertop-zero {
+		border-top: 0;
+	}
+	%borderright-zero {
+		border-right: 0;
+	}
+	%borderbottom-zero {
+		border-bottom: 0;
+	}
+	%borderleft-zero {
+		border-left: 0;
+	}
+
+// BORDER ZERO
+
+	// ALL
+	%border-none {
+		border: none;
+	}
+
+	// TOP, RIGHT, BOTTOM, LEFT
+	%bordertop-none {
+		border-top: 0;
+	}
+	%borderright-none {
+		border-right: 0;
+	}
+	%borderbottom-none {
+		border-bottom: 0;
+	}
+	%borderleft-none {
+		border-left: 0;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+// BORDER
+
+	.border {
+		@extend %border-width-default !optional;
+		@extend %border-style-default !optional;
+		@extend %border-color-default !optional;
+	}
+
+	.border-top {
+		@extend %bordertop-width-default !optional;
+		@extend %border-style-default !optional;
+		@extend %border-color-default !optional;
+	}
+	.border-right {
+		@extend %borderright-width-default !optional;
+		@extend %border-style-default !optional;
+		@extend %border-color-default !optional;
+
+	}
+	.border-bottom {
+		@extend %borderbottom-width-default !optional;
+		@extend %border-style-default !optional;
+		@extend %border-color-default !optional;
+	}
+	.border-left {
+		@extend %borderleft-width-default !optional;
+		@extend %border-style-default !optional;
+		@extend %border-color-default !optional;
+	}
+
+// BORDER WIDTH
+
+	.border-thinner {
+		@extend %border-width-tiny !optional;				// 1px
+	}
+	.border-thin {
+		@extend %border-width-xxxsml !optional;				// 2px
+	}
+	.border-normal {
+		@extend %border-width-xxsml !optional;				// 5px
+	}
+	.border-thick {
+		@extend %border-width-xsml !optional;				// 10px
+	}
+	.border-thicker {}
+
+// BORDER STYLE
+
+	.border-line {
+		@extend %border-style-solid !optional;
+	}
+	.border-dashed {
+		@extend %border-style-dashed !optional;
+	}
+	.border-dotted {
+		@extend %border-style-dotted !optional;
+	}
+	.border-double,
+	.border.border-double {
+		@extend %border-style-double !optional;
+		@extend %border-width-double !optional;
+	}
+
+// BORDER COLOR
+
+	.border.line-color-black {
+		@extend %border-color-black !optional;
+	}
+	.border.line-color-white {
+		@extend %border-color-white !optional;
+	}
+	.border.line-color-gray {
+		@extend %border-color-gray !optional;
+	}
+	.border.line-color-light {
+		@extend %border-color-light !optional;
+	}
+	.border.line-color-lighter {
+		@extend %border-color-lighter !optional;
+	}
+	.border.line-color-lightest {
+		@extend %border-color-lightest !optional;
+	}
+	.border.line-color-dark {
+		@extend %border-color-dark !optional;
+	}
+	.border.line-color-darker {
+		@extend %border-color-darker !optional;
+	}
+	.border.line-color-darkest {
+		@extend %border-color-darkest !optional;
+	}
+
+// BORDER ZERO
+
+	.border-zero {
+		@extend %border-zero !optional;
+	}
+
+	.border-top-zero {
+		@extend %bordertop-zero !optional;
+	}
+	.border-right-zero {
+		@extend %borderright-zero !optional;
+	}
+	.border-bottom-zero {
+		@extend %borderbottom-zero !optional;
+	}
+	.border-left-zero {
+		@extend %borderleft-zero !optional;
+	}
+
+// BORDER ZERO
+
+	.border-none {
+		@extend %border-none !optional;
+	}
+
+	.border-top-none {
+		@extend %bordertop-none !optional;
+	}
+	.border-right-none {
+		@extend %borderright-none !optional;
+	}
+	.border-bottom-none {
+		@extend %borderbottom-none !optional;
+	}
+	.border-left-none {
+		@extend %borderleft-none !optional;
+	}
+
+// BORDER ONLY
+
+	.border-top-only {
+		@extend %borderright-none !optional;
+		@extend %borderbottom-none !optional;
+		@extend %borderleft-none !optional;
+	}
+	.border-right-only {
+		@extend %bordertop-none !optional;
+		@extend %borderbottom-none !optional;
+		@extend %borderleft-none !optional;
+	}
+	.border-bottom-only {
+		@extend %bordertop-none !optional;
+		@extend %borderright-none !optional;
+		@extend %borderleft-none !optional;
+	}
+	.border-left-only {
+		@extend %bordertop-none !optional;
+		@extend %borderright-none !optional;
+		@extend %borderbottom-none !optional;
+	}

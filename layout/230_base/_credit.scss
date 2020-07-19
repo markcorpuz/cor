@@ -1,0 +1,75 @@
+/* BASE_230 | LAYOUT | 230_BASE | CREDIT - 2016-11-23 */
+
+// -------------------------------------
+// EXTEND
+
+	// COPYRIGHT
+
+	%copyright_layout {
+		color: $color-gray;
+		display: block;
+		font-size: #{$fontsize-xsml}rem;
+	}
+		%copyright-a_layout {}
+		%copyright-hvr_layout {}
+
+	// SITEBY
+
+	%siteby {
+		display: inline-block;
+		float: right;
+	}
+		%siteby-a {
+			background-image: url("http://smarterwebpackages.com/brand/smarterwebpackages-240x60.png");
+			background-repeat: no-repeat;
+		 	background-position: center;
+		 	background-attachment: scroll;
+			background-size: 120px;
+			width: 120px;
+			height: 30px;
+			display: block;
+			overflow: hidden;
+			text-decoration: none;
+			text-indent: -9999px;
+		}
+		%siteby-hvr {
+			text-decoration: none;
+		}
+
+
+// -------------------------------------
+// SELECTORS
+
+	// COPYRIGHT
+
+	.copyright {
+		@extend %copyright !optional;
+		@extend %copyright_layout !optional;
+
+		a {
+			@extend %copyright-a !optional;
+			@extend %copyright-a_layout !optional;
+
+			&:hover {
+				@extend %copyright-hvr !optional;
+				@extend %copyright-hvr_layout !optional;
+			}
+		}
+	}
+
+	// SITEBY
+
+	.siteby {
+		@extend %siteby !optional;
+		@extend %siteby_layout !optional;
+
+		a {
+			@extend %siteby-a !optional;
+			@extend %siteby-a_layout !optional;
+
+			&:hover {
+				@extend %siteby-hvr !optional;
+				@extend %siteby-hvr_layout !optional;
+			}
+		}
+	}

@@ -1,0 +1,56 @@
+/* BASE_226 | MODULE | 227_CORMAIN | SITEBY - 2017-02-07 */
+
+// -------------------------------------
+// FORMULA
+
+	%siteby-formula {}
+		%siteby-a-formula {}
+		%siteby-hvr-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	%siteby {
+		display: inline-block;
+		float: right;
+
+		@include responsive-range(lrgbelowdown) {
+			float: none;
+			margin-bottom: 0.5rem;
+		}
+
+	}
+		%siteby-a {
+			background-image: url("images/smarterwebpackages-240x60.png");
+			//background-image: url("http://smarterwebpackages.com/brand/smarterwebpackages-240x60.png");
+			background-size: cover;
+			background-position: top left;
+			background-repeat: no-repeat;
+			width: 120px;
+			height: 30px;
+			display: block;
+			overflow: hidden;
+			text-decoration: none;
+			text-indent: -9999px;
+		}
+		%siteby-hvr {
+			text-decoration: none;
+		}
+
+// -------------------------------------
+// SELECTORS
+
+	.siteby {
+		@extend %siteby-formula !optional;
+		@extend %siteby !optional;
+
+		a {
+			@extend %siteby-a-formula !optional;
+			@extend %siteby-a !optional;
+
+			&:hover {
+				@extend %siteby-hvr-formula !optional;
+				@extend %siteby-hvr !optional;
+			}
+		}
+	}

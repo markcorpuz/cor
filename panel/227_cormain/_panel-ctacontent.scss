@@ -1,0 +1,74 @@
+/* BASE_227 | ITEM | 227_CORMAIN | PANEL-CTACONTENT - 2016-06-05 */
+
+// -------------------------------------
+// UNIVERSAL
+// -------------------------------------
+
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+// PANEL-CTACONTENT
+
+	%panel-ctacontent {
+		padding: 2rem;
+		background-color: #f0f0f0;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+
+		@include responsive-range(smldown) {
+			padding: 1rem;
+		}
+	}
+
+	%panel-ctacontent-top {
+		margin-bottom: 1rem;
+	}
+
+	%panel-ctacontent-top-titlebar {
+		color: #ffcc00;
+	    background-color: #333;
+	    padding: 5px 5px 4px 8px;
+	    font-size: 1.125rem;
+	    font-weight: 700;
+	    margin-bottom: 1rem;
+	}
+
+	%panel-ctacontent-main {}
+
+	%panel-ctacontent-side {}
+
+	%panel-ctacontent-bottom {}
+
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+// PANEL-CTACONTENT
+
+	.panel-ctacontent {
+		@extend %panel-ctacontent !optional;
+
+		.top {
+			@extend %panel-ctacontent-top !optional;
+		}
+
+		.top .titlebar {
+			@extend %panel-ctacontent-top-titlebar !optional;
+		}
+
+		.main {
+			@extend %panel-ctacontent-main !optional;
+		}
+
+		.side {
+			@extend %panel-ctacontent-side !optional;
+		}
+
+		.bottom {
+			@extend %panel-ctacontent-bottom !optional;
+		}
+	}
+

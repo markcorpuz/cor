@@ -1,0 +1,67 @@
+/* BASE_230 | ENTRY | 230_BASE | ENTRYMETA - 2017-02-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%entrymeta {}
+		%entrymeta-a {}
+		%entrymeta-hvr {}
+
+		%archive-entrymeta {}
+			%archive-entrymeta-a {}
+			%archive-entrymeta-hvr {}
+
+		%single-entrymeta {}
+			%single-entrymeta-a {}
+			%single-entrymeta-hvr {}
+
+		%page-entrymeta {}
+			%page-entrymeta-a {}
+			%page-entrymeta-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+	.entry-meta {
+		@extend %entrymeta !optional;
+
+		a {
+			@extend %entrymeta-a !optional;
+
+			&:hover {
+				@extend %entrymeta-hvr !optional;
+			}
+		}
+	}
+
+		// SINGLE
+
+		.single {
+			.entry-meta {
+				@extend %single-entrymeta !optional;
+
+				a {
+					@extend %single-entrymeta-a !optional;
+
+					&:hover {
+						@extend %single-entrymeta-hvr !optional;
+					}
+				}
+			}
+		}
+
+		// PAGE
+
+		.page {
+			.entry-meta {
+				@extend %page-entrymeta !optional;
+
+				a {
+					@extend %page-entrymeta-a !optional;
+
+					&:hover {
+						@extend %page-entrymeta-hvr !optional;
+					}
+				}
+			}
+		}

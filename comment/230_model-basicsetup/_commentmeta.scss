@@ -1,0 +1,41 @@
+/* BASE_230 | COMMENT | 230_MODEL-BASICSETUP | COMMENTMETA - 2017-04-19 */
+// BASE_230 | COMMENT | 230_BASE
+
+// -------------------------------------
+// EXTEND
+
+// COMMENT-META
+
+	%commentmeta {
+		font-size: #{$fontsize-xxsml}rem;
+		font-weight: $fontweight-thick;
+		line-height: 1.2;
+		text-transform: uppercase;
+		letter-spacing: 0.025rem;
+		margin-bottom: 0.5rem;
+	}
+
+	// COMMENT-META A
+
+		%commentmeta-a {}
+
+	// COMMENT-META A:HOVER
+
+		%commentmeta-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+// COMMENT-META
+
+	.comment-meta {
+		@extend %commentmeta !optional;
+
+		a {
+			@extend %commentmeta-a !optional;
+
+			&:hover {
+				@extend %commentmeta-hvr !optional;
+			}
+		}
+	}

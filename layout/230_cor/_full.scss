@@ -1,0 +1,27 @@
+/* BASE_230 | LAYOUT | 230_BASE | FULL - 2016-07-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%full-csw_layout {
+		float: none;
+		width: 100%;
+		@extend %responsive-layout-max !optional;
+	}
+
+	%full-content_layout {
+		float: none;
+		width: 100%;
+		@extend %responsive-layout-max !optional;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.full-width-content .content-sidebar-wrap {
+		@extend %full-csw_layout !optional;
+	}
+
+	.full-width-content .content {
+		@extend %full-content_layout !optional;
+	}

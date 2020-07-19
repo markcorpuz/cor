@@ -1,0 +1,42 @@
+/* BASE_230 | ENTRY-FEATURED-HOOK | 250_MODEL-BASICSETUP | ENTRYFOOTER-FEATUREDCONTENT - 2017-06-22 */
+
+// -------------------------------------
+// EXTEND
+
+	%featuredcontent-entryfooter {}
+
+	// SIDEBAR-PRIMARY
+	%sidebarprimary-featuredcontent-entryfooter {}
+
+	// SIDEBAR-SECONDARY
+	%sidebarsecondary-featuredcontent-entryfooter {}
+
+	// FOOTER-WIDGETS
+	%sidebarsecondary-featuredcontent-entryfooter {}
+
+// -------------------------------------
+// SELECTORS
+
+	.featured-content {
+		.entry-footer {
+			@extend %featuredcontent-entryfooter !optional;
+		}
+	}
+
+	.sidebar-primary .featured-content {
+		.entry-footer {
+			@extend %sidebarprimary-featuredcontent-entryfooter !optional;
+		}
+	}
+
+	.sidebar-secondary .featured-content {
+		.entry-footer {
+			@extend %sidebarsecondary-featuredcontent-entryfooter !optional;
+		}
+	}
+
+	.footer-widgets .featured-content {
+		.entry-footer {
+			@extend %footerwidgets-featuredcontent-entryfooter !optional;
+		}
+	}

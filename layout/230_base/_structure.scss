@@ -1,0 +1,17 @@
+/* BASE_230 | LAYOUT | 230_BASE | STRUCTURE - 2016-07-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%sitecontainer_layout {
+		@extend %clearfix !optional;
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+	.site-container {
+		@extend %sitecontainer !optional;
+		@extend %sitecontainer_layout !optional;
+	}

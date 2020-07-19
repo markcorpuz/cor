@@ -1,0 +1,23 @@
+/* BASE_230 | LAYOUT | 250_MODEL-BASICSETUP | FULL - 2017-06-06 */
+
+// -------------------------------------
+// EXTEND
+
+	%full-csw_layout {
+		@extend %responsive-layout-max !optional;
+	}
+
+	%full-content_layout {
+		@extend %responsive-layout-max !optional;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.full-width-content .content-sidebar-wrap {
+		@extend %full-csw_layout !optional;
+	}
+
+	.full-width-content .content {
+		@extend %full-content_layout !optional;
+	}

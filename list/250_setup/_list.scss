@@ -1,0 +1,27 @@
+/* BASE_230 | CONTENT | 250_SETUP | LIST - 2017-07-19 */
+
+// -------------------------------------
+// EXTEND
+
+	%li {}
+	%liul {
+		margin-bottom: 0;
+	}
+	%liol {
+		margin-bottom: 0;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	// LI
+
+	li {
+		@extend %li !optional;
+	}
+	li > ul {
+		@extend %liul !optional;
+	}
+	li > ol {
+		@extend %liol !optional;
+	}

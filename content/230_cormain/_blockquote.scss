@@ -1,0 +1,101 @@
+/* BASE_230 | CONTENT | 230_BASE > COR | BLOCKQUOTE - 2016-12-30 */
+
+// -------------------------------------
+// EXTEND
+
+	%blockquote {
+		//padding-left: #{$space}rem;
+		//margin: 0;
+		//margin-left: #{$space}rem;
+		//font-weight: $fontweight-thin;
+		border: 5px solid #ccc;
+		padding: #{$space-default}rem;
+		margin: 0;
+		margin-bottom: #{$space-default}rem;
+		box-sizing: border-box;
+		font-weight: $fontweight-default;
+		background-color: #f7f7f7;
+	}
+	%blockquote-p {
+		//font-family: $fontfamily-blockquote;
+		//font-size: #{$fontsize-blockquote}rem;
+		//line-height: $lineheight-blockquote;
+		//font-weight: $fontweight-thin;
+		font-size: #{$fontsize-default}rem;
+		//line-height: $lineheight-default;
+		font-weight: $fontweight-default;
+	}
+
+	%blockquotequote {
+		border: 0;
+		padding: 0;
+		padding-left: #{$space-double}rem;
+		margin: 0;
+		font-weight: $fontweight-thin;
+		background-color: transparent;
+		font-family: $fontfamily-blockquote;
+		font-size: #{$fontsize-blockquote}rem;
+		line-height: $lineheight-blockquote;
+		font-weight: $fontweight-thin;
+		color: #e57e00;
+	}
+	%blockquotequote-p {
+		font-family: $fontfamily-blockquote;
+		font-size: #{$fontsize-blockquote}rem;
+		line-height: $lineheight-blockquote;
+		font-weight: $fontweight-thin;
+		color: #e57e00;
+	}
+
+	%blockquotequote-sml {
+		font-size: 1rem;
+		line-height: 1.4;
+	}
+	%blockquotequote-sml-p {
+		font-size: 1rem;
+		line-height: 1.4;
+	}
+
+	%blockquotequote-end {
+		border-top: 1px solid #666;
+		padding-left: 0;
+		padding-top: 1rem;
+		margin-bottom: 2rem;
+		color: #666;
+	}
+	%blockquotequote-end-p {
+		color: #333;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	blockquote {
+		@extend %blockquote !optional;
+	}
+
+	blockquote p {
+		@extend %blockquote-p !optional;
+	}
+
+	blockquote.quote {
+		@extend %blockquotequote !optional;
+	}
+
+	blockquote.quote p {
+		@extend %blockquotequote-p !optional;
+	}
+
+	blockquote.quote.quote-sml {
+		@extend %blockquotequote-sml !optional;
+	}
+	blockquote.quote.quote-sml p {
+		@extend %blockquotequote-sml-p !optional;
+	}
+
+	blockquote.quote.quote-end {
+		@extend %blockquotequote-end !optional;
+	}
+	blockquote.quote.quote-end p {
+		@extend %blockquotequote-end-p !optional;
+	}

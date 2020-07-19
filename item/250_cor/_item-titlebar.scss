@@ -1,0 +1,94 @@
+/* BASE_230 | ITEM | COR_250 | ITEM-TITLEBAR - 2017-07-18 */
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+// ITEM-WIDGETTITLE
+
+	%item-widgettitle {
+		color: #ffcc00;
+		background-color: #333;
+		padding: 5px 5px 4px 8px;
+		font-size: #{$fontsize-sml}rem;
+		font-weight: $fontweight-thicker;
+		margin-bottom: 1rem;
+
+		@include responsive-range(medbelowdown) {
+			margin-bottom: 0.5rem;
+		}
+	}
+		%item-widgettitle-a {
+			color: #ffcc00;
+			text-decoration: none;
+		}
+		%item-widgettitle-hvr {
+			color: #ffcc00;
+			text-decoration: none;
+		}
+
+// ITEM-FEATURE
+
+	%item-featuretitle {
+		background-color: #333;
+		color: #ffcc00;
+		overflow: hidden;
+		padding: 3px 5px 2px 10px;
+	}
+
+// ITEM-TITLEBAR
+
+	%item-titlebar {
+		//background-color: #333;
+		background-color: #1072B6;
+		//background-color: #900000;
+		color: #fff;
+		line-height: 1;
+		padding: 15px 20px 10px;
+	}
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+// ITEM-WIDGETTITLE
+
+	.item-widgettitle {
+		@extend %item-widgettitle !optional;
+
+		a {
+			@extend %item-widgettitle-a !optional;
+		
+			&:hover {
+				@extend %item-widgettitle-hvr !optional;
+			}
+		}
+	}
+
+// ITEM-FEATURETITLE
+
+	.item-featuretitle {
+		@extend %item-featuretitle !optional;
+
+		a {
+			@extend %item-featuretitle-a !optional;
+		
+			&:hover {
+				@extend %item-featuretitle-hvr !optional;
+			}
+		}
+	}
+
+// ITEM-TITLEBAR
+
+	.item-titlebar {
+		@extend %item-titlebar !optional;
+
+		a {
+			@extend %item-titlebar-a !optional;
+		
+			&:hover {
+				@extend %item-titlebar-hvr !optional;
+			}
+		}
+	}

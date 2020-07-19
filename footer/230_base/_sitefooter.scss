@@ -1,0 +1,22 @@
+/* BASE_230 | FOOTER | 230_BASE | SITEFOOTER - 2017-02-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%sitefooter {}
+	%sitefooterwrap {}
+	%sitefooterwraponly {}
+
+// -------------------------------------
+// SELECTORS
+
+	.site-footer {
+		@extend %sitefooter !optional;
+
+		.wrap {
+			@extend %sitefooterwrap !optional;
+		}
+	}
+	.site-footer > .wrap {
+		@extend %sitefooterwraponly !optional;
+	}

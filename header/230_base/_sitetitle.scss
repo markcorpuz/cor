@@ -1,0 +1,24 @@
+/* BASE_230 | HEADER | 230_BASE | SITETITLE - 2016-07-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%sitetitle {}
+		%sitetitle-a {}
+		%sitetitle-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+	.site-title {
+		@extend %sitetitle !optional;
+	
+		a {
+			@extend %sitetitle-a !optional;
+		}
+
+		a:hover {
+			@extend %sitetitle-hvr !optional;
+		}
+
+	}

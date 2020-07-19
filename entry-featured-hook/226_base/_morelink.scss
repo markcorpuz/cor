@@ -1,0 +1,88 @@
+/* BASE_226 | ENTRY-FEATURED-HOOK | 226_BASE | MORELINK-FEATUREDCONTENT - 2016-01-22 */
+
+// -------------------------------------
+// FORMULA
+
+	%featuredcontent-morelink-a-formula {}
+	%featuredcontent-morelink-hvr-formula {}
+
+	// SIDEBAR-PRIMARY
+	%sidebarprimary-featuredcontent-morelink-a-formula {}
+	%sidebarprimary-featuredcontent-morelink-hvr-formula {}
+
+	// SIDEBAR-SECONDARY
+	%sidebarsecondary-featuredcontent-morelink-a-formula {}
+	%sidebarsecondary-featuredcontent-morelink-hvr-formula {}
+
+	// FOOTER-WIDGETS
+	%sidebarsecondary-featuredcontent-morelink-a-formula {}
+	%sidebarsecondary-featuredcontent-morelink-hvr-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	%featuredcontent-morelink-a {}
+	%featuredcontent-morelink-hvr {}
+
+	// SIDEBAR-PRIMARY
+	%sidebarprimary-featuredcontent-morelink-a {}
+	%sidebarprimary-featuredcontent-morelink-hvr {}
+
+	// SIDEBAR-SECONDARY
+	%sidebarsecondary-featuredcontent-morelink-a {}
+	%sidebarsecondary-featuredcontent-morelink-hvr {}
+
+	// FOOTER-WIDGETS
+	%sidebarsecondary-featuredcontent-morelink-a {}
+	%sidebarsecondary-featuredcontent-morelink-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+	.featured-content {
+		a.more-link {
+			@extend %featuredcontent-morelink-a-formula !optional;
+			@extend %featuredcontent-morelink-a !optional;
+
+			&:hover {
+				@extend %featuredcontent-morelink-hvr-formula !optional;
+				@extend %featuredcontent-morelink-hvr !optional;
+			}
+		}
+	}
+
+	.sidebar-primary .featured-content {
+		a.more-link {
+			@extend %sidebarprimary-featuredcontent-morelink-a-formula !optional;
+			@extend %sidebarprimary-featuredcontent-morelink-a !optional;
+
+			&:hover {
+				@extend %sidebarprimary-featuredcontent-morelink-hvr-formula !optional;
+				@extend %sidebarprimary-featuredcontent-morelink-hvr !optional;
+			}
+		}
+	}
+
+	.sidebar-secondary .featured-content {
+		a.more-link {
+			@extend %sidebarsecondary-featuredcontent-morelink-a-formula !optional;
+			@extend %sidebarsecondary-featuredcontent-morelink-a !optional;
+
+			&:hover {
+				@extend %sidebarsecondary-featuredcontent-morelink-hvr-formula !optional;
+				@extend %sidebarsecondary-featuredcontent-morelink-hvr !optional;
+			}
+		}
+	}
+
+	.footer-widgets .featured-content {
+		a.more-link {
+			@extend %footerwidgets-featuredcontent-morelink-a-formula !optional;
+			@extend %footerwidgets-featuredcontent-morelink-a !optional;
+
+			&:hover {
+				@extend %footerwidgets-featuredcontent-morelink-hvr-formula !optional;
+				@extend %footerwidgets-featuredcontent-morelink-hvr !optional;
+			}
+		}
+	}

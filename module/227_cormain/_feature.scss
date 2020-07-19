@@ -1,0 +1,75 @@
+/* BASE_226 | MODULE | 227_CORMAIN | FEATURE - 2016-05-06 */
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+// FEATUREAREA
+
+	%featurearea {}
+
+// FEATURELEFT
+
+	%featureleft {}
+
+// FEATURERIGHT
+
+	%featureright {}
+
+// FEATUREMAIN
+
+	%featuremain {}
+
+// FEATUREINPOST
+
+	%featurepost {}
+
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+// FEATUREAREA
+
+	.featurearea {}
+
+// FEATURELEFT
+
+	.featureleft {
+		width: 48%;
+		float: left;
+		margin-right: 3%;
+
+		@include responsive-range(meddown) {
+			width: 100%;
+			float: none;
+			margin-right: 0;
+		}
+	}
+
+// FEATURERIGHT
+
+	.featureright {
+		width: 49%;
+		float: left;
+
+		@include responsive-range(meddown) {
+			width: 100%;
+			float: none;
+			margin-right: 0;
+		}
+	}
+
+// FEATUREMAIN
+
+	.featuremain {
+		clear: both;
+		display: block;
+	}
+
+// FEATUREINPOST
+
+	.featureinpost {
+		clear: both;
+		display: block;
+	}

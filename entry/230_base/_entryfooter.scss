@@ -1,0 +1,32 @@
+/* BASE_230 | ENTRY | 230_BASE | ENTRYFOOTER - 2017-02-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%entryfooter {}
+
+		%single-entryfooter {}
+		%page-entryfooter {}
+
+// -------------------------------------
+// SELECTORS
+
+	.entry-footer {
+		@extend %entryfooter !optional;
+	}
+
+		// SINGLE
+
+		.single {
+			.entry-footer {
+				@extend %single-entryfooter !optional;
+			}
+		}
+
+		// PAGE
+
+		.page {
+			.entry-footer {
+				@extend %page-entryfooter !optional;
+			}
+		}

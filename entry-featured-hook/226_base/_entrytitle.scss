@@ -1,0 +1,116 @@
+/* BASE_226 | ENTRY-FEATURED-HOOK | 226_BASE | ENTRYTITLE-FEATUREDCONTENT - 2016-01-19 */
+
+// -------------------------------------
+// FORMULA
+
+	%featuredcontent-entrytitle-formula {}
+		%featuredcontent-entrytitle-a-formula {}
+		%featuredcontent-entrytitle-hvr-formula {}
+
+	// SIDEBAR-PRIMARY
+	%sidebarprimary-featuredcontent-entrytitle-formula {}
+		%sidebarprimary-featuredcontent-entrytitle-a-formula {}
+		%sidebarprimary-featuredcontent-entrytitle-hvr-formula {}
+
+	// SIDEBAR-SECONDARY
+	%sidebarsecondary-featuredcontent-entrytitle-formula {}
+		%sidebarsecondary-featuredcontent-entrytitle-a-formula {}
+		%sidebarsecondary-featuredcontent-entrytitle-hvr-formula {}
+
+	// FOOTER-WIDGETS
+	%sidebarsecondary-featuredcontent-entrytitle-formula {}
+		%sidebarsecondary-featuredcontent-entrytitle-a-formula {}
+		%sidebarsecondary-featuredcontent-entrytitle-hvr-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	%featuredcontent-entrytitle {}
+		%featuredcontent-entrytitle-a {}
+		%featuredcontent-entrytitle-hvr {}
+
+	// SIDEBAR-PRIMARY
+	%sidebarprimary-featuredcontent-entrytitle {}
+		%sidebarprimary-featuredcontent-entrytitle-a {}
+		%sidebarprimary-featuredcontent-entrytitle-hvr {}
+
+	// SIDEBAR-SECONDARY
+	%sidebarsecondary-featuredcontent-entrytitle {}
+		%sidebarsecondary-featuredcontent-entrytitle-a {}
+		%sidebarsecondary-featuredcontent-entrytitle-hvr {}
+
+	// FOOTER-WIDGETS
+	%sidebarsecondary-featuredcontent-entrytitle {}
+		%sidebarsecondary-featuredcontent-entrytitle-a {}
+		%sidebarsecondary-featuredcontent-entrytitle-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+	.featured-content {
+		.entry-title {
+			@extend %featuredcontent-entrytitle-formula !optional;
+			@extend %featuredcontent-entrytitle !optional;
+
+			a {
+				@extend %featuredcontent-entrytitle-a-formula !optional;
+				@extend %featuredcontent-entrytitle-a !optional;
+
+				&:hover {
+					@extend %featuredcontent-entrytitle-hvr-formula !optional;
+					@extend %featuredcontent-entrytitle-hvr !optional;
+				}
+			}
+		}
+	}
+
+	.sidebar-primary .featured-content {
+		.entry-title {
+			@extend %sidebarprimary-featuredcontent-entrytitle-formula !optional;
+			@extend %sidebarprimary-featuredcontent-entrytitle !optional;
+
+			a {
+				@extend %sidebarprimary-featuredcontent-entrytitle-a-formula !optional;
+				@extend %sidebarprimary-featuredcontent-entrytitle-a !optional;
+
+				&:hover {
+					@extend %sidebarprimary-featuredcontent-entrytitle-hvr-formula !optional;
+					@extend %sidebarprimary-featuredcontent-entrytitle-hvr !optional;
+				}
+			}
+		}
+	}
+
+	.sidebar-secondary .featured-content {
+		.entry-title {
+			@extend %sidebarsecondary-featuredcontent-entrytitle-formula !optional;
+			@extend %sidebarsecondary-featuredcontent-entrytitle !optional;
+
+			a {
+				@extend %sidebarsecondary-featuredcontent-entrytitle-a-formula !optional;
+				@extend %sidebarsecondary-featuredcontent-entrytitle-a !optional;
+
+				&:hover {
+					@extend %sidebarsecondary-featuredcontent-entrytitle-hvr-formula !optional;
+					@extend %sidebarsecondary-featuredcontent-entrytitle-hvr !optional;
+				}
+			}
+		}
+	}
+
+	.footer-widgets .featured-content {
+		.entry-title {
+			@extend %footerwidgets-featuredcontent-entrytitle-formula !optional;
+			@extend %footerwidgets-featuredcontent-entrytitle !optional;
+
+			a {
+				@extend %footerwidgets-featuredcontent-entrytitle-a-formula !optional;
+				@extend %footerwidgets-featuredcontent-entrytitle-a !optional;
+
+				&:hover {
+					@extend %footerwidgets-featuredcontent-entrytitle-hvr-formula !optional;
+					@extend %footerwidgets-featuredcontent-entrytitle-hvr !optional;
+				}
+			}
+		}
+	}

@@ -1,0 +1,18 @@
+/* BASE_230 | LAYOUT | 250_MODEL-BASICSETUP | STRUCTURE - 2017-06-06 */
+// BASE_230 | STRUCTURE | 230_BASE
+
+// -------------------------------------
+// EXTEND
+
+	%sitecontainer_layout {
+		@extend %clearfix !optional;
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+	.site-container {
+		@extend %sitecontainer !optional;
+		@extend %sitecontainer_layout !optional;
+	}

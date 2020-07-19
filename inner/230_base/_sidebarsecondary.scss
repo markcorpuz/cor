@@ -1,0 +1,13 @@
+/* BASE_230 | INNER | 230_BASE | SIDEBARSECONDARY - 2017-02-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%sidebarsecondary {}
+
+// -------------------------------------
+// SELECTORS
+
+	.sidebar-secondary {
+		@extend %sidebarsecondary !optional;
+	}

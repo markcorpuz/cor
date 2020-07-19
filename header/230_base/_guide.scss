@@ -1,0 +1,67 @@
+/* BASE_230 | HEADER | 230_BASE | GUIDE - 2017-01-12 */
+
+// -------------------------------------
+// EXTEND
+
+	%siteheader-guide {
+		background-color: #3f5052;
+	}
+	%siteheaderwrap-guide {
+		background-color: #7ea1a5;
+	}
+	%siteheaderwraponly-guide {}
+
+	%titlearea-guide {
+		background-color: #bed0d2;
+	}
+
+	%sitetitle-guide {}
+		%sitetitle-a-guide {}
+		%sitetitle-hvr-guide {}
+
+	%sitedescription-guide {
+		background-color: #cbd9db;
+	}
+
+	%headerwidgetarea-guide {
+		background-color: #8d6f7a;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	body .site-header {
+		@extend %siteheader-guide !optional;
+
+		.wrap {
+			@extend %siteheaderwrap-guide !optional;
+		}
+	}
+	body .site-header > .wrap {
+		@extend %siteheaderwraponly-guide !optional;
+	}
+
+	body .title-area {
+		@extend %titlearea-guide !optional;
+	}
+
+	body .site-title {
+		@extend %sitetitle-guide !optional;
+	
+		a {
+			@extend %sitetitle-a-guide !optional;
+		}
+
+		a:hover {
+			@extend %sitetitle-hvr-guide !optional;
+		}
+
+	}
+
+	body .site-description {
+		@extend %sitedescription-guide !optional;
+	}
+
+	body .header-widget-area {
+		@extend %headerwidgetarea-guide !optional;
+	}

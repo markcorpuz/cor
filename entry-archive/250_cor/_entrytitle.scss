@@ -1,0 +1,154 @@
+/* BASE_230 | ENTRY-ARCHIVE | 250_MODEL-BASICSETUP | ENTRYTITLE - 2017-06-22 */
+// BASE_230 | ENTRY-ARCHIVE | 230_BASE
+
+// -------------------------------------
+// EXTEND
+
+	%all-entrytitle {
+		font-size: #{$fontsize-lrg}rem;
+	}
+		%all-entrytitle-a {}
+		%all-entrytitle-hvr {}
+
+	%archive-entrytitle {}
+		%archive-entrytitle-a {}
+		%archive-entrytitle-hvr {}
+
+	%category-entrytitle {}
+		%category-entrytitle-a {}
+		%category-entrytitle-hvr {}
+
+	%tag-entrytitle {}
+		%tag-entrytitle-a {}
+		%tag-entrytitle-hvr {}
+
+	%blog-entrytitle {}
+		%blog-entrytitle-a {}
+		%blog-entrytitle-hvr {}
+
+	%haspostthumbnail-all-entrytitle {}
+		%haspostthumbnail-all-entrytitle-a {}
+		%haspostthumbnail-all-entrytitle-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+	// ARCHIVE
+
+	.archive {
+		.entry-title {
+			@extend %all-entrytitle !optional;
+			@extend %archive-entrytitle !optional;
+
+			a {
+				@extend %all-entrytitle-a !optional;
+				@extend %archive-entrytitle-a !optional;
+
+				&:hover {
+					@extend %all-entrytitle-hvr !optional;
+					@extend %archive-entrytitle-hvr !optional;
+				}
+			}
+		}
+		.has-post-thumbnail .entry-title {
+			@extend %haspostthumbnail-all-entrytitle !optional;
+
+			a {
+				@extend %haspostthumbnail-all-entrytitle-a !optional;
+
+				&:hover {
+					@extend %haspostthumbnail-all-entrytitle-hvr !optional;
+				}
+			}
+		}
+	}
+
+	// CATEGORY
+
+	.category {
+		.entry-title {
+			@extend %all-entrytitle !optional;
+			@extend %category-entrytitle !optional;
+
+			a {
+				@extend %all-entrytitle-a !optional;
+				@extend %category-entrytitle-a !optional;
+
+				&:hover {
+					@extend %all-entrytitle-hvr !optional;
+					@extend %category-entrytitle-hvr !optional;
+				}
+			}
+		}
+		.has-post-thumbnail .entry-title {
+			@extend %haspostthumbnail-all-entrytitle !optional;
+
+			a {
+				@extend %haspostthumbnail-all-entrytitle-a !optional;
+
+				&:hover {
+					@extend %haspostthumbnail-all-entrytitle-hvr !optional;
+				}
+			}
+		}
+	}
+
+	// TAG
+
+	.tag {
+		.entry-title {
+			@extend %all-entrytitle !optional;
+			@extend %tag-entrytitle !optional;
+
+			a {
+				@extend %all-entrytitle-a !optional;
+				@extend %tag-entrytitle-a !optional;
+
+				&:hover {
+					@extend %all-entrytitle-hvr !optional;
+					@extend %tag-entrytitle-hvr !optional;
+				}
+			}
+		}
+		.has-post-thumbnail .entry-title {
+			@extend %haspostthumbnail-all-entrytitle !optional;
+
+			a {
+				@extend %haspostthumbnail-all-entrytitle-a !optional;
+
+				&:hover {
+					@extend %haspostthumbnail-all-entrytitle-hvr !optional;
+				}
+			}
+		}
+	}
+
+	// TAG
+
+	.blog {
+		.entry-title {
+			@extend %all-entrytitle !optional;
+			@extend %blog-entrytitle !optional;
+
+			a {
+				@extend %all-entrytitle-a !optional;
+				@extend %blog-entrytitle-a !optional;
+
+				&:hover {
+					@extend %all-entrytitle-hvr !optional;
+					@extend %blog-entrytitle-hvr !optional;
+				}
+			}
+		}
+		.has-post-thumbnail .entry-title {
+			@extend %haspostthumbnail-all-entrytitle !optional;
+
+			a {
+				@extend %haspostthumbnail-all-entrytitle-a !optional;
+
+				&:hover {
+					@extend %haspostthumbnail-all-entrytitle-hvr !optional;
+				}
+			}
+		}
+	}

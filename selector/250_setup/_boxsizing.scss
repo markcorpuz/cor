@@ -1,0 +1,32 @@
+/* BASE_230 | SELECTOR | 250_SETUP | BOXSIZING - 2017-07-19 */
+
+// -------------------------------------
+// EXTEND
+
+	%boxsizing-borderbox {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing:    border-box;
+		box-sizing:         border-box;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.boxsizing-borderbox {
+		@extend %boxsizing-borderbox !optional;
+	}
+
+	html {
+		@extend %boxsizing-borderbox !optional;
+	}
+
+	input[type="search"] {
+		@extend %boxsizing-borderbox !optional;
+	}
+
+
+	*,
+	*:before,
+	*:after {
+		box-sizing: inherit;
+	}

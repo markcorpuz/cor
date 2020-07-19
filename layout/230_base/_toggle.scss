@@ -1,0 +1,65 @@
+/* BASE_230 | LAYOUT | 230_BASE | TOGGLE - 2016-09-16 */
+
+// -------------------------------------
+// EXTEND
+
+	%both-toggle_layout {}
+	%menu-toggle_layout {}
+	%submenu-toggle_layout {}
+
+	%both-button-toggle_layout {}
+	%menu-button-toggle_layout {}
+	%submenu-button-toggle_layout {}
+
+	%menu-toggle-before_layout {}
+	%menu-toggle-activatedbefore_layout {}
+
+	%submenu-toggle-before_layout {}
+	%submenu-toggle-activatedbefore_layout {}
+
+// -------------------------------------
+// SELECTORS
+
+	.menu-toggle {
+		@extend %both-toggle !optional;
+		@extend %menu-toggle !optional;
+		@extend %both-toggle_layout !optional;
+		@extend %menu-toggle_layout !optional;
+	}
+	.sub-menu-toggle {
+		@extend %both-toggle !optional;
+		@extend %submenu-toggle !optional;
+		@extend %both-toggle_layout !optional;
+		@extend %submenu-toggle_layout !optional;
+	}
+
+	button.menu-toggle {
+		@extend %both-button-toggle !optional;
+		@extend %menu-button-toggle !optional;
+		@extend %both-button-toggle_layout !optional;
+		@extend %menu-button-toggle_layout !optional;
+	}
+	button.sub-menu-toggle {
+		@extend %both-button-toggle !optional;
+		@extend %submenu-button-toggle !optional;
+		@extend %both-button-toggle_layout !optional;
+		@extend %submenu-button-toggle_layout !optional;
+	}
+
+	.menu-toggle:before {
+		@extend %menu-toggle-before !optional;
+		@extend %menu-toggle-before_layout !optional;
+	}
+	.menu-toggle.activated:before {
+		@extend %menu-toggle-activatedbefore !optional;
+		@extend %menu-toggle-activatedbefore_layout !optional;
+	}
+
+	.sub-menu-toggle:before {
+		@extend %submenu-toggle-before !optional;
+		@extend %submenu-toggle-before_layout !optional;
+	}
+	.sub-menu-toggle.activated:before {
+		@extend %submenu-toggle-activatedbefore !optional;
+		@extend %submenu-toggle-activatedbefore_layout !optional;
+	}

@@ -1,0 +1,47 @@
+/* BASE_230 | LAYOUT | 230_BASE | CSS - 2016-07-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%css-csw_layout {
+		float: left;
+		width: 80%;
+		@extend %responsive-layout-max !optional;
+	}
+
+	%css-content_layout {
+		float: left;
+		width: 70%;
+		@extend %responsive-layout-max !optional;
+	}
+
+	%css-sidebarprimary_layout {
+		float: right;
+		width: 30%;
+		@extend %responsive-layout-max !optional;
+	}
+
+	%css-sidebarsecondary_layout {
+		float: right;
+		width: 20%;
+		@extend %responsive-layout-max !optional;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.content-sidebar-sidebar .content-sidebar-wrap {
+		@extend %css-csw_layout !optional;
+	}
+
+	.content-sidebar-sidebar .content {
+		@extend %css-content_layout !optional;
+	}
+
+	.content-sidebar-sidebar .sidebar-primary {
+		@extend %css-sidebarprimary_layout !optional;
+	}
+
+	.content-sidebar-sidebar .sidebar-secondary {
+		@extend %css-sidebarsecondary_layout !optional;
+	}

@@ -1,0 +1,121 @@
+/* BASIC_2123 | ITEM-COR | DEFAULT_2124 | ITEM-SUBSCRIBE - 2015-7-14 */
+
+// -------------------------------------
+// UNIVERSAL
+// -------------------------------------
+
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+// ITEM-SUBSCRIBE PRETITLE
+
+	%item-subscribe-pretitle {
+		background-color: #ffcc00;
+		color: #333;
+		padding: 5px 10px;
+		font-family: "Lato",arial,sans-serif;
+		font-weight: 700;
+		line-height: 1.1;
+		text-align: center;
+	}
+
+// ITEM-SUBSCRIBE TITLE
+
+	%item-subscribe-title {
+		background-color: #1072B6;
+		color: #fff;
+		//color: #333;
+		padding: $space-default-half;
+		margin-bottom: $space-default;
+		font-family: "Lato",arial,sans-serif;
+		font-weight: 700;
+		line-height: 1.1;
+		text-align: center;
+	}
+
+// ITEM-SUBSCRIBE PHOTO
+
+	%item-subscribe-photo {}
+	%item-subscribe-photo-img {
+		width: 100%;
+		max-width: 670px;
+		text-align: center;
+	}
+
+// ITEM-SUBSCRIBE DISCLAIMER
+
+	%item-subscribe-disclaimer {
+		font-family: "Roboto",arial,sans-serif;
+		line-height: 1.4;
+		font-size: 0.75rem;
+	}
+
+// ITEM-SUBSCRIBE FORMENTRY INPUT
+
+	%item-subscribe-input {}
+	%item-subscribe-formentry-input {
+		width: 100%;
+		padding: 5px;
+		box-sizing: border-box;
+	}
+
+// ITEM-SUBSCRIBE INPUT SUBMIT
+
+	%item-subscribe-formsubmit {
+		text-align: center;
+		box-sizing: border-box;
+	}
+	%item-subscribe-inputsubmit {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		clear: both;
+	}
+
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+// ITEM-SUBSCRIBE PRETITLE
+
+	.item-subscribe .pretitle {
+		@extend %item-subscribe-pretitle !optional;
+	}
+
+// ITEM-SUBSCRIBE TITLE
+
+	.item-subscribe .title {
+		@extend %item-subscribe-title !optional;
+	}
+
+// ITEM-SUBSCRIBE PHOTO
+
+	.item-subscribe .photo {
+		@extend %item-subscribe-photo !optional;
+	}
+	.item-subscribe .photo img {
+		@extend %item-subscribe-photo-img !optional;
+	}
+
+// ITEM-SUBSCRIBE DISCLAIMER
+
+	.item-subscribe .disclaimer {
+		@extend %item-subscribe-disclaimer !optional;
+	}
+
+// ITEM-SUBSCRIBE FORMENTRY INPUT
+
+	.item-subscribe .formentry input {
+		@extend %item-subscribe-formentry-input !optional;
+	}
+
+// ITEM-SUBSCRIBE INPUT SUBMIT 
+
+	.item-subscribe .formsubmit {
+		@extend %item-subscribe-formsubmit !optional;
+	}
+	.item-subscribe input[type=submit] {
+		@extend %item-subscribe-inputsubmit !optional;
+	}

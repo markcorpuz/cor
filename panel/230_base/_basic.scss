@@ -1,0 +1,96 @@
+/* BASE_230 | PANEL | 230_BASE | BASIC - 2016-9-6 */
+
+// -------------------------------------
+// EXTEND
+
+	// PANEL
+
+	%panel {}
+	%panel-main {
+		width: 70%;
+	}
+	%panel-side {
+		width: 30%;
+	}
+
+	// PANEL OUTER & INNER
+
+	%panel-outer {}
+	%panel-inner {
+		max-width: #{$width-inner}rem;
+	}
+
+	// PANEL.MS
+
+	%panelms {}
+	%panelms-main {
+		@extend %alignleft !optional;
+	}
+	%panelms-side {
+		@extend %alignright !optional;
+	}
+
+	// PANEL.SM
+
+	%panelsm {}
+	%panelsm-main {
+		@extend %alignright !optional;
+	}
+	%panelsm-side {
+		@extend %alignleft !optional;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	// PANEL
+
+	.panel {
+		@extend %panel !optional;
+	}
+	.panel > .main {
+		@extend %panel-main !optional;
+	}
+	.panel > .side {
+		@extend %panel-side !optional;
+	}
+
+	// PANEL OUTER & INNER
+	.panel > .outer {
+		@extend %panel-outer !optional;
+	}
+	.panel > .outer > .inner {
+		@extend %panel-inner !optional;
+	}
+	.panel > .inner {
+		@extend %panel-inner !optional;
+	}
+
+	// PANEL.MS
+
+	.panel.ms {
+		@extend %panelms !optional;
+	}
+	.panel.ms > .main,
+	.panel.ms > .main.alignright {
+		@extend %panelms-main !optional;
+	}
+	.panel.ms > .side,
+	.panel.ms > .side.alignleft {
+		@extend %panelms-side !optional;
+	}
+
+	// PANEL.SM
+
+	.panel.sm {
+		@extend %panelsm !optional;
+	}
+	.panel.sm > .main,
+	.panel.sm > .main.alignleft {
+		@extend %panelsm-main !optional;
+	}
+	.panel.sm > .side,
+	.panel.sm > .side.alignright {
+		@extend %panelsm-side !optional;
+	}
+

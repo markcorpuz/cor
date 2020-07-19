@@ -1,0 +1,32 @@
+/* BASE_230 | COMMENT | 230_MODEL-BASICSETUP | ENTRYCOMMENTS - 2017-04-19 */
+// BASE_230 | COMMENT | 230_BASE
+
+// -------------------------------------
+// EXTEND
+
+// ENTRY-COMMENTS
+
+	%entrycomments {
+		margin-top: #{$space-double}rem;
+	}
+
+// ENTRY-COMMENTS H3
+
+	%entrycomments-h3 {
+		font-weight: $fontweight-thick;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+// ENTRY-COMMENTS
+
+	.entry-comments {
+		@extend %entrycomments !optional;
+	}
+
+// ENTRY-COMMENTS
+
+	.entry-comments h3 {
+		@extend %entrycomments-h3 !optional;
+	}

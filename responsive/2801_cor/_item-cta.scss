@@ -1,0 +1,131 @@
+/* BASE_230 | RESPONSIVE | 2801_COR | MEDIA - 2019-03-04 */
+
+// -------------------------------------
+// EXTEND
+
+	%item-cta-removemedia {
+		@include responsive-range(meddown) {
+			float: none;
+			display: block;
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
+
+	%item-cta-textcenter {
+		@include responsive-range(smldown) {
+			text-align: center;
+		}
+	}
+
+	%item-cta-center {
+		@include responsive-range(smldown) {
+			margin-right: auto;
+			margin-left: auto;
+		}
+	}
+
+	%item-cta-hide {
+		@include responsive-range(smldown) {
+			display: none;
+		}
+	}
+
+	%item-cta-maxgrid {
+		@include responsive-range(smldown) {
+			width: 100%;
+			float: none;
+			margin-right: 0;
+			border-top: 1px dashed #ccc;
+			padding-top: 1rem;
+		}
+	}
+
+	%item-cta-columns-max {
+		@include responsive-range(smldown) {
+			grid-column: span 12;
+		}
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.item-cta.media .media-img {
+		@extend %item-cta-removemedia !optional;
+	}
+	.item-cta.media .media-right {
+		@extend %item-cta-removemedia !optional;
+	}
+	.item-cta.media .media-bd .third {
+		@extend %item-cta-maxgrid !optional;
+	}
+
+	.item-cta-hide {
+		@extend %item-cta-hide !optional;
+	}
+
+	.item-cta.media {
+		@extend %item-cta-textcenter !optional;
+	}
+
+	.item-cta .cta-amazon {
+		@extend %item-cta-center !optional;
+	}
+	.item-cta .cta-amazon-large {
+		@extend %item-cta-center !optional;
+	}
+	.item-cta .cta-paypal {
+		@extend %item-cta-center !optional;
+	}
+	.item-cta .cta-audible {
+		@extend %item-cta-center !optional;
+	}
+	.item-cta .cta-audible-large {
+		@extend %item-cta-center !optional;
+	}
+	.item-cta .cta-ibooks {
+		@extend %item-cta-center !optional;
+	}
+	.item-cta .cta-itunes {
+		@extend %item-cta-center !optional;
+	}
+	.item-cta .cta-kindle {
+		@extend %item-cta-center !optional;
+	}
+	.item-cta .cta-lulu {
+		@extend %item-cta-center !optional;
+	}
+	.item-cta .cta-teespring {
+		@extend %item-cta-center !optional;
+	}
+
+	.item-cta .cta-merchandise {
+		@extend %item-cta-hide !optional;
+	}
+	.item-cta .cta-bookpaperback {
+		@extend %item-cta-hide !optional;
+	}
+	.item-cta .cta-book2paperback {
+		@extend %item-cta-hide !optional;
+	}
+	.item-cta .cta-bookebook {
+		@extend %item-cta-hide !optional;
+	}
+	.item-cta .cta-book2ebook {
+		@extend %item-cta-hide !optional;
+	}
+	.item-cta .cta-bookaudio {
+		@extend %item-cta-hide !optional;
+	}
+	.item-cta .cta-book2audio {
+		@extend %item-cta-hide !optional;
+	}
+	.item-cta .cta-bookcombined {
+		@extend %item-cta-hide !optional;
+	}
+	.item-cta .cta-book2combined {
+		@extend %item-cta-hide !optional;
+	}
+	.item-cta .columns .third {
+		@extend %item-cta-columns-max !optional;
+	}

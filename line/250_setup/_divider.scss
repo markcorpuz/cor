@@ -1,0 +1,130 @@
+/* BASE_230 | LINE | 250_SETUP | DIVIDER - 2017-07-19 */
+
+// -------------------------------------
+// EXTEND
+
+// -------------------------------------
+// SELECTORS
+
+// DIVIDER-LINE DEFAULT
+
+	.divider {
+		@extend %border-color-default !optional;
+		@extend %border-style-solid !optional;
+		@extend %bordertop-width-default !optional;
+		@extend %borderright-zero !optional;
+		@extend %borderbottom-zero !optional;
+		@extend %borderleft-zero !optional;
+	}
+	.divider-line {
+		@extend %border-color-default !optional;
+		@extend %border-style-solid !optional;
+		@extend %bordertop-width-default !optional;
+		@extend %borderright-zero !optional;
+		@extend %borderbottom-zero !optional;
+		@extend %borderleft-zero !optional;
+	}
+	.divider-dash,
+	.divider-dashed {
+		@extend %bordertop-width-default !optional;
+		@extend %borderright-zero !optional;
+		@extend %borderbottom-zero !optional;
+		@extend %borderleft-zero !optional;
+		@extend %border-color-default !optional;
+		@extend %border-style-dashed !optional;
+	}
+	.divider-dotted {
+		@extend %bordertop-width-default !optional;
+		@extend %borderright-zero !optional;
+		@extend %borderbottom-zero !optional;
+		@extend %borderleft-zero !optional;
+		@extend %border-color-default !optional;
+		@extend %border-style-dotted !optional;
+	}
+	.divider-double {
+		@extend %bordertop-width-default-double !optional;
+		@extend %borderright-zero !optional;
+		@extend %borderbottom-zero !optional;
+		@extend %borderleft-zero !optional;
+		@extend %border-color-default !optional;
+		@extend %border-style-double !optional;
+	}
+
+// DIVIDER-LINE WIDTH
+
+	.divider.border-thin {
+		@extend %border-width-xxxsml !optional;
+	}
+	.divider.border-normal {
+		@extend %border-width-xxsml !optional;
+	}
+	.divider.border-thick {
+		@extend %border-width-xsml !optional;
+	}
+
+	.divider-line.border-thin {
+		@extend %border-width-xxxsml !optional;
+	}
+	.divider-line.border-normal {
+		@extend %border-width-xxsml !optional;
+	}
+	.divider-line.border-thick {
+		@extend %border-width-xsml !optional;
+	}
+
+	.divider-dash.border-thin {
+		@extend %border-width-xxxsml !optional;
+	}
+	.divider-dash.border-normal {
+		@extend %border-width-xxsml !optional;
+	}
+	.divider-dash.border-thick {
+		@extend %border-width-xsml !optional;
+	}
+
+	.divider-dotted.border-thin {
+		@extend %border-width-xxxsml !optional;
+	}
+	.divider-dotted.border-normal {
+		@extend %border-width-xxsml !optional;
+	}
+	.divider-dotted.border-thick {
+		@extend %border-width-xsml !optional;
+	}
+
+// DIVIDER-COLOR
+
+	.divider.line-color-black {
+		@extend %border-color-black !optional;
+	}
+	.divider.line-color-white {
+		@extend %border-color-white !optional;
+	}
+	.divider.line-color-gray {
+		@extend %border-color-gray !optional;
+	}
+	.divider.line-color-light {
+		@extend %border-color-light !optional;
+	}
+	.divider.line-color-lighter {
+		@extend %border-color-lighter !optional;
+	}
+	.divider.line-color-lightest {
+		@extend %border-color-lightest !optional;
+	}
+	.divider.line-color-dark {
+		@extend %border-color-dark !optional;
+	}
+	.divider.line-color-darker {
+		@extend %border-color-darker !optional;
+	}
+	.divider.line-color-darkerkest {
+		@extend %border-color-darkest !optional;
+	}
+
+	.divider-line.line-light {
+		// @extend %divider-lightgray !optional;
+	}
+	.divider-line.line-dark {
+		// @extend %divider-lightgray !optional;
+	}

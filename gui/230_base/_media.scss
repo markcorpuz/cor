@@ -1,0 +1,44 @@
+/* BASE_230 | GUI | 230_BASE | MEDIA - 2017-01-12 */
+
+// Author: http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+// Tutorial: http://codepen.io/siiron/pen/kHdlp
+
+// -------------------------------------
+// FORMULA
+
+// -------------------------------------
+// EXTEND
+
+// -------------------------------------
+// SELECTORS
+
+	.media {}
+
+	.media, .media-bd {
+	  overflow:hidden;
+	  _overflow:visible;
+	  zoom:1;
+	}
+
+	.media .media-img {
+	  float:left;
+	  margin-right: #{$space-default}rem;
+	}
+
+	.media .media-img img{
+	  display:block;
+	}
+
+	.media .media-right {
+	  float:right;
+	  margin-left: #{$space-default}rem;
+	  margin-right: 0;
+	}
+
+	.media .media-img.space-right-zero {
+		@extend %spaceright-zero !optional;
+	}
+
+	.media .media-right.space-left-zero {
+		@extend %spaceleft-zero !optional;
+	}

@@ -1,0 +1,57 @@
+/* BASE_230 | TYPOGRAPHY | 250_SETUP | FAMILY - 2017-07-19 */
+
+// -------------------------------------
+// EXTEND
+
+	%fontfamily-default {
+		font-family: $fontfamily-default;
+	}
+	%fontfamily-headline {
+		font-family: $fontfamily-headline;
+	}
+	%fontfamily-compact {
+		font-family: $fontfamily-compact;
+	}
+	%fontfamily-narrow {
+		font-family: $fontfamily-narrow;
+	}
+	%fontfamily-regular {
+		font-family: $fontfamily-regular;
+	}
+	%fontfamily-wide {
+		font-family: $fontfamily-wide;
+	}
+	%fontfamily-script {
+		font-family: $fontfamily-script;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.fontfamily-default {
+		@extend %fontfamily-default !optional;
+	}
+
+	.fontfamily-headline {
+		@extend %fontfamily-headline !optional;
+	}
+
+	.fontfamily-compact {
+		@extend %fontfamily-compact !optional;
+	}
+
+	.fontfamily-narrow {
+		@extend %fontfamily-narrow !optional;
+	}
+
+	.fontfamily-regular {
+		@extend %fontfamily-regular !optional;
+	}
+
+	.fontfamily-wide {
+		@extend %fontfamily-wide !optional;
+	}
+
+	.fontfamily-script {
+		@extend %fontfamily-script !optional;
+	}

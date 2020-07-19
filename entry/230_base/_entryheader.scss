@@ -1,0 +1,32 @@
+/* BASE_230 | ENTRY | 230_BASE | ENTRYHEADER - 2017-02-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%entryheader {}
+
+		%single-entryheader {}
+		%page-entryheader {}
+
+// -------------------------------------
+// SELECTORS
+
+	.entry-header {
+		@extend %entryheader !optional;
+	}
+
+		// SINGLE
+
+		.single {
+			.entry-header {
+				@extend %single-entryheader !optional;
+			}
+		}
+
+		// PAGE
+
+		.page {
+			.entry-header {
+				@extend %page-entryheader !optional;
+			}
+		}

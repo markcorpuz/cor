@@ -1,0 +1,17 @@
+/* BASE_230 | STRUCTURE | 230_BASE | GUIDE - 2017-02-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%sitecontainer-guide {
+		//background-color: #fba2a4;
+		background-color: #fff;
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+	body .site-container {
+		@extend %sitecontainer-guide !optional;
+	}

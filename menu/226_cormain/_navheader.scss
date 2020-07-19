@@ -1,0 +1,19 @@
+/* BASE_226 | MENU | 226_BASE | NAVHEADER - 2016-01-12 */
+
+// -------------------------------------
+// FORMULA
+
+	%navheader-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	%navheader {}
+
+// -------------------------------------
+// SELECTORS
+
+	.nav-header {
+		@extend %navheader-formula !optional;
+		@extend %navheader !optional;
+	}

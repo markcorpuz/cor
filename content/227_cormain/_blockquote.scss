@@ -1,0 +1,30 @@
+/* BASE_226 | CONTENT | 226_CORMAIN | BLOCKQUOTE - 2016-06-30 */
+
+// -------------------------------------
+// EXTEND
+
+	%blockquote {
+		border: 5px solid #ccc;
+		padding: #{$space-default}rem;
+		margin: 0;
+		margin-bottom: #{$space-default}rem;
+		box-sizing: border-box;
+		font-weight: $fontweight-default;
+		background-color: #f7f7f7;
+	}
+	%blockquote-p {
+		font-size: #{$fontsize-blockquote}rem;
+		line-height: $lineheight-blockquote;
+		font-weight: $fontweight-default;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	blockquote {
+		@extend %blockquote !optional;
+	}
+
+	blockquote p {
+		@extend %blockquote-p !optional;
+	}

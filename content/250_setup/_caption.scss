@@ -1,0 +1,75 @@
+/* BASE_250 | CONTENT | 250_SETUP | CAPTION - 2017-08-03 */
+
+// -------------------------------------
+// EXTEND
+
+	// WP-CAPTION
+	%wpcaption {}
+		%wpcaptionalignleft {
+			@extend %imgalignleft !optional;
+		}
+		%wpcaptionalignright {
+			@extend %imgalignright !optional;
+		}
+		%wpcaptionaligncenter {}
+
+	// WP-CAPTION LINK & IMG
+	%wpcaption-link {}
+	%wpcaption-hover {}
+	%wpcaption-img {}
+
+	// WP-CAPTION-TEXT
+	%wpcaptiontext {
+		font-size: #{$fontsize-caption}rem;
+		line-height: $lineheight-caption;
+		border-top: 1px solid #ccc;
+		padding-top: #{$space-half}rem;
+	}
+		%alignleft-wpcaptiontext {}
+		%alignright-wpcaptiontext {}
+		%aligncenter-wpcaptiontext {}
+
+// -------------------------------------
+// SELECTORS
+
+	.wp-caption {
+		@extend %wpcaption !optional;
+	}
+		.wp-caption.alignleft {
+			@extend %wpcaptionalignleft !optional;
+		}
+		.wp-caption.alignright {
+			@extend %wpcaptionalignright !optional;
+		}
+		.wp-caption.aligncenter {
+			@extend %wpcaptionaligncenter !optional;
+		}
+
+	.wp-caption a {
+		@extend %wpcaption-link !optional;
+	}
+
+	.wp-caption a:hover {
+		@extend %wpcaption-hover !optional;
+	}
+
+	.wp-caption img {
+		@extend %wpcaption-img !optional;
+	}
+
+	p.wp-caption-text,
+	.wp-caption-text {
+		@extend %wpcaptiontext !optional;
+	}
+
+		.wp-caption.alignleft .wp-caption-text {
+			@extend %alignleft-wpcaptiontext !optional;
+		}
+
+		.wp-caption.alignright .wp-caption-text {
+			@extend %alignright-wpcaptiontext !optional;
+		}
+
+		.wp-caption.aligncenter .wp-caption-text {
+			@extend %aligncenter-wpcaptiontext !optional;
+		}

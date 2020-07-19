@@ -1,0 +1,63 @@
+/* BASE_230 | COMMENT | 230_MODEL-BASICSETUP | COMMENTREPLY - 2017-04-19 */
+// BASE_230 | COMMENT | 230_BASE
+
+// -------------------------------------
+// EXTEND
+
+// COMMENT-REPLY
+
+	%commentreply {
+		font-size: #{$fontsize-xxsml}rem;
+		margin-left: 3.5rem;
+	}
+
+	// COMMENT-REPLY A
+
+		%commentreply-a {}
+
+	// COMMENT-REPLY A:HOVER
+
+		%commentreply-hvr {}
+
+// CHILDREN COMMENT-REPLY
+
+	%children-commentreply {
+		margin-left: 2.5rem;
+	}
+
+	// COMMENT-REPLY A
+
+		%children-commentreply-a {}
+
+	// COMMENT-REPLY A:HOVER
+
+		%children-commentreply-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+// COMMENT-REPLY
+
+	.comment-reply {
+		@extend %commentreply !optional;
+
+		a {
+			@extend %commentreply-a !optional;
+
+			&:hover {
+				@extend %commentreply-hvr !optional;
+			}
+		}
+	}
+
+	.children .comment-reply {
+		@extend %children-commentreply !optional;
+
+		a {
+			@extend %children-commentreply-a !optional;
+
+			&:hover {
+				@extend %children-commentreply-hvr !optional;
+			}
+		}
+	}

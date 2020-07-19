@@ -1,0 +1,30 @@
+/* BASE_230 | LAYOUT | 250_COR | STRUCTURE - 2017-06-26 */
+// BASE_230 | STRUCTURE | 230_BASE
+
+// -------------------------------------
+// EXTEND
+
+	%sitecontainer_layout {
+		@extend %clearfix !optional;
+		background-color: #fff;
+		max-width: #{$width-base}rem;
+		margin: 0 auto 5rem;
+		padding: 1rem;
+
+		@include responsive-range(xlrgbelowdown) {
+			margin-bottom: 1.5rem;
+		}
+
+		@include responsive-range(medbelowdown) {
+			padding: 0;
+		}
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+	.site-container {
+		@extend %sitecontainer !optional;
+		@extend %sitecontainer_layout !optional;
+	}

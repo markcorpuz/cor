@@ -1,0 +1,127 @@
+/* BASE_230 | LAYOUT | 230_BASE > COR | FOOTER - 2016-9-14 */
+
+// -------------------------------------
+// EXTEND
+
+	// SITE-FOOTER
+
+	%sitefooter_layout {
+		@extend %clearfix !optional;
+		background-color: #dbdbdb;
+	}
+	%sitefooterwrap_layout {}
+	%sitefooterwraponly_layout {
+		@extend %clearfix !optional;
+		margin-right: auto;
+		margin-left: auto;
+		padding-top: #{$space-half}rem;
+		padding-right: 1rem;
+		padding-bottom: #{$space-half}rem;
+		padding-left: 1rem;
+		background-color: #ddd;
+	}
+
+	// FOOTER-WIDGETS
+
+	%footerwidgets_layout {
+		@extend %clearfix !optional;
+		background-color: #a8c3e1;
+	}
+	%footerwidgetswrap_layout {}
+	%footerwidgetswraponly_layout {
+		@extend %clearfix !optional;
+		//max-width: #{$space-inside}rem;
+		padding: #{$space-default}rem;
+		margin-right: auto;
+		margin-left: auto;
+		//background-color: #eee;
+	}
+
+	%footerwidgets1_layout {
+		@extend %clearfix !optional;
+		width: 30%;
+		margin-right: 3%;
+		float: left;
+
+		@include responsive-range(meddown) {
+			width: 100%;
+			margin-right: 0;
+			float: none;
+		}
+	}
+
+	%footerwidgets2_layout {
+		@extend %clearfix !optional;
+		width: 30%;
+		margin-right: 3%;
+		float: left;
+
+		@include responsive-range(meddown) {
+			width: 100%;
+			margin-right: 0;
+			float: none;
+		}
+	}
+
+	%footerwidgets3_layout {
+		@extend %clearfix !optional;
+		width: 34%;
+		float: left;
+
+		@include responsive-range(meddown) {
+			width: 100%;
+			margin-right: 0;
+			float: none;
+		}
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+	// SITE-FOOTER
+
+	.site-footer {
+		@extend %sitefooter !optional;
+		@extend %sitefooter_layout !optional;
+
+		.wrap {
+			@extend %sitefooterwrap !optional;
+			@extend %sitefooterwrap_layout !optional;
+		}
+	}
+	.site-footer > .wrap {
+		@extend %sitefooterwraponly !optional;
+		@extend %sitefooterwraponly_layout !optional;
+	}
+
+	// FOOTER-WIDGETS
+
+	.footer-widgets {
+		@extend %footerwidgets !optional;
+		@extend %footerwidgets_layout !optional;
+
+		.wrap {
+			@extend %footerwidgetswrap !optional;
+			@extend %footerwidgetswrap_layout !optional;
+		}
+	}
+	.footer-widgets > .wrap {
+		@extend %footerwidgetswraponly !optional;
+		@extend %footerwidgetswraponly_layout !optional;
+	}
+
+	.footer-widgets-1 {
+		@extend %footerwidgets1 !optional;
+		@extend %footerwidgets1_layout !optional;
+	}
+
+	.footer-widgets-2 {
+		@extend %footerwidgets2 !optional;
+		@extend %footerwidgets2_layout !optional;
+	}
+
+	.footer-widgets-3 {
+		@extend %footerwidgets3 !optional;
+		@extend %footerwidgets3_layout !optional;
+	}

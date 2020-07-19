@@ -1,0 +1,124 @@
+/* BASE_230 | GUI | 230_BASE | BUTTON - 2016-08-05 */
+
+// -------------------------------------
+// EXTEND
+
+// BUTTON
+
+	%button {
+		@extend %fontfamily-bold !optional;
+		@extend %fontweight-thick !optional;
+		@extend %lineheight-single !optional;
+		@extend %textcenter !optional;
+
+		border-width: 0;
+		border-radius: 3pt;
+		cursor: pointer;
+		display: inline-block;
+		color: #fff;
+		background-color: $color-link;
+		padding: #{$space-half}rem #{$space-default}rem;
+		text-transform: uppercase;
+
+		text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+		box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
+		background-image: -webkit-linear-gradient(top, #76d5eb 0%, #5cb9d8 50%, #007aae 51%, #016ca3 75%, #004176 100%);
+		background-image: -moz-linear-gradient(top, #76d5eb 0%, #5cb9d8 50%, #007aae 51%, #016ca3 75%, #004176 100%);
+		background-image: -o-linear-gradient(top, #76d5eb 0%, #5cb9d8 50%, #007aae 51%, #016ca3 75%, #004176 100%);
+		background-image: linear-gradient(to bottom, #76d5eb 0%, #5cb9d8 50%, #007aae 51%, #016ca3 75%, #004176 100%);
+	}
+	%button-link {
+		color: #fff;
+		background-color: $color-link;
+		text-decoration: none;
+
+		background-image: -webkit-linear-gradient(top, #76d5eb 0%, #5cb9d8 50%, #007aae 51%, #016ca3 75%, #004176 100%);
+		background-image: -moz-linear-gradient(top, #76d5eb 0%, #5cb9d8 50%, #007aae 51%, #016ca3 75%, #004176 100%);
+		background-image: -o-linear-gradient(top, #76d5eb 0%, #5cb9d8 50%, #007aae 51%, #016ca3 75%, #004176 100%);
+		background-image: linear-gradient(to bottom, #76d5eb 0%, #5cb9d8 50%, #007aae 51%, #016ca3 75%, #004176 100%);
+	}
+	%button-hover {
+		color: #fff;
+		background-color: $color-hover;
+		text-decoration: none;
+
+		box-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+		background-image: -webkit-linear-gradient(top, #b9e9f5 0%, #9ad4e7 50%, #00b0fb 51%, #019eef 75%, #006bc3 100%);
+		background-image: -moz-linear-gradient(top, #b9e9f5 0%, #9ad4e7 50%, #00b0fb 51%, #019eef 75%, #006bc3 100%);
+		background-image: -o-linear-gradient(top, #b9e9f5 0%, #9ad4e7 50%, #00b0fb 51%, #019eef 75%, #006bc3 100%);
+		background-image: linear-gradient(to bottom, #b9e9f5 0%, #9ad4e7 50%, #00b0fb 51%, #019eef 75%, #006bc3 100%);
+	}
+
+// BUTTON-SIZE
+
+	%button-tiny {
+		padding: #{$space-tiny}rem;
+	}
+	%button-xsml {
+		padding: #{$space-xxxsml}rem;
+	}
+	%button-sml {
+		padding: #{$space-xxsml}rem;
+	}
+	%button-med {
+		padding: #{$space-xsml}rem;
+	}
+	%button-lrg {
+		padding: #{$space-default}rem;
+	}
+	%button-xlrg {
+		padding: #{$space-double}rem;
+	}
+	%button-huge {
+		padding: #{$space-triple}rem;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+// BUTTON
+
+	.button {
+		@extend %button !optional;
+	}
+	.button:link {
+		@extend %button-link !optional;
+	}
+	.button:hover {
+		@extend %button-hover !optional;
+	}
+
+	.button.valigntop {
+		@extend %verticalaligntop !optional;
+	}
+	.button.valignbottom {
+		@extend %verticalalignbottom !optional;
+	}
+
+	.button.display-block {
+		@extend %display-block !optional;
+	}
+
+// BUTTON-SIZE
+
+	.button-tiny {
+		@extend %button-tiny !optional;
+	}
+	.button-xsml {
+		@extend %button-xsml !optional;
+	}
+	.button-sml {
+		@extend %button-sml !optional;
+	}
+	.button-med {
+		@extend %button-med !optional;
+	}
+	.button-lrg {
+		@extend %button-lrg !optional;
+	}
+	.button-xlrg {
+		@extend %button-xlrg !optional;
+	}
+	.button-huge {
+		@extend %button-huge !optional;
+	}

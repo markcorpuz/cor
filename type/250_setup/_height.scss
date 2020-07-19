@@ -1,0 +1,75 @@
+/* BASE_230 | TYPOGRAPHY | 250_SETUP | HEIGHT - 2017-07-19 */
+
+// -------------------------------------
+// EXTEND
+
+	// BODY
+	%lineheight-body {
+		line-height: $lineheight-body;
+	}
+
+	// DEFAULT
+	%lineheight-default {
+		line-height: $lineheight-default;
+	}
+
+	// PERCENTAGE
+	%lineheight-half {
+		line-height: $lineheight-half;
+	}
+	%lineheight-threefourth {}
+	%lineheight-single {
+		line-height: $lineheight-single;
+	}
+	%lineheight-onehalf {
+		line-height: $lineheight-onehalf;
+	}
+	%lineheight-onequarter {}
+	%lineheight-onefifth {}
+	%lineheight-double {
+		line-height: $lineheight-double;
+	}
+	%lineheight-triple {}
+
+// -------------------------------------
+// SELECTORS
+
+	.lineheight-body {
+		@extend %lineheight-body !optional;
+	}
+
+	.lineheight-default {
+		@extend %lineheight-default !optional;
+	}
+
+	.lineheight-half {
+		@extend %lineheight-half !optional;
+	}
+
+	.lineheight-threefourth {
+		@extend %lineheight-threefourth !optional;
+	}
+
+	.lineheight-single {
+		@extend %lineheight-single !optional;
+	}
+
+	.lineheight-onehalf {
+		@extend %lineheight-onehalf !optional;
+	}
+
+	.lineheight-onequarter {
+		@extend %lineheight-onequarter !optional;
+	}
+
+	.lineheight-onefifth {
+		@extend %lineheight-onefifth !optional;
+	}
+
+	.lineheight-double {
+		@extend %lineheight-double !optional;
+	}
+
+	.lineheight-triple {
+		@extend %lineheight-triple !optional;
+	}

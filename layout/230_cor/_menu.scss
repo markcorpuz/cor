@@ -1,0 +1,69 @@
+/* BASE_230 | LAYOUT | 230_BASE | MENU - 2016-08-04 */
+
+// -------------------------------------
+// EXTEND
+
+	// MENU
+	%menu_layout {
+		margin-left: 0;
+		list-style-type: none;
+	}
+
+	// MENU-PRIMARY & MENU-SECONDARY
+	%menuboth_layout {}
+
+	// MENU-PRIMARY
+	%menumenuprimary_layout {}
+
+	// MENU-SECONDARY
+	%menumenusecondary_layout {}
+
+	// WIDGET MENU
+	%menu-widget_layout {}
+
+	// SIDEBAR MENU
+	%menu-sidebar_layout {}
+
+	// FOOTER-WIDGETS MENU
+	%menu-footerwidgets_layout {}
+
+	// GENESIS-NAV-MENU
+	%menugnm_layout {}
+
+	// PREFIX MENU
+	%menu-prefix_layout {}
+
+// -------------------------------------
+// SELECTORS
+
+	.menu {
+		@extend %menu !optional;
+		@extend %menu_layout !optional;
+	}
+
+	.menu-primary {
+		@extend %menumenuprimary !optional;
+		@extend %menuboth_layout !optional;
+		@extend %menumenuprimary_layout !optional;
+	}
+
+	.menu-secondary {
+		@extend %menumenusecondary !optional;
+		@extend %menuboth_layout !optional;
+		@extend %menumenusecondary_layout !optional;
+	}
+
+	.widget .menu {
+		@extend %menu-widget !optional;
+		@extend %menu-widget_layout !optional;
+	}
+
+	.sidebar .menu {
+		@extend %menu-sidebar !optional;
+		@extend %menu-sidebar_layout !optional;
+	}
+
+	.footer-widgets .menu {
+		@extend %menu-footerwidgets !optional;
+		@extend %menu-footerwidgets_layout !optional;
+	}

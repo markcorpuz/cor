@@ -1,0 +1,49 @@
+/* BASE_230 | COMMENT | 230_MODEL-BASICSETUP | COMMENTAUTHOR - 2017-04-19 */
+// BASE_230 | COMMENT | 230_BASE
+
+// -------------------------------------
+// EXTEND
+
+// COMMENTAUTHOR
+
+	%commentauthor {
+		font-size: #{$fontsize-sml}rem;
+		font-weight: $fontweight-thick;
+		line-height: 1.2;
+		margin-bottom: 0.25rem;
+	}
+
+// COMMENTAUTHOR IMG
+
+	%commentauthor-img {
+		float: left;
+		margin-right: 0.5rem;
+		margin-bottom: 0.5rem;
+		border-radius: 3px;
+	}
+
+// CHILDREN COMMENTAUTHOR IMG
+
+	%children-commentauthor-img {
+		width: 2rem;
+		height: 2rem;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+// COMMENTAUTHOR
+
+	.comment-author {
+		@extend %commentauthor !optional;
+
+		img {
+			@extend %commentauthor-img !optional;
+		}
+	}
+
+	.children .comment-author {
+		img {
+			@extend %children-commentauthor-img !optional;
+		}
+	}

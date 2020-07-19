@@ -1,0 +1,30 @@
+/* BASE_230 | VARIABLES | 230_BASE | BREAK - 2017-02-07 */
+
+// -------------------------------------
+// VARIABLES
+
+
+// NOTE: RELATIVE BREAKPOINTS BASED ON SITE DESIGN FUNCTIONALITY
+
+	$break-outer:						160;		// 2560px
+
+	$break-base:						75;			// 1200px
+
+	$break-inner:						75;			// 1200px
+		$break-inner-large:				64;			// 1024px
+		$break-inner-medium:			48;			// 768px
+		$break-inner-small:				26.563;		// 425px
+
+// NOTE: RELATIVE BREAKPOINTS BASED ON OVERALL SCALE
+
+	$break-huge:						160;		// 2560px
+	$break-xlrg:						75;			// 1200px
+	$break-lrg:							64;			// 1024px
+	$break-med:							48;			// 768px
+	$break-sml:							26.563;		// 425px
+	$break-xsml:						20;			// 320px
+
+// NOTE: FUNCTIONAL BREAKPOINTS
+
+	$break-pixel:						0.0625;		// 1px
+	$break-zero: 						0;

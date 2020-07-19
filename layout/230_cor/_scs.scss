@@ -1,0 +1,47 @@
+/* BASE_230 | LAYOUT | 230_BASE | SCS - 2016-07-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%scs-csw {
+		float: right;
+		width: 80%;
+		@extend %responsive-layout-max !optional;
+	}
+
+	%scs-content {
+		float: left;
+		width: 70%;
+		@extend %responsive-layout-max !optional;
+	}
+
+	%scs-sidebarprimary {
+		float: right;
+		width: 30%;
+		@extend %responsive-layout-max !optional;
+	}
+
+	%scs-sidebarsecondary {
+		float: left;
+		width: 20%;
+		@extend %responsive-layout-max !optional;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.sidebar-content-sidebar .content-sidebar-wrap {
+		@extend %scs-csw !optional;
+	}
+
+	.sidebar-content-sidebar .content {
+		@extend %scs-content !optional;
+	}
+
+	.sidebar-content-sidebar .sidebar-primary {
+		@extend %scs-sidebarprimary !optional;
+	}
+
+	.sidebar-content-sidebar .sidebar-secondary {
+		@extend %scs-sidebarsecondary !optional;
+	}

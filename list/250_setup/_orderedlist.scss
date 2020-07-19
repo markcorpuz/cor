@@ -1,0 +1,95 @@
+/* BASE_230 | LIST | 250_SETUP | ORDEREDLIST - 2017-07-19 */
+
+// -------------------------------------
+// EXTEND
+
+	// OL
+
+	%ol {
+		margin: 0;
+		margin-bottom: #{$space}rem;
+		margin-left: #{$space}rem;
+		padding-left: 0;
+	}
+	%olol {
+		margin-left: #{$space}rem;	
+		margin-bottom: 0;
+	}
+	%olul {
+		margin-left: #{$space}rem;
+		margin-bottom: 0;
+	}
+
+	// CONTENT OL
+
+	%content-ol {}
+	%content-olol {}
+	%content-olul {}
+
+	// OL (INDENT)
+
+	%olindent {
+		margin-left: #{$space}rem;
+	}
+	%olnoindent {
+		padding-left: 0;
+		margin-left: 0;
+	}
+
+	// OL (LISTSTYLE)
+
+	%olliststyle {}
+	%olnoliststyle {
+		list-style-type: none;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	// OL
+
+	ol {
+		@extend %ol !optional;
+	}
+
+	ol > ol {
+		@extend %olol !optional;
+	}
+
+	ol > ul {
+		@extend %olul !optional;
+	}
+
+	// CONTENT OL
+
+	.content ol {
+		@extend %content-ol !optional;
+	}
+
+	.content ol > ol {
+		@extend %content-olol !optional;
+	}
+
+	.content ol > ul {
+		@extend %content-olul !optional;
+	}
+
+	// OL (INDENT)
+
+	ol.indent {
+		@extend %olindent !optional;
+	}
+
+	ol.no-indent {
+		@extend %olnoindent !optional;
+	}
+
+	// OL (LISTSTYLE)
+
+	ol.liststyle {
+		@extend %olliststyle !optional;
+	}
+
+	ol.no-liststyle {
+		@extend %olnoliststyle !optional;
+	}

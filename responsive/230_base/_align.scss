@@ -1,0 +1,12 @@
+/* BASE_230 | RESPONSIVE | 230_BASE | ALIGN - 2016-07-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%responsive-align-spacezero {
+
+		@include responsive-range(smldown) {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}

@@ -1,0 +1,36 @@
+/* BASE_230 | COMMENT | 230_MODEL-BASICSETUP | LOGGEDINAS - 2017-04-19 */
+// BASE_230 | COMMENT | 230_BASE
+
+// -------------------------------------
+// EXTEND
+
+// LOGGED-IN-AS
+
+	%loggedinas {}
+
+	// LOGGED-IN-AS A
+
+		%loggedinas-a {}
+
+	// LOGGED-IN-AS A:HOVER
+
+		%loggedinas-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+// LOGGED-IN-AS
+
+	.logged-in-as {
+		@extend .comment-meta !optional;
+
+		@extend %loggedinas !optional;
+
+		a {
+			@extend %loggedinas-a !optional;
+
+			&:hover {
+				@extend %loggedinas-hvr !optional;
+			}
+		}
+	}

@@ -1,0 +1,77 @@
+/* BASE_230 | WIDGET | 250_COR | WIDGETTITLE - 2017-07-24 */
+
+// -------------------------------------
+// EXTEND
+
+	%widgettitle {
+		color: #ffcc00;
+		background-color: #333;
+		padding: 5px 5px 5px 8px;
+		font-size: #{$fontsize-sml}rem;
+		font-weight: $fontweight-thicker;
+		margin-bottom: 1rem;
+
+		@include responsive-range(medbelowdown) {
+			margin-bottom: 0.5rem;
+		}
+	}
+
+		%sidebar-widgettitle {}
+		%sidebarprimary-widgettitle {}
+		%sidebarsecondary-widgettitle {}
+		%siteheader-widgettitle {}
+		%footerwidgets-widgettitle {
+			background-color: transparent;
+			color: #1072b6;
+			padding: 0;
+		}
+		%afterentry-widgettitle {}
+
+// -------------------------------------
+// SELECTORS
+
+	.widget-title {
+		@extend %widgettitle !optional;
+	}
+
+		// SIDEBAR
+
+		.sidebar {
+			.widget-title {
+				@extend %sidebar-widgettitle !optional;
+			}
+		}
+		.sidebar.sidebar-primary {
+			.widget-title {
+				@extend %sidebarprimary-widgettitle !optional;
+			}
+		}
+		.sidebar.sidebar-secondary {
+			.widget-title {
+				@extend %sidebarsecondary-widgettitle !optional;
+			}
+		}
+
+		// SITE-HEADER
+
+		.site-header {
+			.widget-title {
+				@extend %siteheader-widgettitle !optional;				
+			}
+		}
+
+		// FOOTER-WIDGETS
+
+		.footer-widgets {
+			.widget-title {
+				@extend %footerwidgets-widgettitle !optional;
+			}
+		}
+
+		// AFTER-ENTRY
+
+		.after-entry {
+			.widget-title {
+				@extend %afterentry-widgettitle !optional;
+			}
+		}

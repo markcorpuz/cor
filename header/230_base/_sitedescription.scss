@@ -1,0 +1,13 @@
+/* BASE_230 | HEADER | 230_BASE | SITEDESCRIPTION - 2016-07-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%sitedescription {}
+
+// -------------------------------------
+// SELECTORS
+
+	.site-description {
+		@extend %sitedescription !optional;
+	}

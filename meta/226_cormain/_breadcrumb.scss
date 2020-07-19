@@ -1,0 +1,39 @@
+/* BASE_226 | META | 226_CORMAIN_STYLE | BREADCRUMB - 2016-01-22 */
+
+// -------------------------------------
+// FORMULA
+
+	%breadcrumb-formula {}
+		%breadcrumb-a-formula {}
+		%breadcrumb-hvr-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	%breadcrumb {
+		font-family: $fontfamily-breadcrumb;
+		font-size: #{$fontsize-xxsml}rem;
+		border-bottom: 1px solid #bbb;
+		margin-bottom: #{$space-default}rem;
+		padding-bottom: #{$space-quarter}rem;
+	}
+		%breadcrumb-a {}
+		%breadcrumb-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+	.breadcrumb {
+		@extend %breadcrumb-formula !optional;
+		@extend %breadcrumb !optional;
+	
+		a {
+			@extend %breadcrumb-a-formula !optional;
+			@extend %breadcrumb-a !optional;
+		}
+
+		a:hover {
+			@extend %breadcrumb-hvr-formula !optional;
+			@extend %breadcrumb-hvr !optional;
+		}
+	}

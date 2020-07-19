@@ -1,0 +1,67 @@
+/* BASE_230 | LAYOUT | 230_BASE > COR | INNER-OVERRIDE - 2016-10-10 */
+
+// -------------------------------------
+// EXTEND
+
+	// SITE-INNER
+
+	%siteinner_override {}
+	%siteinnerwrap_override {}
+	%siteinnerwraponly_override {}
+
+	// CONTENT-SIDEBAR-WRAP
+
+	%csw_override {}
+
+	// CONTENT
+
+	%content_override {}
+
+	// SIDEBAR-PRIMARY
+
+	%sidebarprimary_override {}
+
+	// SIDEBAR-SECONDARY
+
+	%sidebarsecondary_override {}
+
+// -------------------------------------
+// SELECTORS
+
+	// SITE-INNER
+
+	.home .site-inner {
+		@extend %siteinner_override !optional;
+
+		.wrap {
+			@extend %siteinnerwrap_override !optional;
+		}
+	}
+	.home .site-inner > .wrap {
+		@extend %siteinnerwraponly_override !optional;
+	}
+
+	// CONTENT-SIDEBAR-WRAP
+
+	.home .content-sidebar-wrap {
+		@extend %csw_override !optional;
+	}
+
+	// CONTENT
+
+	.home .content {
+		@extend %content_override !optional;
+	}
+
+	// SIDEBAR-PRIMARY
+
+	.home .sidebar-primary {
+		@extend %sidebarprimary_override !optional;
+	}
+
+	// SIDEBAR-SECONDARY
+
+	.home .sidebar-secondary {
+		@extend %sidebarsecondary_override !optional;
+	}
+

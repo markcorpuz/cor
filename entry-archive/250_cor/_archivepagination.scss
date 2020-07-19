@@ -1,0 +1,75 @@
+/* BASE_230 | ENTRY-ARCHIVE | 250_MODEL-BASICSETUP | ARCHIVEPAGINATION - 2017-06-13 */
+// BASE_230 | ENTRY-ARCHIVE | 230_BASE
+
+// -------------------------------------
+// EXTEND
+
+	%pagination {
+		font-weight: $fontweight-thicker;
+		text-transform: uppercase;
+		clear: both;
+	}
+
+	%archivepagination {}
+
+	%pagination-active {}
+	%pagination-active-link {}
+	%pagination-active-hover {}
+
+	%pagination-previous {
+		border-left: 0;
+		padding-left: 0;
+		margin-left: 0;
+	}
+	%pagination-next {}
+
+	%pagination-ul {}
+	%pagination-li {
+		border-left: solid 1px rgba(160, 160, 160, 0.3);
+		padding-left: 0.5rem;
+		margin-left: 0.5rem;
+	}
+	%pagination-lifirstoftype {
+		margin-left: 0;
+	}
+	%pagination-liactive {}
+	%pagination-liprevious {}
+	%pagination-linext {}
+
+// -------------------------------------
+// SELECTORS
+
+	.pagination {
+		@extend %pagination !optional;
+	}
+
+	.archive-pagination {
+		@extend %pagination !optional;
+		@extend %archivepagination !optional;
+	}
+
+	.pagination .active {
+		@extend %pagination-active !optional;
+		@extend %pagination-liactive !optional;
+	}
+
+	.pagination li:first-of-type {
+		@extend %pagination-lifirstoftype !optional;
+	}
+
+	.pagination .active a {
+		@extend %pagination-active-link !optional;
+	}
+	.pagination .active a:hover {
+		@extend %pagination-active-hover !optional;
+	}
+
+	.pagination .pagination-previous {
+		@extend %pagination-previous !optional;
+		@extend %pagination-liprevious !optional;
+	}
+
+	.pagination .pagination-next {
+		@extend %pagination-next !optional;
+		@extend %pagination-linext !optional;
+	}

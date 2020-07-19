@@ -1,0 +1,116 @@
+/* BASE_226 | ENTRY-FEATURED-HOOK | 226_BASE | ENTRYMETA-FEATUREDCONTENT - 2016-01-19 */
+
+// -------------------------------------
+// FORMULA
+
+	%featuredcontent-entrymeta-formula {}
+		%featuredcontent-entrymeta-a-formula {}
+		%featuredcontent-entrymeta-hvr-formula {}
+
+	// SIDEBAR-PRIMARY
+	%sidebarprimary-featuredcontent-entrymeta-formula {}
+		%sidebarprimary-featuredcontent-entrymeta-a-formula {}
+		%sidebarprimary-featuredcontent-entrymeta-hvr-formula {}
+
+	// SIDEBAR-SECONDARY
+	%sidebarsecondary-featuredcontent-entrymeta-formula {}
+		%sidebarsecondary-featuredcontent-entrymeta-a-formula {}
+		%sidebarsecondary-featuredcontent-entrymeta-hvr-formula {}
+
+	// FOOTER-WIDGETS
+	%sidebarsecondary-featuredcontent-entrymeta-formula {}
+		%sidebarsecondary-featuredcontent-entrymeta-a-formula {}
+		%sidebarsecondary-featuredcontent-entrymeta-hvr-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	%featuredcontent-entrymeta {}
+		%featuredcontent-entrymeta-a {}
+		%featuredcontent-entrymeta-hvr {}
+
+	// SIDEBAR-PRIMARY
+	%sidebarprimary-featuredcontent-entrymeta {}
+		%sidebarprimary-featuredcontent-entrymeta-a {}
+		%sidebarprimary-featuredcontent-entrymeta-hvr {}
+
+	// SIDEBAR-SECONDARY
+	%sidebarsecondary-featuredcontent-entrymeta {}
+		%sidebarsecondary-featuredcontent-entrymeta-a {}
+		%sidebarsecondary-featuredcontent-entrymeta-hvr {}
+
+	// FOOTER-WIDGETS
+	%sidebarsecondary-featuredcontent-entrymeta {}
+		%sidebarsecondary-featuredcontent-entrymeta-a {}
+		%sidebarsecondary-featuredcontent-entrymeta-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+	.featured-content {
+		.entry-meta {
+			@extend %featuredcontent-entrymeta-formula !optional;
+			@extend %featuredcontent-entrymeta !optional;
+
+			a {
+				@extend %featuredcontent-entrymeta-a-formula !optional;
+				@extend %featuredcontent-entrymeta-a !optional;
+
+				&:hover {
+					@extend %featuredcontent-entrymeta-hvr-formula !optional;
+					@extend %featuredcontent-entrymeta-hvr !optional;
+				}
+			}
+		}
+	}
+
+	.sidebar-primary .featured-content {
+		.entry-meta {
+			@extend %sidebarprimary-featuredcontent-entrymeta-formula !optional;
+			@extend %sidebarprimary-featuredcontent-entrymeta !optional;
+
+			a {
+				@extend %sidebarprimary-featuredcontent-entrymeta-a-formula !optional;
+				@extend %sidebarprimary-featuredcontent-entrymeta-a !optional;
+
+				&:hover {
+					@extend %sidebarprimary-featuredcontent-entrymeta-hvr-formula !optional;
+					@extend %sidebarprimary-featuredcontent-entrymeta-hvr !optional;
+				}
+			}
+		}
+	}
+
+	.sidebar-secondary .featured-content {
+		.entry-meta {
+			@extend %sidebarsecondary-featuredcontent-entrymeta-formula !optional;
+			@extend %sidebarsecondary-featuredcontent-entrymeta !optional;
+
+			a {
+				@extend %sidebarsecondary-featuredcontent-entrymeta-a-formula !optional;
+				@extend %sidebarsecondary-featuredcontent-entrymeta-a !optional;
+
+				&:hover {
+					@extend %sidebarsecondary-featuredcontent-entrymeta-hvr-formula !optional;
+					@extend %sidebarsecondary-featuredcontent-entrymeta-hvr !optional;
+				}
+			}
+		}
+	}
+
+	.footer-widgets .featured-content {
+		.entry-meta {
+			@extend %footerwidgets-featuredcontent-entrymeta-formula !optional;
+			@extend %footerwidgets-featuredcontent-entrymeta !optional;
+
+			a {
+				@extend %footerwidgets-featuredcontent-entrymeta-a-formula !optional;
+				@extend %footerwidgets-featuredcontent-entrymeta-a !optional;
+
+				&:hover {
+					@extend %footerwidgets-featuredcontent-entrymeta-hvr-formula !optional;
+					@extend %footerwidgets-featuredcontent-entrymeta-hvr !optional;
+				}
+			}
+		}
+	}

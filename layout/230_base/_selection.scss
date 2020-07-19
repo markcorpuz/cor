@@ -1,0 +1,18 @@
+/* BASE_230 | LAYOUT | 230_BASE | SELECTION - 2016-07-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%selection {}
+
+// -------------------------------------
+// SELECTORS
+
+	::selection {
+		background-color: $bgcolor-selection;
+		color: $color-selection;
+	}
+	::-moz-selection {
+		background-color: $bgcolor-selection;
+		color: $color-selection;
+	}

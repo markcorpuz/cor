@@ -1,0 +1,26 @@
+/* BASE_230 | HOOK | 250_COR | CSWBEFORE - 2019-11-21 */
+
+// -------------------------------------
+// EXTEND
+
+	%hook-cswbefore {}
+	%hook-cswbefore-hookwrap {
+		padding-right: 1rem;
+		padding-top: 1rem;
+		padding-left: 1rem;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.hook-cswbefore {
+		@extend %hook-cswbefore !optional;
+	
+		.hook-wrap {
+			@extend %hook-cswbefore-hookwrap !optional;
+		}
+
+	}
+	.hide-hook-cswbefore .hook-cswbefore {
+		display: none;
+	}

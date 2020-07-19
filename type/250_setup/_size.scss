@@ -1,0 +1,95 @@
+/* BASE_230 | TYPOGRAPHY | 250_SETUP | SIZE - 2017-07-19 */
+
+// -------------------------------------
+// EXTEND
+
+	// DEFAULT
+	%fontsize-default {
+		font-size: #{$fontsize-default}rem;
+	}
+
+	// RELATIVE
+	%fontsize-tiny {
+		font-size: #{$fontsize-tiny}rem;
+	}
+	%fontsize-xxxsml {
+		font-size: #{$fontsize-xxxsml}rem;
+	}
+	%fontsize-xxsml {
+		font-size: #{$fontsize-xxsml}rem;
+	}
+	%fontsize-xsml {
+		font-size: #{$fontsize-xsml}rem;
+	}
+	%fontsize-sml {
+		font-size: #{$fontsize-sml}rem;
+	}
+	%fontsize-med {
+		font-size: #{$fontsize-med}rem;
+	}
+	%fontsize-lrg {
+		font-size: #{$fontsize-lrg}rem;
+	}
+	%fontsize-xlrg {
+		font-size: #{$fontsize-xlrg}rem;
+	}
+	%fontsize-xxlrg {
+		font-size: #{$fontsize-xxlrg}rem;
+	}
+	%fontsize-xxxlrg {
+		font-size: #{$fontsize-xxxlrg}rem;
+	}
+	%fontsize-huge {
+		font-size: #{$fontsize-huge}rem;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.fontsize-default {
+		@extend %fontsize-default !optional;
+	}
+
+	.fontsize-tiny {
+		@extend %fontsize-tiny !optional;
+	}
+
+	.fontsize-xxxsml {
+		@extend %fontsize-xxxsml !optional;
+	}
+
+	.fontsize-xxsml {
+		@extend %fontsize-xxsml !optional;
+	}
+
+	.fontsize-xsml {
+		@extend %fontsize-xsml !optional;
+	}
+
+	.fontsize-sml {
+		@extend %fontsize-sml !optional;
+	}
+
+	.fontsize-med {
+		@extend %fontsize-med !optional;
+	}
+
+	.fontsize-lrg {
+		@extend %fontsize-lrg !optional;
+	}
+
+	.fontsize-xlrg {
+		@extend %fontsize-xlrg !optional;
+	}
+
+	.fontsize-xxlrg {
+		@extend %fontsize-xxlrg !optional;
+	}
+
+	.fontsize-xxxlrg {
+		@extend %fontsize-xxxlrg !optional;
+	}
+
+	.fontsize-huge {
+		@extend %fontsize-huge !optional;
+	}

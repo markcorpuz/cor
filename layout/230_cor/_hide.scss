@@ -1,0 +1,22 @@
+/* BASE_230 | LAYOUT | 230_COR | HIDE - 2017-02-21 */
+
+// -------------------------------------
+// EXTEND
+
+
+// -------------------------------------
+// SELECTORS
+
+	.hide-mobile,
+	.hide-medbelowdown {
+		@include responsive-range(medbelowdown) {
+			display: none;
+		}
+	}
+
+	.hide-desktop,
+	.hide-medup {
+		@include responsive-range(medup) {
+			display: none;
+		}
+	}

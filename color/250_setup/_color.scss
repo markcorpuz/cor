@@ -1,0 +1,63 @@
+/* BASE_230 | COLOR | 250_SETUP | COLOR - 2017-07-19 */
+
+// -------------------------------------
+// EXTEND
+
+	// SOLID
+
+	%color-white {
+		color: $color-white;
+	}
+	%color-black {
+		color: $color-black;
+	}
+	%color-gray {
+		color: $color-gray;
+	}
+
+	// SHADES
+
+	%color-light {
+		color: $color-light;
+	}
+	%color-lighter {
+		color: $color-lighter;
+	}
+
+	%color-dark {
+		color: $color-dark;
+	}
+	%color-darker {
+		color: $color-darker;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	// SOLID
+
+	.color-white {
+		@extend %color-white !optional;
+	}
+	.color-black {
+		@extend %color-black !optional;
+	}
+	.color-gray {
+		@extend %color-gray !optional;
+	}
+
+	// SHADES
+
+	.color-light {
+		@extend %color-light !optional;
+	}
+	.color-lighter {
+		@extend %color-lighter !optional;
+	}
+
+	.color-dark {
+		@extend %color-dark !optional;
+	}
+	.color-darker {
+		@extend %color-darker !optional;
+	}

@@ -1,0 +1,142 @@
+/* BASE_226 | MENU | 226_CORMAIN_STYLE | MENUITEM-PRISEC - 2016-01-20 */
+
+// -------------------------------------
+// FORMULA
+
+	// MENU-ITEM
+	// .menu-primary .menu-item
+	// .menu-secondary .menu-item
+	%menuprisec-menuitem-formula {}
+	%menuprisec-menuitem-a-formula {}
+	%menuprisec-menuitem-hvr-formula {}
+		
+		// LEVEL 1 MENU-ITEM
+		// .menu-primary.menu > .menu-item
+		// .menu-secondary.menu > .menu-item
+		%menuprisec-menuitemlvlone-formula {}
+		%menuprisec-menuitemlvlone-a-formula {}
+		%menuprisec-menuitemlvlone-hvr-formula {}
+		
+		// MENU-ITEM MENU-ITEM-HAS-CHILDREN
+		// .menu-primary .menu-item.menu-item-has-children
+		// .menu-secondary .menu-item.menu-item-has-children
+		%menuprisec-menuitemhaschildren-formula {}
+		%menuprisec-menuitemhaschildren-a-formula {}
+		%menuprisec-menuitemhaschildren-hvr-formula {}
+
+		// SUB-MENU MENU-ITEM
+		// .menu-primary .menu-item.menu-item-has-children
+		// .menu-secondary .menu-item.menu-item-has-children
+		%menuprisec-submenu-menuitem-formula {}
+		%menuprisec-submenu-menuitem-a-formula {}
+		%menuprisec-submenu-menuitem-hvr-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	// MENU-ITEM
+	%menuprisec-menuitem {
+		font-size: #{$fontsize-xxsml}rem;
+		font-weight: $fontweight-thicker;
+	}
+	%menuprisec-menuitem-a {
+		color: #fff;
+	}
+	%menuprisec-menuitem-hvr {
+		color: #ffcc00;
+	}
+		// LEVEL 1 MENU-ITEM
+		%menuprisec-menuitemlvlone {
+			display: inline-block;
+		}
+		%menuprisec-menuitemlvlone-a {
+			padding: 10px 8px;
+			display: block;
+		}
+		%menuprisec-menuitemlvlone-hvr {}
+		// MENU-ITEM MENU-ITEM-HAS-CHILDREN
+		%menuprisec-menuitemhaschildren {}
+		%menuprisec-menuitemhaschildren-a {}
+		%menuprisec-menuitemhaschildren-hvr {}
+		// SUB-MENU MENU-ITEM
+		%menuprisec-submenu-menuitem {}
+		%menuprisec-submenu-menuitem-a {
+			color: #666;
+			padding: 6px 10px;
+			display: block;
+			text-align: left;
+		}
+		%menuprisec-submenu-menuitem-hvr {
+			background-color: #333;
+			color: #fff;
+		}
+
+// -------------------------------------
+// SELECTORS
+
+	// MENU-ITEM
+	.menu-primary .menu-item,
+	.menu-secondary .menu-item {
+		@extend %menuprisec-menuitem-formula !optional;
+		@extend %menuprisec-menuitem !optional;
+	
+		a {
+			@extend %menuprisec-menuitem-a-formula !optional;
+			@extend %menuprisec-menuitem-a !optional;
+		
+			&:hover {
+				@extend %menuprisec-menuitem-hvr-formula !optional;
+				@extend %menuprisec-menuitem-hvr !optional;
+			}
+		}
+	}
+		// LEVEL 1 MENU-ITEM
+		.menu-primary > .menu-item,
+		.menu-secondary > .menu-item {
+			@extend %menuprisec-menuitemlvlone-formula !optional;
+			@extend %menuprisec-menuitemlvlone !optional;
+		}
+		.menu-primary > .menu-item > a,
+		.menu-secondary > .menu-item > a {
+			@extend %menuprisec-menuitemlvlone-a-formula !optional;
+			@extend %menuprisec-menuitemlvlone-a !optional;
+		}
+		.menu-primary > .menu-item > a:hover,
+		.menu-secondary > .menu-item > a:hover {
+			@extend %menuprisec-menuitemlvlone-hvr-formula !optional;
+			@extend %menuprisec-menuitemlvlone-hvr !optional;
+		}
+
+		// MENU-ITEM.MENU-ITEM-HAS-CHILDREN
+		.menu-primary .menu-item.menu-item-has-children,
+		.menu-secondary .menu-item.menu-item-has-children {
+			@extend %menuprisec-menuitemhaschildren-formula !optional;
+			@extend %menuprisec-menuitemhaschildren !optional;
+		}
+		.menu-primary .menu-item.menu-item-has-children > a,
+		.menu-secondary .menu-item.menu-item-has-children > a {
+			@extend %menuprisec-menuitemhaschildren-a-formula !optional;
+			@extend %menuprisec-menuitemhaschildren-a !optional;
+		}
+		.menu-primary .menu-item.menu-item-has-children > a:hover,
+		.menu-secondary .menu-item.menu-item-has-children > a:hover {
+			@extend %menuprisec-menuitemhaschildren-hvr-formula !optional;
+			@extend %menuprisec-menuitemhaschildren-hvr !optional;
+		}
+
+		// SUB-MENU MENU-ITEM
+		.menu-primary .sub-menu > .menu-item,
+		.menu-secondary .sub-menu > .menu-item {
+			@extend %menuprisec-submenu-menuitem-formula !optional;
+			@extend %menuprisec-submenu-menuitem !optional;
+		}
+		.menu-primary .sub-menu > .menu-item > a,
+		.menu-secondary .sub-menu > .menu-item > a {
+			@extend %menuprisec-submenu-menuitem-a-formula !optional;
+			@extend %menuprisec-submenu-menuitem-a !optional;
+		}
+		.menu-primary .sub-menu > .menu-item > a:hover,
+		.menu-secondary .sub-menu > .menu-item > a:hover {
+			@extend %menuprisec-submenu-menuitem-hvr-formula !optional;
+			@extend %menuprisec-submenu-menuitem-hvr !optional;
+		}

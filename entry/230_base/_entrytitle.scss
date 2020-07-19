@@ -1,0 +1,63 @@
+/* BASE_230 | ENTRY | 230_BASE | ENTRYTITLE - 2017-02-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%entrytitle {}
+		%entrytitle-a {}
+		%entrytitle-hvr {}
+
+		%single-entrytitle {}
+			%single-entrytitle-a {}
+			%single-entrytitle-hvr {}
+
+		%page-entrytitle {}
+			%page-entrytitle-a {}
+			%page-entrytitle-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+	.entry-title {
+		@extend %entrytitle !optional;
+
+		a {
+			@extend %entrytitle-a !optional;
+
+			&:hover {
+				@extend %entrytitle-hvr !optional;
+			}
+		}
+	}
+
+		// SINGLE
+
+		.single {
+			.entry-title {
+				@extend %single-entrytitle !optional;
+
+				a {
+					@extend %single-entrytitle-a !optional;
+
+					&:hover {
+						@extend %single-entrytitle-hvr !optional;
+					}
+				}
+			}
+		}
+
+		// PAGE
+
+		.page {
+			.entry-title {
+				@extend %page-entrytitle !optional;
+
+				a {
+					@extend %page-entrytitle-a !optional;
+
+					&:hover {
+						@extend %page-entrytitle-hvr !optional;
+					}
+				}
+			}
+		}

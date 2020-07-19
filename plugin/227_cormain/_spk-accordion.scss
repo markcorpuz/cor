@@ -1,0 +1,36 @@
+/* BASE_227 | PLUGIN | 227_CORMAIN | SPKACCORDION - 2016-06-09 */
+
+// -------------------------------------
+// VARIABLES
+
+// -------------------------------------
+// EXTEND
+
+	%ui-accordion-header {
+		cursor: pointer;
+		cursor: hand;
+		outline: 0;
+	}
+	%ui-accordion-icon {
+		background-image: url("images/sprites.png");
+    	background-repeat: no-repeat;
+    	display: inline-block;
+    	margin-right: 5px;
+    	width: 12px;
+    	height: 12px;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.ui-accordion-header {
+		@extend %ui-accordion-header !optional;
+	}
+	.ui-icon-triangle-1-s {
+		@extend %ui-accordion-icon !optional;
+		background-position: -434px -442px;
+	}
+	.ui-icon-triangle-1-e {
+		@extend %ui-accordion-icon !optional;
+		background-position: -434px -422px;
+	}

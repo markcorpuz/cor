@@ -1,0 +1,239 @@
+/* BASE_230 | PANEL | 230_BASE | WIDTH - 2016-11-18 */
+
+// -------------------------------------
+// EXTEND - COLUMNS
+
+	%column-panel-full {
+		@extend %column-full !optional;
+	}
+	%column-panel-eleventwelves {
+		@extend %column-eleventwelves !optional;
+		//@include span(11 of 12);
+	}
+	%column-panel-fivesixths {
+		@extend %column-fivesixths !optional;
+		//@include span(10 of 12);
+	}
+	%column-panel-threefourths {
+		@extend %column-threefourths !optional;
+		//@include span(9 of 12);
+	}
+	%column-panel-twothirds {
+		@extend %column-twothirds !optional;
+		//@include span(8 of 12);
+	}
+	%column-panel-half {
+		@extend %column-half !optional;
+		//@include span(6 of 12);
+	}
+	%column-panel-third {
+		@extend %column-third !optional;
+		//@include span(4 of 12);
+	}
+	%column-panel-fourth {
+		@extend %column-fourth !optional;
+		//@include span(3 of 12);
+	}
+	%column-panel-sixth {
+		@extend %column-sixth !optional;
+		//@include span(2 of 12);
+	}
+	%column-panel-twelve {
+		@extend %column-twelve !optional;
+		//@include span(1 of 12);
+	}
+
+	%column-panel-fourfifths {
+		@extend %column-fourfifths !optional;
+		//@include span(4 of 5);
+	}
+	%column-panel-threefifths {
+		@extend %column-threefifths !optional;
+		//@include span(3 of 5);
+	}
+	%column-panel-twofifths {
+		@extend %column-twofifths !optional;
+		//@include span(8 of 12);
+	}
+	%column-panel-fifth {
+		@extend %column-fifth !optional;
+		//@include span(1 of 5);
+	}
+
+// -------------------------------------
+// EXTEND
+
+	%panel-main {}
+	%panel-side {}
+
+	%panel-full {}
+	%panel-full-main {
+		@extend %column-panel-full !optional;
+	}
+	%panel-full-side {
+		@extend %column-panel-full !optional;
+	}
+
+	%panel-half {}
+	%panel-half-main {
+		@extend %column-panel-half !optional;
+	}
+	%panel-half-side {
+		@extend %column-panel-half !optional;
+	}
+
+	%panel-third {}
+	%panel-third-main {
+		@extend %column-panel-twothirds !optional;
+	}
+	%panel-third-side {
+		@extend %column-panel-third !optional;
+	}
+
+	%panel-twofifth {}
+	%panel-twofifth-main {
+		@extend %column-panel-threefifths !optional;
+	}
+	%panel-twofifth-side {
+		@extend %column-panel-twofifths !optional;
+	}
+
+	%panel-fourth {}
+	%panel-fourth-main {
+		@extend %column-panel-threefourths !optional;
+	}
+	%panel-fourth-side {
+		@extend %column-panel-fourth !optional;
+	}
+
+	%panel-fifth {}
+	%panel-fifth-main {
+		@extend %column-panel-fourfifths !optional;
+	}
+	%panel-fifth-side {
+		@extend %column-panel-fifth !optional;
+	}
+
+	%panel-sixth {}
+	%panel-sixth-main {
+		@extend %column-panel-fivesixths !optional;
+	}
+	%panel-sixth-side {
+		@extend %column-panel-sixth !optional;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.panel > .main {
+		@extend %panel-main !optional;
+	}
+	.panel > .side {
+		@extend %panel-side !optional;
+	}
+
+	.panel-full {
+		@extend %panel-full !optional;
+	}
+	.panel-full > .main {
+		@extend %panel-full-main !optional;
+	}
+	.panel-full > .side {
+		@extend %panel-full-side !optional;
+	}
+
+	.panel-half {
+		@extend %panel-half !optional;
+	}
+	.panel-half > .main {
+		@extend %panel-half-main !optional;
+	}
+	.panel-half > .side {
+		@extend %panel-half-side !optional;
+	}
+		.panel-half.sm > .main,
+		.panel-half > .main.last,
+		.panel-half.ms > .side,
+		.panel-half > .side.last {
+			@extend %column-last !optional;
+		}
+
+	.panel-third {
+		@extend %panel-third !optional;
+	}
+	.panel-third > .main {
+		@extend %panel-third-main !optional;
+	}
+	.panel-third > .side {
+		@extend %panel-third-side !optional;
+	}
+		.panel-third.sm > .main,
+		.panel-third > .main.last,
+		.panel-third.ms > .side,
+		.panel-third > .side.last {
+			@extend %column-last !optional;
+		}
+
+	.panel-twofifth {
+		@extend %panel-twofifth !optional;
+	}
+	.panel-twofifth > .main {
+		@extend %panel-twofifth-main !optional;
+	}
+	.panel-twofifth > .side {
+		@extend %panel-twofifth-side !optional;
+	}
+		.panel-twofifth.sm > .main,
+		.panel-twofifth > .main.last,
+		.panel-twofifth.ms > .side,
+		.panel-twofifth > .side.last {
+			@extend %column-last !optional;
+		}
+
+	.panel-fourth {
+		@extend %panel-fourth !optional;
+	}
+	.panel-fourth > .main {
+		@extend %panel-fourth-main !optional;
+	}
+	.panel-fourth > .side {
+		@extend %panel-fourth-side !optional;
+	}
+		.panel-fourth.sm > .main,
+		.panel-fourth > .main.last,
+		.panel-fourth.ms > .side,
+		.panel-fourth > .side.last {
+			@extend %column-last !optional;
+		}
+
+	.panel-fifth {
+		@extend %panel-fifth !optional;
+	}
+	.panel-fifth > .main {
+		@extend %panel-fifth-main !optional;
+	}
+	.panel-fifth > .side {
+		@extend %panel-fifth-side !optional;
+	}
+		.panel-sixth.sm > .main,
+		.panel-sixth > .main.last,
+		.panel-sixth.ms > .side,
+		.panel-sixth > .side.last {
+			@extend %column-last !optional;
+		}
+
+	.panel-sixth {
+		@extend %panel-sixth !optional;
+	}
+	.panel-sixth > .main {
+		@extend %panel-sixth-main !optional;
+	}
+	.panel-sixth > .side {
+		@extend %panel-sixth-side !optional;
+	}
+		.panel-sixth.sm > .main,
+		.panel-sixth > .main.last,
+		.panel-sixth.ms > .side,
+		.panel-sixth > .side.last {
+			@extend %column-last !optional;
+		}

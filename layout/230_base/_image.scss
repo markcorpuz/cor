@@ -1,0 +1,230 @@
+/* BASE_230 | LAYOUT | 230_BASE | IMAGE - 2017-02-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%img {}
+
+	%img-wppostimage {}
+
+	%img-sizethumbnail {}
+	%img-sizemedium {
+		@extend %responsive-float-cancel !optional;
+	}
+		%img-sizemediumalignleft {
+			@extend %responsive-align-spacezero !optional;
+		}
+		%img-sizemediumalignright {
+			@extend %responsive-align-spacezero !optional;
+		}
+	%img-sizelarge {}
+	%img-sizetml-insidecaption {}
+
+	%img-sizemax {}
+	%img-sizemax-alignleft {}
+	%img-sizemax-alignright {}
+	%img-sizetwothird {}
+	%img-sizehalf {}
+	%img-sizethird {}
+	%img-sizefourth {}
+	%img-sizesixth {}
+	%img-sizeeight {}
+	%img-insidecaption {}
+
+		%imgalignleft {}
+		%imgalignright {}
+		%imgaligncenter {}
+
+	%img20 {}
+	%img30 {}
+	%img60 {}
+
+	%imageleft {}
+	%imageright {}
+
+		%imageleftalignleft {}
+		%imagerightalignright {}
+		%imagecenteraligncenter {}
+
+// -------------------------------------
+// SELECTORS
+
+	img {
+		@extend %img !optional;
+	}
+
+	img.wp-post-image {
+		@extend %img-wp-post !optional;
+	}
+
+	img.size-thumbnail {
+		@extend %img-sizethumbnail !optional;
+	}
+	.wp-caption.size-thumbnail {
+		@extend %img-sizethumbnail !optional;
+		@extend %img-sizetml-insidecaption !optional;
+	
+		img {
+			@extend %img-insidecaption !optional;
+		}
+	}
+
+	img.size-medium {
+		@extend %img-sizemedium !optional;
+	}
+		img.size-medium.alignleft {
+			@extend %img-sizemediumalignleft !optional;
+		}
+		img.size-medium.alignright {
+			@extend %img-sizemediumalignleft !optional;
+		}
+	.wp-caption.size-medium {
+		@extend %img-sizemedium !optional;
+		@extend %img-sizetml-insidecaption !optional;
+	
+		img {
+			@extend %img-insidecaption !optional;
+		}
+	}
+
+	img.size-large {
+		@extend %img-sizelarge !optional;
+	}
+	.wp-caption.size-large {
+		@extend %img-sizelarge !optional;
+		@extend %img-sizetml-insidecaption !optional;
+	
+		img {
+			@extend %img-insidecaption !optional;
+		}
+	}
+
+	img.size-max {
+		@extend %img-sizemax !optional;
+	}
+	.wp-caption.size-max {
+		@extend %img-sizemax !optional;
+	
+		img {
+			@extend %img-insidecaption !optional;
+		}
+	}
+	.wp-caption.size-max.alignleft {
+		@extend %img-sizemax-alignleft !optional;
+	}
+	.wp-caption.size-max.alignright {
+		@extend %img-sizemax-alignright !optional;
+	}
+
+	img.size-twothird {
+		@extend %img-sizetwothird !optional;
+	}
+	.wp-caption.size-twothird {
+		@extend %img-sizetwothird !optional;
+	
+		img {
+			@extend %img-insidecaption !optional;
+		}
+	}
+
+	img.size-half {
+		@extend %img-sizehalf !optional;
+	}
+	.wp-caption.size-half {
+		@extend %img-sizehalf !optional;
+	
+		img {
+			@extend %img-insidecaption !optional;
+		}
+	}
+
+	img.size-third {
+		@extend %img-sizethird !optional;
+	}
+	.wp-caption.size-third {
+		@extend %img-sizethird !optional;
+	
+		img {
+			@extend %img-insidecaption !optional;
+		}
+	}
+
+	img.size-fourth {
+		@extend %img-sizefourth !optional;
+	}
+	.wp-caption.size-fourth {
+		@extend %img-sizefourth !optional;
+	
+		img {
+			@extend %img-insidecaption !optional;
+		}
+	}
+
+	img.size-sixth {
+		@extend %img-sizesixth !optional;
+	}
+	.wp-caption.size-sixth {
+		@extend %img-sizesixth !optional;
+	
+		img {
+			@extend %img-insidecaption !optional;
+		}
+	}
+
+	img.size-eight {
+		@extend %img-sizeeight !optional;
+	}
+	.wp-caption.size-eight {
+		@extend %img-sizeeight !optional;
+	
+		img {
+			@extend %img-insidecaption !optional;
+		}
+	}
+
+		img.alignleft {
+			@extend %imgalignleft !optional;
+		}
+
+		img.alignright {
+			@extend %imgalignright !optional;
+		}
+
+		img.aligncenter {
+			@extend %imgaligncenter !optional;
+		}
+
+	img.img-20,
+	.img-20 {
+		@extend %img20 !optional;
+	}
+	img.img-30,
+	.img-30 {
+		@extend %img30 !optional;
+	}
+	img.img-60,
+	.img-60 {
+		@extend %img60 !optional;
+	}
+
+	// IMAGEX
+
+	.imageleft {
+		@extend %imageleft !optional;
+	}
+
+	.imageright {
+		@extend %imageright !optional;
+	}
+
+		.imageleft.alignleft {
+			@extend %imageleftalignleft !optional;
+		}
+
+		.imageright.alignright {
+			@extend %imagerightalignright !optional;
+		}
+
+		.imagecenter.aligncenter {
+			@extend %imagecenteraligncenter !optional;
+		}

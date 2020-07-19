@@ -1,0 +1,95 @@
+/* BASE_230 | ENTRY-ARCHIVE | 250_MODEL-BASICSETUP | ENTRY - 2017-07-21 */
+// BASE_230 | ENTRY-ARCHIVE | 230_BASE
+
+// -------------------------------------
+// EXTEND
+
+	%all-entry {
+		margin-bottom: 1rem;
+		padding-top: 0.5rem;
+		border-top: 1px solid #ccc;
+	}
+		%all-entryfot {}
+
+	%archive-entry {}
+		%archive-entryfot {}
+
+	%category-entry {}
+		%category-entryfot {}
+
+	%tag-entry {}
+		%tag-entryfot {}
+
+	%blog-entry {}
+		%blog-entryfot {}
+
+	%haspostthumbnail-all-entry {}
+
+// -------------------------------------
+// SELECTORS
+
+	// ARCHIVE
+
+	.archive {
+		.entry {
+			@extend %all-entry !optional;
+			@extend %archive-entry !optional;
+		}
+		article.entry:first-of-type {
+			@extend %all-entryfot !optional;
+			@extend %archive-entryfot !optional;
+		}
+		.entry.has-post-thumbnail {
+			@extend %haspostthumbnail-all-entry !optional;
+		}
+	}
+
+	// CATEGORY
+
+	.category {
+		.entry {
+			@extend %all-entry !optional;
+			@extend %category-entry !optional;
+		}
+		article.entry:first-of-type {
+			@extend %all-entryfot !optional;
+			@extend %category-entryfot !optional;
+		}
+		.entry.has-post-thumbnail {
+			@extend %haspostthumbnail-all-entry !optional;
+		}
+	}
+
+	// TAG
+
+	.tag {
+		.entry {
+			@extend %all-entry !optional;
+			@extend %tag-entry !optional;
+		}
+		article.entry:first-of-type {
+			@extend %all-entryfot !optional;
+			@extend %tag-entryfot !optional;
+		}
+		.entry.has-post-thumbnail {
+			@extend %haspostthumbnail-all-entry !optional;
+		}
+	}
+
+	// BLOG
+
+	.blog {
+		.entry {
+			@extend %all-entry !optional;
+			@extend %blog-entry !optional;
+			@extend %haspostthumbnail-all-entry !optional;
+		}
+		article.entry:first-of-type {
+			@extend %all-entryfot !optional;
+			@extend %blog-entryfot !optional;
+			@extend %haspostthumbnail-all-entryfot !optional;
+		}
+		.entry.has-post-thumbnail {
+			@extend %haspostthumbnail-all-entry !optional;
+		}
+	}

@@ -1,0 +1,61 @@
+/* BASE_230 | SELECTOR | 230_BASE | POSITION - 2017-01-12 */
+
+// -------------------------------------
+// EXTEND
+
+// POSITION
+
+	%position-absolute {
+		position: absolute;
+	}
+	%position-relative {
+		position: relative;
+	}
+
+// CENTER
+
+	%center-outside {
+		position: relative;
+	}
+	%center-vertical {
+		margin: 0;
+   		position: absolute;
+   		top: 50%;
+   		transform: translate(0, -50%);
+	}
+	%center-horizontal {
+		margin: 0;
+   		position: absolute;
+   		left: 50%;
+   		transform: translate(-50%, 0);
+	}
+	%center-all {
+		margin: 0;
+   		position: absolute;
+   		top: 50%;
+   		left: 50%;
+   		transform: translate(-50%, -50%);
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.position-absolute {
+		@extend %position-absolute !optional;
+	}
+	.position-relative {
+		@extend %position-relative !optional;
+	}
+
+	.center-container {
+		//@extend %center-outside !optional;
+	}
+	.center-all {
+		//@extend %center-all !optional;
+	}
+	.center-horizontal {
+		//@extend %center-horizontal !optional;
+	}
+	.center-vertical {
+		//@extend %center-vertical !optional;
+	}

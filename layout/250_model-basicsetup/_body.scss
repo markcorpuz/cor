@@ -1,0 +1,35 @@
+/* BASE_230 | LAYOUT | 250_MODEL-BASICSETUP | BODY - 2017-06-26 */
+
+// -------------------------------------
+// EXTEND
+
+	// HTML
+
+	%html_layout {}
+
+	// BODY
+
+	%body_layout {
+		font-family: $fontfamily-body;
+		color: $color-body;
+		background-color: $bgcolor-body;
+		line-height: $lineheight-body;
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+	// HTML
+
+	html {
+		@extend %html !optional;
+		@extend %html_layout !optional;
+	}
+
+	// BODY
+
+	body {
+		@extend %body !optional;
+		@extend %body_layout !optional;
+	}

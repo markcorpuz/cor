@@ -1,0 +1,13 @@
+/* BASE_230 | FOOTER | 230_BASE | FOOTERWIDGETS1 - 2017-02-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%footerwidgets1 {}
+
+// -------------------------------------
+// SELECTORS
+
+	.footer-widgets-1 {
+		@extend %footerwidgets1 !optional;
+	}

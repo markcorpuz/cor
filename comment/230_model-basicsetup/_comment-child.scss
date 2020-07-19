@@ -1,0 +1,68 @@
+/* BASE_230 | COMMENT | 230_MODEL-BASICSETUP | COMMENT-CHILD - 2017-04-19 */
+// BASE_230 | COMMENT | 230_BASE
+
+// -------------------------------------
+// EXTEND
+
+// COMMENT > CHILDREN
+
+	%comment-children {
+		list-style-type: none;
+		margin-top: #{$space-default}rem;
+		margin-left: 0;
+	}
+
+// CHILDREN > COMMENT
+
+	%children-comment {}
+
+// CHILDREN > COMMENT > ARTICLE
+
+	%children-comment-article {
+		//border-bottom: 1px dashed #eee;
+	}
+
+// COMMENT-LIST > COMMENT > CHILDREN 
+
+	%commentlist-comment-children {
+		padding-left: 1rem;
+		border-left: 1px solid #ccc;
+		margin-left: 3.5rem;	// controls indent spacing of main comment
+	}
+
+// CHILDREN > COMMENT > CHILDREN
+
+	%children-comment-children {
+		margin-left: 2.5rem;	// controls indent spacing of comment replies
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+// CHILDREN
+
+	.comment > .children {
+		@extend %comment-children !optional;
+	}
+
+// CHILDREN > COMMENT
+
+	.children > .comment {
+		@extend %children-comment !optional;
+	}
+	.children > .comment > article {
+		@extend %children-comment-article !optional;
+	}
+
+// COMMENT-LIST > COMMENT > CHILDREN 
+
+	.comment-list > .comment > .children {
+		@extend %commentlist-comment-children !optional;
+	}
+
+// CHILDREN > COMMENT > CHILDREN
+
+	.children > .comment > .children {
+		@extend %children-comment-children !optional;
+	}

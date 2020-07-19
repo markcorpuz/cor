@@ -1,0 +1,499 @@
+/* BASE_230 | LAYOUT | 230_BASE | LIST - 2016-08-04 */
+
+// -------------------------------------
+// EXTEND
+
+	// LI
+
+	%li_layout {}
+	%liul_layout {
+		margin-bottom: 0;
+	}
+	%liol_layout {
+		margin-bottom: 0;
+	}
+
+	// UL
+
+	%ul_layout {
+		margin: 0;
+		margin-bottom: #{$space}rem;
+		margin-left: #{$space}rem;
+		padding-left: 0;
+		//list-style-type: none;
+		list-style-type: disc;
+	}
+	%ulul_layout {
+		margin-left: #{$space}rem;
+		margin-bottom: 0;
+	}
+	%ulol_layout {
+		margin-left: #{$space}rem;
+		margin-bottom: 0;
+	}
+	
+	// CONTENT UL
+
+	%content-ul_layout {
+		//list-style-type: disc;
+		//margin-left: #{$space}rem;
+	}
+	%content-ulul_layout {}
+	%content-ulol_layout {}
+
+	// UL (INDENT)
+
+	%ulindent_layout {
+		margin-left: #{$space}rem;
+	}
+	%ulnoindent_layout {
+		padding-left: 0;
+		margin-left: 0;
+	}
+
+	// UL (LISTSTYLE)
+
+	%ulliststyle_layout {
+		list-style-type: disc;
+	}
+	%ulnoliststyle_layout {
+		list-style-type: none;
+	}
+
+	// OL
+
+	%ol_layout {
+		margin: 0;
+		margin-bottom: #{$space}rem;
+		margin-left: #{$space}rem;
+		padding-left: 0;
+	}
+	%olol_layout {
+		margin-left: #{$space}rem;	
+		margin-bottom: 0;	
+	}
+	%olul_layout {
+		margin-left: #{$space}rem;
+		margin-bottom: 0;
+	}
+
+	// CONTENT OL
+
+	%content-ol_layout {
+		//margin-left: #{$space}rem;
+	}
+	%content-olol_layout {}
+	%content-olul_layout {}
+
+	// OL (INDENT)
+
+	%olindent_layout {
+		margin-left: #{$space}rem;
+	}
+	%olnoindent_layout {
+		padding-left: 0;
+		margin-left: 0;
+	}
+
+	// OL (LISTSTYLE)
+
+	%olliststyle_layout {}
+	%olnoliststyle_layout {
+		list-style-type: none;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	// LI
+
+	li {
+		@extend %li !optional;
+		@extend %li_layout !optional;
+	}
+	li > ul {
+		@extend %liul_layout !optional;
+	}
+	li > ol {
+		@extend %liol_layout !optional;
+	}
+
+	// UL
+
+	ul {
+		@extend %ul !optional;
+		@extend %ul_layout !optional;
+	}
+
+	ul > ul {
+		@extend %ulul !optional;
+		@extend %ulul_layout !optional;
+	}
+
+	ul > ol {
+		@extend %ulol !optional;
+		@extend %ulol_layout !optional;
+	}
+
+	// CONTENT UL
+
+	.content ul {
+		@extend %content-ul !optional;
+		@extend %content-ul_layout !optional;
+	}
+
+	.content ul > ul {
+		@extend %content-ulul !optional;
+		@extend %content-ulul_layout !optional;
+	}
+
+	.content ul > ol {
+		@extend %content-ulol !optional;
+		@extend %content-ulol_layout !optional;
+	}
+
+	// UL (INDENT)
+
+	ul.indent {
+		@extend %ulindent !optional;
+		@extend %ulindent_layout !optional;
+	}
+
+	ul.no-indent {
+		@extend %ulnoindent !optional;
+		@extend %ulnoindent_layout !optional;
+	}
+
+	// UL (LISTSTYLE)
+
+	ul.liststyle {
+		@extend %ulliststyle !optional;
+		@extend %ulliststyle_layout !optional;
+	}
+
+	ul.no-liststyle {
+		@extend %ulnoliststyle !optional;
+		@extend %ulnoliststyle_layout !optional;
+	}
+
+	// UL (W SPACE)
+
+	ul.space-top {
+		@extend %spacetop !optional;
+	}
+	ul.space-top-double {
+		@extend %spacetop-double !optional;
+	}
+	ul.space-top-half {
+		@extend %spacetop-half !optional;
+	}
+	ul.space-top-zero {
+		@extend %spacetop-zero !optional;
+	}
+	.content ul.space-top-zero {
+		@extend %spacetop-zero !optional;
+	}
+
+	ul.space-bottom {
+		@extend %spacebottom !optional;
+	}
+	ul.space-bottom-double {
+		@extend %spacebottom-double !optional;
+	}
+	ul.space-bottom-half {
+		@extend %spacebottom-half !optional;
+	}
+	ul.space-bottom-zero {
+		@extend %spacebottom-zero !optional;
+	}
+	.content ul.space-bottom-zero {
+		@extend %spacebottom-zero !optional;
+	}
+
+	ul.space-left {
+		@extend %spaceleft !optional;
+	}
+	ul.space-left-double {
+		@extend %spaceleft-double !optional;
+	}
+	ul.space-left-half {
+		@extend %spaceleft-half !optional;
+	}
+	ul.space-left-zero {
+		@extend %spaceleft-zero !optional;
+	}
+	.content ul.space-left-zero {
+		@extend %spaceleft-zero !optional;
+	}
+
+	ul.space-right {
+		@extend %spaceright !optional;
+	}
+	ul.space-right-double {
+		@extend %spaceright-double !optional;
+	}
+	ul.space-right-half {
+		@extend %spaceright-half !optional;
+	}
+	ul.space-right-zero {
+		@extend %spaceright-zero !optional;
+	}
+	.content ul.space-right-zero {
+		@extend %spaceright-zero !optional;
+	}
+
+	// UL (W PAD)
+
+	ul.pad-top {
+		@extend %padtop !optional;
+	}
+	ul.pad-top-double {
+		@extend %padtop-double !optional;
+	}
+	ul.pad-top-half {
+		@extend %padtop-half !optional;
+	}
+	ul.pad-top-zero {
+		@extend %padtop-zero !optional;
+	}
+	.content ul.pad-top-zero {
+		@extend %padtop-zero !optional;
+	}
+
+	ul.pad-bottom {
+		@extend %padbottom !optional;
+	}
+	ul.pad-bottom-double {
+		@extend %padbottom-double !optional;
+	}
+	ul.pad-bottom-half {
+		@extend %padbottom-half !optional;
+	}
+	ul.pad-bottom-zero {
+		@extend %padbottom-zero !optional;
+	}
+	.content ul.pad-bottom-zero {
+		@extend %padbottom-zero !optional;
+	}
+
+	ul.pad-left {
+		@extend %padleft !optional;
+	}
+	ul.pad-left-double {
+		@extend %padleft-double !optional;
+	}
+	ul.pad-left-half {
+		@extend %padleft-half !optional;
+	}
+	ul.pad-left-zero {
+		@extend %padleft-zero !optional;
+	}
+	.content ul.pad-left-zero {
+		@extend %padleft-zero !optional;
+	}
+
+	ul.pad-right {
+		@extend %padright !optional;
+	}
+	ul.pad-right-double {
+		@extend %padright-double !optional;
+	}
+	ul.pad-right-half {
+		@extend %padright-half !optional;
+	}
+	ul.pad-right-zero {
+		@extend %padright-zero !optional;
+	}
+	.content ul.pad-right-zero {
+		@extend %padright-zero !optional;
+	}
+
+	// OL
+
+	ol {
+		@extend %ol !optional;
+		@extend %ol_layout !optional;
+	}
+
+	ol > ol {
+		@extend %olol !optional;
+		@extend %olol_layout !optional;
+	}
+
+	ol > ul {
+		@extend %olul !optional;
+		@extend %olul_layout !optional;
+	}
+
+	// CONTENT OL
+
+	.content ol {
+		@extend %content-ol !optional;
+		@extend %content-ol_layout !optional;
+	}
+
+	.content ol > ol {
+		@extend %content-olol !optional;
+		@extend %content-olol_layout !optional;
+	}
+
+	.content ol > ul {
+		@extend %content-olul !optional;
+		@extend %content-olul_layout !optional;
+	}
+
+	// OL (INDENT)
+
+	ol.indent {
+		@extend %olindent !optional;
+		@extend %olindent_layout !optional;
+	}
+
+	ol.no-indent {
+		@extend %olnoindent !optional;
+		@extend %olnoindent_layout !optional;
+	}
+
+	// OL (LISTSTYLE)
+
+	ol.liststyle {
+		@extend %olliststyle !optional;
+		@extend %olliststyle_layout !optional;
+	}
+
+	ol.no-liststyle {
+		@extend %olnoliststyle !optional;
+		@extend %olnoliststyle_layout !optional;
+	}
+
+	// OL (W SPACE)
+
+	ol.space-top {
+		@extend %spacetop !optional;
+	}
+	ol.space-top-double {
+		@extend %spacetop-double !optional;
+	}
+	ol.space-top-half {
+		@extend %spacetop-half !optional;
+	}
+	ol.space-top-zero {
+		@extend %spacetop-zero !optional;
+	}
+	.content ol.space-top-zero {
+		@extend %spacetop-zero !optional;
+	}
+
+	ol.space-bottom {
+		@extend %spacebottom !optional;
+	}
+	ol.space-bottom-double {
+		@extend %spacebottom-double !optional;
+	}
+	ol.space-bottom-half {
+		@extend %spacebottom-half !optional;
+	}
+	ol.space-bottom-zero {
+		@extend %spacebottom-zero !optional;
+	}
+	.content ol.space-bottom-zero {
+		@extend %spacebottom-zero !optional;
+	}
+
+	ol.space-left {
+		@extend %spaceleft !optional;
+	}
+	ol.space-left-double {
+		@extend %spaceleft-double !optional;
+	}
+	ol.space-left-half {
+		@extend %spaceleft-half !optional;
+	}
+	ol.space-left-zero {
+		@extend %spaceleft-zero !optional;
+	}
+	.content ol.space-left-zero {
+		@extend %spaceleft-zero !optional;
+	}
+
+	// OL (W PAD)
+
+	ol.pad-right {
+		@extend %padright !optional;
+	}
+	ol.pad-right-double {
+		@extend %padright-double !optional;
+	}
+	ol.pad-right-half {
+		@extend %padright-half !optional;
+	}
+	ol.space-right-zero {
+		@extend %spaceright-zero !optional;
+	}
+	.content ol.space-right-zero {
+		@extend %spaceright-zero !optional;
+	}
+
+	ol.pad-top {
+		@extend %padtop !optional;
+	}
+	ol.pad-top-double {
+		@extend %padtop-double !optional;
+	}
+	ol.pad-top-half {
+		@extend %padtop-half !optional;
+	}
+	ol.pad-top-zero {
+		@extend %padtop-zero !optional;
+	}
+	.content ol.pad-top-zero {
+		@extend %padtop-zero !optional;
+	}
+
+	ol.pad-bottom {
+		@extend %padbottom !optional;
+	}
+	ol.pad-bottom-double {
+		@extend %padbottom-double !optional;
+	}
+	ol.pad-bottom-half {
+		@extend %padbottom-half !optional;
+	}
+	ol.pad-bottom-zero {
+		@extend %padbottom-zero !optional;
+	}
+	.content ol.pad-bottom-zero {
+		@extend %padbottom-zero !optional;
+	}
+
+	ol.pad-left {
+		@extend %padleft !optional;
+	}
+	ol.pad-left-double {
+		@extend %padleft-double !optional;
+	}
+	ol.pad-left-half {
+		@extend %padleft-half !optional;
+	}
+	ol.pad-left-zero {
+		@extend %padleft-zero !optional;
+	}
+	.content ol.pad-left-zero {
+		@extend %padleft-zero !optional;
+	}
+
+	ol.pad-right {
+		@extend %padright !optional;
+	}
+	ol.pad-right-double {
+		@extend %padright-double !optional;
+	}
+	ol.pad-right-half {
+		@extend %padright-half !optional;
+	}
+	ol.pad-right-zero {
+		@extend %padright-zero !optional;
+	}
+	.content ol.pad-right-zero {
+		@extend %padright-zero !optional;
+	}

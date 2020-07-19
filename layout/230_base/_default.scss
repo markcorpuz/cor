@@ -1,0 +1,80 @@
+/* BASE_227 | LAYOUT | 227_BASE | DEFAULT - 2016-05-11 */
+
+// -------------------------------------
+// EXTEND
+
+	%default-csw {
+		float: left;
+		width: 80%;
+		@extend %csw !optional;
+		@extend %responsive-layout-max !optional;
+	}
+
+	%default-content {
+		float: left;
+		width: 70%;
+		@extend %content !optional;
+		@extend %responsive-layout-max !optional;
+	}
+
+	%default-sidebarprimary {
+		float: right;
+		width: 30%;
+		@extend %sidebarprimary !optional;
+		@extend %responsive-layout-max !optional;
+	}
+
+	%default-sidebarsecondary {
+		float: right;
+		width: 20%;
+		@extend %sidebarsecondary !optional;
+		@extend %responsive-layout-max !optional;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	// HEADER
+
+	.site-header {
+		@extend %siteheader !optional;
+	}
+	.site-header .wrap {
+		@extend %siteheaderwrap !optional;
+	}
+
+	// HEADER ITEMS
+
+	.header-widget-area {
+		@extend %headerwidgetarea !optional;
+	}
+	.site-title {
+		@extend %sitetitle !optional;
+		a {
+			@extend %sitetitle-a !optional;
+		}
+		a:hover {
+			@extend %sitetitle-hvr !optional;
+		}
+	}
+
+	// INNER
+
+	.content-sidebar-wrap {
+		@extend %default-csw !optional;
+	}
+
+	.content {
+		@extend %default-content !optional;
+	}
+
+	.sidebar-primary {
+		@extend %default-sidebarprimary !optional;
+	}
+
+	.sidebar-secondary {
+		@extend %default-sidebarsecondary !optional;
+	}
+
+	// FOOTER
+

@@ -1,0 +1,109 @@
+/* BASE_226 | PLUGIN | 227_CORMAIN | SPK-YOUTUBEEMBEDS - 2016-04-20 */
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+.module-video {
+    background-color: black;
+    border: 1px solid #ccc;
+}
+
+.video-image {
+    //background-color: red;
+}
+.video-image .module-wrap {
+    //background-color: pink;
+
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+}
+.video-image .module-wrap img {
+    position: absolute;
+    top: -16.7%;
+}
+.video-image .video-play {
+    position: absolute;
+    top: 43.75%;
+    left: 43.75%;
+    background-image: url("/wp-content/themes/cor-main/images/YouTube-icon-full_color.png");
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 68px;
+    height: 48px;
+    z-index: 2;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.video-youtube {
+    //background-color: green;
+}
+.video-youtube .module-wrap {
+    //background-color: purple;
+
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+}
+
+.video-youtube #video_iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+#video-main::before,
+#video-main::after {}
+
+#video-main {
+    background-color: red;
+
+    position: relative;
+    //padding-bottom: 56.25%;
+    //padding-top: 30px;
+    //height: 0;
+    //overflow: hidden;
+    //border-top: 1px solid yellow;
+    //border-bottom: 1px solid green;
+}
+
+#thumbnail_div {
+    width: 100%;
+    background-color: green;
+    position: relative;
+}
+
+#thumbnail_div img {
+    width: 100%;
+    height: auto;
+}
+
+#thumbnail {
+    cursor: pointer;
+    cursor: hand;
+    width: 100%;
+    height: auto;
+}
+
+#thumbnail_div {
+    //max-width: 560px;
+    //max-height: 315px;
+}
+
+#video_iframe {
+    //width: 100%;
+    //height: auto;
+}

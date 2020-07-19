@@ -1,0 +1,84 @@
+/* BASE_230 | INNER | 230_BASE | GUIDE - 2017-02-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%siteinner-guide {
+		background-color: #ffbf00;
+	}
+
+	%siteinner-wrap-guide {
+		background-color: #ffd24c;
+	}
+
+	%csw-guide {
+		background-color: #ffe599;
+	}
+
+	%content-guide {
+		//background-color: #ffe4c4;
+	}
+
+	%sidebarprimary-guide {
+		background-color: #deb887;
+	}
+
+	%sidebarsecondary-guide {
+		background-color: #ffc1cc;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	body .site-inner {
+		@extend %siteinner-guide !optional;
+	
+		.wrap {
+			@extend %siteinner-wrap-guide !optional;		
+		}
+	}
+
+	body .content-sidebar-wrap {
+		@extend %csw-guide !optional;
+	}
+
+	body .content {
+		@extend %content-guide !optional;
+
+		@include responsive-range(zero-insidemain) {
+			background-color: red;
+		}
+		@include responsive-range(zero-insidelarge) {
+			background-color: orange;
+		}
+		@include responsive-range(zero-insidemedium) {
+			background-color: yellow;
+		}
+		@include responsive-range(zero-insidesmall) {
+			background-color: green;
+		}
+	}
+
+	body .sidebar-primary {
+		@extend %sidebarprimary-guide !optional;
+
+		@include responsive-range(insidelargeabove-insidemain) {
+			background-color: cyan;
+		}
+
+		@include responsive-range(insidemediumabove-insidelarge) {
+			background-color: blue;
+		}
+
+		@include responsive-range(insidesmallabove-insidemedium) {
+			background-color: violet;
+		}
+
+		@include responsive-range(zero-insidesmall) {
+			background-color: purple;
+		}
+	}
+
+	body .sidebar-secondary {
+		@extend %sidebarsecondary-guide !optional;
+	}

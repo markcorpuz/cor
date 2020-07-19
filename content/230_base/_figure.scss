@@ -1,0 +1,19 @@
+/* BASE_230 | CONTENT | 230_BASE | FIGURE - 2017-05-23 */
+
+// -------------------------------------
+// EXTEND
+
+	// FIGURE
+
+	%figure {
+		margin: 0;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	// FIGURE
+
+	figure {
+		@extend %figure !optional;
+	}

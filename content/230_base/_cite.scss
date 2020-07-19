@@ -1,0 +1,21 @@
+/* BASE_230 | CONTENT | 230_BASE | CITE - 2016-08-21 */
+
+// -------------------------------------
+// EXTEND
+
+	%cite {
+		font-size: #{$fontsize-cite}rem;
+		font-weight: $fontweight-cite;
+		line-height: $lineheight-cite;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	cite {
+		@extend %cite !optional;
+	}
+
+	cite p {
+		@extend %cite !optional;
+	}

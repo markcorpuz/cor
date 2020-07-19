@@ -1,0 +1,32 @@
+/* BASIC_2123 | ITEM-COR | DEFAULT_2124 | ITEM-VIDEO - 2015-7-14 */
+
+// -------------------------------------
+// UNIVERSAL
+// -------------------------------------
+
+// [su_youtube_advanced url="https://www.youtube.com/embed/-tgIANlQtOA" autohide="no" class="item-youtube"]
+// <iframe width="590" height="360" src="https://www.youtube.com/embed/cC8-CZPgukM" frameborder="0" allowfullscreen></iframe>
+
+// <iframe width="590" height="360" src="
+// [su_youtube_advanced url="
+
+// " frameborder="0" allowfullscreen></iframe>
+// " autohide="no" class="item-youtube"]
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+// ITEM-VIDEO
+
+	%item-video {}
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+// ITEM-YOUTUBE
+
+	.item-video {
+		@extend %item-video !optional;
+	}

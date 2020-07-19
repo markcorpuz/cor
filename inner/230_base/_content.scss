@@ -1,0 +1,13 @@
+/* BASE_230 | INNER | 230_BASE | CONTENT - 2017-02-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%content {}
+
+// -------------------------------------
+// SELECTORS
+
+	.content {
+		@extend %content !optional;
+	}

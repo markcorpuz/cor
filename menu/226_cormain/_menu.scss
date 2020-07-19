@@ -1,0 +1,79 @@
+/* BASE_226 | MENU | 226_CORMAIN_STYLE | MENU - 2016-10-10 */
+
+// -------------------------------------
+// FORMULA
+
+	%menu-formula {}
+	%menugnm-formula {}
+	%navheader-menugnm-formula {}
+	%menuprimarymenugnm-formula {}
+	%menusecondarymenugnm-formula {}
+	%widget-menu-formula {}
+	%sidebar-menu-formula {}
+	%footerwidgets-menu-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	%menu {}
+	%menugnm {}
+	%navheader-menugnm {}
+	%menuprimarymenugnm {
+		margin-left: 0;
+		margin-bottom: 0;
+		text-align: center;
+	}
+	%menusecondarymenugnm {
+		margin-left: 0;
+		margin-bottom: 0;
+		text-align: center;
+	}
+	%widget-menu {}
+	%sidebar-menu {}
+	%footerwidgets-menu {
+		list-style-type: none;
+		margin-left: 0;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.menu {
+		@extend %menu-formula !optional;
+		@extend %menu !optional;
+	}
+
+	.menu.genesis-nav-menu {
+		@extend %menugnm-formula !optional;
+		@extend %menugnm !optional;
+	}
+
+	.nav-header .genesis-nav-menu.menu {
+		@extend %navheader-menugnm-formula !optional;
+		@extend %navheader-menugnm !optional;
+	}
+
+	.menu-primary.genesis-nav-menu.menu {
+		@extend %menuprimarymenugnm-formula !optional;
+		@extend %menuprimarymenugnm !optional;
+	}
+
+	.menu-secondary.genesis-nav-menu.menu {
+		@extend %menusecondarymenugnm-formula !optional;
+		@extend %menusecondarymenugnm !optional;
+	}
+
+	.widget .menu {
+		@extend %widget-menu-formula !optional;
+		@extend %widget-menu !optional;
+	}
+
+	.sidebar .menu {
+		@extend %sidebar-menu-formula !optional;
+		@extend %sidebar-menu !optional;
+	}
+
+	.footer-widgets .menu {
+		@extend %footerwidgets-menu-formula !optional;
+		@extend %footerwidgets-menu !optional;
+	}

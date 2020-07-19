@@ -1,0 +1,53 @@
+/* BASE_230 | COLOR | 250_SETUP | BGCOLOR - 2017-07-19 */
+
+// -------------------------------------
+// EXTEND
+
+	%bg-white {
+		background-color: $color-white;
+	}
+	%bg-black {
+		background-color: $color-black;
+	}
+	%bg-gray {
+		background-color: $color-gray;
+	}
+
+	%bg-red {
+		background-color: $color-red;
+	}
+	%bg-orange {
+		background-color: $color-orange;
+	}
+	%bg-yellow {
+		background-color: $color-yellow;
+	}
+	%bg-green {
+		background-color: $color-green;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.bgcolor-white {
+		@extend %bg-white !optional;
+	}
+	.bgcolor-black {
+		@extend %bg-black !optional;
+	}
+	.bgcolor-gray {
+		@extend %bg-gray !optional;
+	}
+
+	.bgcolor-red {
+		@extend %bg-red !optional;
+	}
+	.bgcolor-orange {
+		@extend %bg-orange !optional;
+	}
+	.bgcolor-yellow {
+		@extend %bg-yellow !optional;
+	}
+	.bgcolor-green {
+		@extend %bg-green !optional;
+	}

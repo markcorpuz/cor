@@ -1,0 +1,32 @@
+/* BASE_230 | COMMENT | 230_MODEL-BASICSETUP | ENTRYPING - 2017-04-19 */
+// BASE_230 | COMMENT | 230_BASE
+
+// -------------------------------------
+// EXTEND
+
+// ENTRY-PINGS
+
+	%entrypings {
+		margin-top: #{$space-double}rem;
+	}
+
+// ENTRY-PINGS H3
+
+	%entrypings-h3 {
+		font-weight: $fontweight-thick;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+// ENTRY-PINGS
+
+	.entry-pings {
+		@extend %entrypings !optional;
+	}
+
+// ENTRY-PINGS H3
+
+	.entry-pings h3 {
+		@extend %entrypings-h3 !optional;
+	}

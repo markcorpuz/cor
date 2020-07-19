@@ -1,0 +1,104 @@
+/* BASE_230 | MENU | 230_COR | MENUITEM-GNM - 2017-07-19 */
+
+// -------------------------------------
+// EXTEND
+
+	// MENU-ITEM
+	// .genesis-nav-menu .menu-item
+	%gnm-menuitem {
+		font-size: 1rem;
+		font-weight: 700;
+		display: inline-block;			// horizontally aligning desktop menu-items
+		text-align: left;				// aligns text on desktop menu-items to left
+	}
+	%gnm-menuitem-a {
+		display: block;					// forces all gnm items on it's own line
+		padding: 10px 8px;
+	}
+	%gnm-menuitem-hvr {
+		position: static;
+	}
+	// .genesis-nav-menu .menu-item:hover > sub-menu
+	%gnm-menuitem-hvr-submenu {
+		left: auto;
+		opacity: 1;
+	}
+		
+		// LEVEL 1 MENU-ITEM
+		// .genesis-nav-menu.menu > .menu-item
+		%gnm-menuitemlvlone {
+			color: #fff;
+		}
+		%gnm-menuitemlvlone-a {
+			color: #fff;
+		}
+		%gnm-menuitemlvlone-hvr {
+			color: #ffcc00;
+		}
+		
+		// MENU-ITEM MENU-ITEM-HAS-CHILDREN
+		// .genesis-nav-menu .menu-item.menu-item-has-children
+		%gnm-menuitemhaschildren {}
+		%gnm-menuitemhaschildren-a {}
+		%gnm-menuitemhaschildren-hvr {}
+		
+		// SUB-MENU MENU-ITEM
+		// .genesis-nav-menu .menu-item.menu-item-has-children
+		%gnm-submenu-menuitem {
+			font-size: 0.75rem;
+		}
+		%gnm-submenu-menuitem-a {}
+		%gnm-submenu-menuitem-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+	// MENU-ITEM
+	.genesis-nav-menu .menu-item {
+		@extend %gnm-menuitem !optional;
+	
+		a {
+			@extend %gnm-menuitem-a !optional;
+		
+			&:hover {
+				@extend %gnm-menuitem-hvr !optional;
+			}
+
+			&:hover > .sub-menu {
+				@extend %gnm-menuitem-hvr-submenu !optional;
+			}
+		}
+	}
+
+		// LEVEL 1 MENU-ITEM
+		.genesis-nav-menu > .menu-item {
+			@extend %gnm-menuitemlvlone !optional;
+		}
+		.genesis-nav-menu > .menu-item > a {
+			@extend %gnm-menuitemlvlone-a !optional;
+		}
+		.genesis-nav-menu > .menu-item > a:hover {
+			@extend %gnm-menuitemlvlone-hvr !optional;
+		}
+
+		// MENU-ITEM.MENU-ITEM-HAS-CHILDREN
+		.genesis-nav-menu .menu-item.menu-item-has-children {
+			@extend %gnm-menuitemhaschildren !optional;
+		}
+		.genesis-nav-menu .menu-item.menu-item-has-children > a {
+			@extend %gnm-menuitemhaschildren-a !optional;
+		}
+		.genesis-nav-menu .menu-item.menu-item-has-children > a:hover {
+			@extend %gnm-menuitemhaschildren-hvr !optional;
+		}
+
+		// SUB-MENU MENU-ITEM
+		.genesis-nav-menu .sub-menu .menu-item {
+			@extend %gnm-submenu-menuitem !optional;
+		}
+		.genesis-nav-menu .menu-item > a {
+			@extend %gnm-submenu-menuitem-a !optional;
+		}
+		.genesis-nav-menu .menu-item > a:hover {
+			@extend %gnm-submenu-menuitem-hvr !optional;
+		}

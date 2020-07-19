@@ -1,0 +1,37 @@
+/* BASE_226 | CONTENT | 226_CORMAIN_STYLE | BLOCKQUOTE - 2016-01-22 */
+
+// -------------------------------------
+// FORMULA
+
+	%blockquote-formula {}
+	%blockquote-p-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	%blockquote {
+		border: 5px solid #ccc;
+		padding: #{$space-default}rem;
+		margin: 0;
+		margin-bottom: #{$space-default}rem;
+		box-sizing: border-box;
+		font-weight: $fontweight-default;
+	}
+	%blockquote-p {
+		font-size: #{$fontsize-blockquote}rem;
+		line-height: $lineheight-blockquote;
+		font-weight: $fontweight-default;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	blockquote {
+		@extend %blockquote-formula !optional;
+		@extend %blockquote !optional;
+	}
+
+	blockquote p {
+		@extend %blockquote-p-formula !optional;
+		@extend %blockquote-p !optional;
+	}

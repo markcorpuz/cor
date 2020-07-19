@@ -1,0 +1,120 @@
+/* BASE_226 | ENTRY-FEATURED-HOOK | 226_BASE | MOREFROMCATEGORY-FEATUREDCONTENT - 2016-01-22 */
+
+// -------------------------------------
+// FORMULA
+
+	%featuredcontent-morefromcategory-formula {}
+		%featuredcontent-morefromcategory-a-formula {}
+		%featuredcontent-morefromcategory-hvr-formula {}
+
+	// SIDEBAR-PRIMARY
+	%sidebarprimary-featuredcontent-morefromcategory-formula {}
+		%sidebarprimary-featuredcontent-morefromcategory-a-formula {}
+		%sidebarprimary-featuredcontent-morefromcategory-hvr-formula {}
+
+	// SIDEBAR-SECONDARY
+	%sidebarsecondary-featuredcontent-morefromcategory-formula {}
+		%sidebarsecondary-featuredcontent-morefromcategory-a-formula {}
+		%sidebarsecondary-featuredcontent-morefromcategory-hvr-formula {}
+
+	// FOOTER-WIDGETS
+	%sidebarsecondary-featuredcontent-morefromcategory-formula {}
+		%sidebarsecondary-featuredcontent-morefromcategory-a-formula {}
+		%sidebarsecondary-featuredcontent-morefromcategory-hvr-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	%featuredcontent-morefromcategory {
+		border-top: 1px solid #ccc;
+		padding-top: #{$space-half}rem;
+		text-align: right;
+	}
+		%featuredcontent-morefromcategory-a {}
+		%featuredcontent-morefromcategory-hvr {}
+
+	// SIDEBAR-PRIMARY
+	%sidebarprimary-featuredcontent-morefromcategory {}
+		%sidebarprimary-featuredcontent-morefromcategory-a {}
+		%sidebarprimary-featuredcontent-morefromcategory-hvr {}
+
+	// SIDEBAR-SECONDARY
+	%sidebarsecondary-featuredcontent-morefromcategory {}
+		%sidebarsecondary-featuredcontent-morefromcategory-a {}
+		%sidebarsecondary-featuredcontent-morefromcategory-hvr {}
+
+	// FOOTER-WIDGETS
+	%sidebarsecondary-featuredcontent-morefromcategory {}
+		%sidebarsecondary-featuredcontent-morefromcategory-a {}
+		%sidebarsecondary-featuredcontent-morefromcategory-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+	.featured-content {
+		.more-from-category {
+			@extend %featuredcontent-morefromcategory-formula !optional;
+			@extend %featuredcontent-morefromcategory !optional;
+
+			a {
+				@extend %featuredcontent-morefromcategory-a-formula !optional;
+				@extend %featuredcontent-morefromcategory-a !optional;
+
+				&:hover {
+					@extend %featuredcontent-morefromcategory-hvr-formula !optional;
+					@extend %featuredcontent-morefromcategory-hvr !optional;
+				}
+			}
+		}
+	}
+
+	.sidebar-primary .featured-content {
+		.more-from-category {
+			@extend %sidebarprimary-featuredcontent-morefromcategory-formula !optional;
+			@extend %sidebarprimary-featuredcontent-morefromcategory !optional;
+
+			a {
+				@extend %sidebarprimary-featuredcontent-morefromcategory-a-formula !optional;
+				@extend %sidebarprimary-featuredcontent-morefromcategory-a !optional;
+
+				&:hover {
+					@extend %sidebarprimary-featuredcontent-morefromcategory-hvr-formula !optional;
+					@extend %sidebarprimary-featuredcontent-morefromcategory-hvr !optional;
+				}
+			}
+		}
+	}
+
+	.sidebar-secondary .featured-content {
+		.more-from-category {
+			@extend %sidebarsecondary-featuredcontent-morefromcategory-formula !optional;
+			@extend %sidebarsecondary-featuredcontent-morefromcategory !optional;
+
+			a {
+				@extend %sidebarsecondary-featuredcontent-morefromcategory-a-formula !optional;
+				@extend %sidebarsecondary-featuredcontent-morefromcategory-a !optional;
+
+				&:hover {
+					@extend %sidebarsecondary-featuredcontent-morefromcategory-hvr-formula !optional;
+					@extend %sidebarsecondary-featuredcontent-morefromcategory-hvr !optional;
+				}
+			}
+		}
+	}
+
+	.footer-widgets .featured-content {
+		.more-from-category {
+			@extend %footerwidgets-featuredcontent-morefromcategory-formula !optional;
+			@extend %footerwidgets-featuredcontent-morefromcategory !optional;
+
+			a {
+				@extend %footerwidgets-featuredcontent-morefromcategory-a-formula !optional;
+				@extend %footerwidgets-featuredcontent-morefromcategory-a !optional;
+
+				&:hover {
+					@extend %footerwidgets-featuredcontent-morefromcategory-hvr-formula !optional;
+					@extend %footerwidgets-featuredcontent-morefromcategory-hvr !optional;
+				}
+			}
+		}
+	}

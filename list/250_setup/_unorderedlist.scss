@@ -1,0 +1,98 @@
+/* BASE_230 | LIST | 250_SETUP | UNORDEREDLIST - 2017-07-19 */
+
+// -------------------------------------
+// EXTEND
+
+	// UL
+
+	%ul {
+		margin: 0;
+		margin-bottom: #{$space}rem;
+		margin-left: #{$space}rem;
+		padding-left: 0;
+		list-style-type: disc;
+	}
+	%ulul {
+		margin-left: #{$space}rem;
+		margin-bottom: 0;
+	}
+	%ulol {
+		margin-left: #{$space}rem;
+		margin-bottom: 0;
+	}
+	
+	// CONTENT UL
+
+	%content-ul {}
+	%content-ulul {}
+	%content-ulol {}
+
+	// UL (INDENT)
+
+	%ulindent {
+		margin-left: #{$space}rem;
+	}
+	%ulnoindent {
+		padding-left: 0;
+		margin-left: 0;
+	}
+
+	// UL (LISTSTYLE)
+
+	%ulliststyle {
+		list-style-type: disc;
+	}
+	%ulnoliststyle {
+		list-style-type: none;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	// UL
+
+	ul {
+		@extend %ul !optional;
+	}
+
+	ul > ul {
+		@extend %ulul !optional;
+	}
+
+	ul > ol {
+		@extend %ulol !optional;
+	}
+
+	// CONTENT UL
+
+	.content ul {
+		@extend %content-ul !optional;
+	}
+
+	.content ul > ul {
+		@extend %content-ulul !optional;
+	}
+
+	.content ul > ol {
+		@extend %content-ulol !optional;
+	}
+
+	// UL (INDENT)
+
+	ul.indent {
+		@extend %ulindent !optional;
+	}
+
+	ul.no-indent {
+		@extend %ulnoindent !optional;
+	}
+
+	// UL (LISTSTYLE)
+
+	ul.liststyle {
+		@extend %ulliststyle !optional;
+	}
+
+	ul.no-liststyle {
+		@extend %ulnoliststyle !optional;
+	}

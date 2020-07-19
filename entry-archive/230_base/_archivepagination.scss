@@ -1,0 +1,62 @@
+/* BASE_230 | ENTRY-ARCHIVE | 230_BASE | ARCHIVEPAGINATION - 2016-03-11 */
+
+// -------------------------------------
+// EXTEND
+
+	%pagination {
+		clear: both;
+	}
+
+	%archivepagination {}
+
+	%pagination-active {}
+	%pagination-active-link {}
+	%pagination-active-hover {}
+
+	%pagination-previous {}
+	%pagination-next {}
+
+	%pagination-ul {}
+	%pagination-li {}
+	%pagination-lifirstoftype {}
+	%pagination-liactive {}
+	%pagination-liprevious {}
+	%pagination-linext {}
+
+// -------------------------------------
+// SELECTORS
+
+	.pagination {
+		@extend %pagination !optional;
+	}
+
+	.archive-pagination {
+		@extend %pagination !optional;
+		@extend %archivepagination !optional;
+	}
+
+	.pagination .active {
+		@extend %pagination-active !optional;
+		@extend %pagination-liactive !optional;
+	}
+
+	.pagination li:first-of-type {
+		@extend %pagination-lifirstoftype !optional;
+	}
+
+	.pagination .active a {
+		@extend %pagination-active-link !optional;
+	}
+	.pagination .active a:hover {
+		@extend %pagination-active-hover !optional;
+	}
+
+	.pagination .pagination-previous {
+		@extend %pagination-previous !optional;
+		@extend %pagination-liprevious !optional;
+	}
+
+	.pagination .pagination-next {
+		@extend %pagination-next !optional;
+		@extend %pagination-linext !optional;
+	}

@@ -1,0 +1,156 @@
+/* BASE_226 | MODULE | 227_CORMAIN | CTA - 2016-04-19 */
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+	.cta-icon {
+		@extend %cta-icon !optional;
+	}
+
+	.cta-bookprint {
+		background-image: url("/wp-content/themes/cor-main/images/sprites.png");
+		background-position: -234px -319px;
+		background-repeat: no-repeat;
+		width: 37px;
+		height: 48px;
+
+		@media (-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi) {
+			background-image: url("/wp-content/themes/cor-main/images/sprites2x.png");
+			background-size: 800px;
+		}
+
+	}
+
+	.cta-coachinglife {
+		background-image: url("/wp-content/themes/cor-main/images/sprites.png");
+		background-position: -292px -320px;
+		background-repeat: no-repeat;
+		width: 59px;
+		height: 40px;
+
+		@media (-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi) {
+			background-image: url("/wp-content/themes/cor-main/images/sprites2x.png");
+			background-size: 800px;
+		}
+
+	}
+
+	.cta-bookaudio {
+		background-image: url("/wp-content/themes/cor-main/images/sprites.png");
+		background-position: -374px -315px;
+		background-repeat: no-repeat;
+		width: 52px;
+		height: 49px;
+
+		@media (-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi) {
+			background-image: url("/wp-content/themes/cor-main/images/sprites2x.png");
+			background-size: 800px;
+		}
+
+	}
+
+	.cta-bookfree {
+		background-image: url("/wp-content/themes/cor-main/images/sprites.png");
+		background-position: -452px -322px;
+		background-repeat: no-repeat;
+		width: 49px;
+		height: 49px;
+
+		@media (-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi) {
+			background-image: url("/wp-content/themes/cor-main/images/sprites2x.png");
+			background-size: 800px;
+		}
+
+	}
+
+	.cta-bookebook {
+		background-image: url("/wp-content/themes/cor-main/images/sprites.png");
+		background-position: -527px -322px;
+		background-repeat: no-repeat;
+		width: 47px;
+		height: 51px;
+
+		@media (-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi) {
+			background-image: url("/wp-content/themes/cor-main/images/sprites2x.png");
+			background-size: 800px;
+		}
+
+	}
+
+	.cta-coachingemail {
+		background-image: url("/wp-content/themes/cor-main/images/sprites.png");
+		background-position: -228px -386px;
+		background-repeat: no-repeat;
+		width: 49px;
+		height: 49px;
+
+		@media (-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi) {
+			background-image: url("/wp-content/themes/cor-main/images/sprites2x.png");
+			background-size: 800px;
+		}
+
+	}
+
+	.cta-coachingphone {
+		background-image: url("/wp-content/themes/cor-main/images/sprites.png");
+		background-position: -300px -386px;
+		background-repeat: no-repeat;
+		width: 51px;
+		height: 51px;
+
+		@media (-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi) {
+			background-image: url("/wp-content/themes/cor-main/images/sprites2x.png");
+			background-size: 800px;
+		}
+
+	}
+
+	.cta-recommended {
+		background-image: url("/wp-content/themes/cor-main/images/sprites.png");
+		background-position: -376px -387px;
+		background-repeat: no-repeat;
+		width: 49px;
+		height: 48px;
+
+		@media (-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi) {
+			background-image: url("/wp-content/themes/cor-main/images/sprites2x.png");
+			background-size: 800px;
+		}
+
+	}
+
+	.cta-button.button {
+		border-width: 0;
+		border-radius: 3pt;
+		cursor: pointer;
+		display: inline-block;
+		color: #fff;
+		background-color: $color-link;
+		padding: 0.25rem;
+		text-transform: uppercase;
+		
+		text-shadow: none;
+		box-shadow: none;
+		background-image: none;
+	}
+	.cta-button.button:link {
+		box-shadow: none;
+		background-image: none;
+	}
+	.cta-button.button:hover {
+		box-shadow: none;
+		background-image: none;
+	}

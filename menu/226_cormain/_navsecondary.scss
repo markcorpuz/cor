@@ -1,0 +1,37 @@
+/* BASE_226 | MENU | 226_CORMAIN_STYLE | NAVSECONDARY - 2016-01-20 */
+
+// -------------------------------------
+// FORMULA
+
+	%navsecondary-formula {}
+	%navsecondarywrap-formula {}
+	%navsecondarywraponly-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	%navsecondary {
+		background-color: #3768A0;
+	}
+	%navsecondarywrap {
+		max-width: #{$width-base}rem;
+		margin: 0 auto;
+	}
+	%navsecondarywraponly {}
+
+// -------------------------------------
+// SELECTORS
+
+	.nav-secondary {
+		@extend %navsecondary-formula !optional;
+		@extend %navsecondary !optional;
+
+		.wrap {
+			@extend %navsecondarywrap-formula !optional;
+			@extend %navsecondarywrap !optional;
+		}
+	}
+	.nav-secondary > .wrap {
+		@extend %navsecondarywraponly-formula !optional;
+		@extend %navsecondarywraponly !optional;
+	}

@@ -1,0 +1,40 @@
+/* BASE_230 | COMMENT | 230_MODEL-BASICSETUP | COMMENTCONTENT - 2017-04-19 */
+// BASE_230 | COMMENT | 230_BASE
+
+// -------------------------------------
+// EXTEND
+
+// COMMENT-CONTENT
+
+	%commentcontent {
+		margin-left: 3.5rem;	// adds left indent space on content area for main page
+	}
+
+	%commentcontent-p {
+		font-size: #{$fontsize-xsml}rem;
+	}
+
+// CHILDREN COMMENT-CONTENT
+
+	%children-commentcontent {
+		margin-left: 2.5rem;	// adds left indent space on content area for replies
+	}
+
+// -------------------------------------
+// SELECTORS
+
+// COMMENT-CONTENT
+
+	.comment-content {
+		@extend %commentcontent !optional;
+	}
+
+	.comment-content p {
+		@extend %commentcontent-p !optional;
+	}
+
+// CHILDREN COMMENT-CONTENT
+
+	.children .comment-content {
+		@extend %children-commentcontent !optional;
+	}

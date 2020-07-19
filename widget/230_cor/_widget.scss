@@ -1,0 +1,85 @@
+/* BASE_230 | WIDGET | 230_BASE > COR | WIDGET - 2017-07-18 */
+
+// -------------------------------------
+// EXTEND
+
+	%widget {}
+
+		%sidebar-widget {}
+		%sidebarprimary-widget {
+			background-color: #fff;
+			border: 1px solid #ccc;
+			padding: 1.5rem;
+			//margin-bottom: 1rem;
+			box-shadow: 2px 2px 2px 0px #bbbbbb;
+
+			@include responsive-range(lrgbelowdown) {	
+				padding: 1rem;
+				margin-bottom: 0.5rem;
+				background-color: #fff;
+			}
+
+			@include responsive-range(smldown) {
+				//box-shadow: none;
+			}
+		}
+		%sidebarsecondary-widget {}
+		%siteheader-widget {}
+		%footerwidgets-widget {}
+		%afterentry-widget {}
+
+// -------------------------------------
+// SELECTORS
+
+	.widget {
+		@extend %widget !optional;
+	}
+
+		// SIDEBAR
+
+		.sidebar {
+			.widget {
+				@extend %sidebar-widget !optional;
+			}
+		}
+		.sidebar.sidebar-primary {
+			.widget {
+				@extend %sidebarprimary-widget !optional;
+			}
+		}
+		.sidebar.sidebar-secondary {
+			.widget {
+				@extend %sidebarsecondary-widget !optional;
+			}
+		}
+
+		// ABOVECSW
+		.cswbefore {
+			.widget {
+				@extend %sidebarprimary-widget !optional;
+			}
+		}
+
+		// SITE-HEADER
+
+		.site-header {
+			.widget {
+				@extend %siteheader-widget !optional;				
+			}
+		}
+
+		// FOOTER-WIDGETS
+
+		.footer-widgets {
+			.widget {
+				@extend %footerwidgets-widget !optional;
+			}
+		}
+
+		// AFTER-ENTRY
+
+		.after-entry {
+			.widget {
+				@extend %afterentry-widget !optional;
+			}
+		}

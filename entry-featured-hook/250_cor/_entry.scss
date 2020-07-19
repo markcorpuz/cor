@@ -1,0 +1,29 @@
+/* BASE_230 | ENTRY-FEATURED-HOOK | 250_COR | ENTRY-FEATUREDCONTENT - 2017-07-24 */
+
+// -------------------------------------
+// EXTEND
+
+	%featuredcontent-entry {
+		border-top: 1px solid #ccc;
+		padding-top: 1rem;
+		margin-bottom: 1rem;
+	}
+		%featuredcontent-entryfot {
+			border-top: 0;
+			padding-top: 0;
+		}
+
+// -------------------------------------
+// SELECTORS
+
+	.featured-content {
+		.entry {
+			@extend %featuredcontent-entry !optional;
+		}
+	}
+
+	.featured-content {
+		article.entry:first-of-type {
+			@extend %featuredcontent-entryfot !optional;
+		}
+	}

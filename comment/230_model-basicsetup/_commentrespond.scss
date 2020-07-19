@@ -1,0 +1,36 @@
+/* BASE_230 | COMMENT | 230_MODEL-BASICSETUP | COMMENTRESPOND - 2017-04-19 */
+// BASE_230 | COMMENT | 230_BASE
+
+// -------------------------------------
+// EXTEND
+
+// COMMENT-RESPOND
+
+	%commentrespond {
+		margin-top: #{$space-double}rem;
+	}
+
+// COMMENT-RESPOND COMMENT-REPLY-TITLE
+
+	%commentrespond-h3 {
+		font-weight: $fontweight-thick;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+// COMMENT-RESPOND
+
+	.comment-respond {
+		@extend .entry-comments !optional;
+
+		@extend %commentrespond !optional;
+	}
+
+// COMMENT-RESPOND
+
+	.comment-respond h3 {
+		@extend .entry-comments-h3 !optional;
+
+		@extend %commentrespond-h3 !optional;
+	}

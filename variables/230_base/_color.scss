@@ -1,0 +1,135 @@
+/* BASE_230 | VARIABLES | 230_BASE | COLOR - 2017-01-12 */
+
+// -------------------------------------
+// VARIABLES
+
+// DEFAULT (HTML)
+
+	$color-html:						null;
+	$bgcolor-html:						null;
+
+// BODY
+
+	$color-body:						#333;
+	$bgcolor-body:						null;
+
+// LINK
+
+	$color-link: 						#147FC4;
+	$color-hover: 						#0d527f;
+
+// SELECTION
+
+	$color-selection:					white;
+	$bgcolor-selection:					#0d527f;
+
+// HEADLINE
+
+	$color-headline:					null;
+	$color-headline-link:				null;
+	$color-headline-hover:				null;
+
+// BLOCKQUOTE
+
+	$color-blockquote:					null;
+	$color-caption:						null;
+
+// ENTRY-TITLE
+
+	$color-entrytitle:					null;
+	$color-entrytitle-link:				null;
+	$color-entrytitle-hover:			null;
+
+	$color-entrytitle-page:				null;
+	$color-entrytitle-single:			null;
+
+// HARD COLORS
+
+	$color-black:						#000;
+	$color-white:						#fff;
+	$color-gray:						#808080;
+
+// SHADES BETWEEN BLACK & WHITE
+
+	$color-lightest:					#dfdfdf;
+	$color-lighter:						#bfbfbf;
+	$color-light:						#9f9f9f;
+	$color-mid:							#808080;
+	$color-dark:						#606060;
+	$color-darker:						#404040;
+	$color-darkest:						#202020;
+
+// SHADES OF GRAY
+
+	$color-gray-lightest:				#dfdfdf;
+	$color-gray-lighter:				#bfbfbf;
+	$color-gray-light:					#9f9f9f;
+	$color-gray-mid:					#808080;
+	$color-gray-dark:					#606060;
+	$color-gray-darker:					#404040;
+	$color-gray-darkest:				#202020;
+
+// SHADES OF THE RAINBOW
+
+	$color-red:							red;
+	$color-orange:						orange;
+	$color-yellow:						yellow;
+	$color-green:						green;
+
+// -------------------
+
+// SOURCE: ColorBlender
+// meyerweb.com
+
+// Black		#000
+// Darkest		#202020
+// Darker 		#404040
+// Dark 		#606060
+// Mid 			#808080
+// Light 		#9f9f9f
+// Lighter 		#bfbfbf
+// Lightest 	#dfdfdf
+// White		#fff
+
+// -------------------
+
+// SHADES BETWEEN #000 and #FFF
+// SOURCE: ColorHexa
+
+// #000000
+
+// #0a0a0a
+// #141414
+// #1f1f1f
+
+// #292929
+// #333333
+// #3d3d3d
+
+// #474747
+// #525252
+// #5c5c5c
+
+// #666666
+// #707070
+// #7a7a7a
+
+// #858585
+// #8f8f8f
+// #999999
+
+// #a3a3a3
+// #adadad
+// #b8b8b8
+
+// #c2c2c2
+// #cccccc
+// #d6d6d6
+
+// #e0e0e0
+// #ebebeb
+// #f5f5f5
+
+// #ffffff
+
+// -------------------

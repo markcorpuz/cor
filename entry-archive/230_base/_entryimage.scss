@@ -1,0 +1,137 @@
+/* BASE_230 | ENTRY-ARCHIVE | 230_BASE | ENTRYIMAGE - 2016-07-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%all-entryimage {}
+		%all-entryimagealignleft {}
+		%all-imgentryimagealignleft {}
+		%all-entryimagealignright {}
+		%all-imgentryimagealignright {}
+
+	%archive-entryimage {}
+		%archive-entryimagealignleft {}
+		%archive-imgentryimagealignleft {}
+		%archive-entryimagealignright {}
+		%archive-imgentryimagealignright {}
+
+	%category-entryimage {}
+		%category-entryimagealignleft {}
+		%category-imgentryimagealignleft {}
+		%category-entryimagealignright {}
+		%category-imgentryimagealignright {}
+
+	%tag-entryimage {}
+		%tag-entryimagealignleft {}
+		%tag-imgentryimagealignleft {}
+		%tag-entryimagealignright {}
+		%tag-imgentryimagealignright {}
+
+	%blog-entryimage {}
+		%blog-entryimagealignleft {}
+		%blog-imgentryimagealignleft {}
+		%blog-entryimagealignright {}
+		%blog-imgentryimagealignright {}
+
+// -------------------------------------
+// SELECTORS
+
+	// ARCHIVE
+
+	.archive {
+		.entry-image {
+			@extend %all-entryimage !optional;
+			@extend %archive-entryimage !optional;
+		}
+			.entry-image.alignleft {
+				@extend %all-entryimagealignleft !optional;
+				@extend %archive-entryimagealignleft !optional;
+			}
+			img.entry-image.alignleft {
+				@extend %all-imgentryimagealignleft !optional;
+				@extend %archive-imgentryimagealignleft !optional;
+			}
+			.entry-image.alignright {
+				@extend %all-entryimagealignright !optional;
+				@extend %archive-entryimagealignright !optional;
+			}
+			img.entry-image.alignright {
+				@extend %all-imgentryimagealignright !optional;
+				@extend %archive-imgentryimagealignright !optional;
+			}
+	}
+
+	// ARCHIVE
+
+	.category {
+		.entry-image {
+			@extend %all-entryimage !optional;
+			@extend %category-entryimage !optional;
+		}
+			.entry-image.alignleft {
+				@extend %all-entryimagealignleft !optional;
+				@extend %category-entryimagealignleft !optional;
+			}
+			img.entry-image.alignleft {
+				@extend %all-imgentryimagealignleft !optional;
+				@extend %category-imgentryimagealignleft !optional;
+			}
+			.entry-image.alignright {
+				@extend %all-entryimagealignright !optional;
+				@extend %category-entryimagealignright !optional;
+			}
+			img.entry-image.alignright {
+				@extend %all-imgentryimagealignright !optional;
+				@extend %category-imgentryimagealignright !optional;
+			}
+	}
+
+	// TAG
+
+	.tag {
+		.entry-image {
+			@extend %all-entryimage !optional;
+			@extend %tag-entryimage !optional;
+		}
+			.entry-image.alignleft {
+				@extend %all-entryimagealignleft !optional;
+				@extend %tag-entryimagealignleft !optional;
+			}
+			img.entry-image.alignleft {
+				@extend %all-imgentryimagealignleft !optional;
+				@extend %tag-imgentryimagealignleft !optional;
+			}
+			.entry-image.alignright {
+				@extend %all-entryimagealignright !optional;
+				@extend %tag-entryimagealignright !optional;
+			}
+			img.entry-image.alignright {
+				@extend %all-imgentryimagealignright !optional;
+				@extend %tag-imgentryimagealignright !optional;
+			}
+	}
+
+	// BLOG
+
+	.blog {
+		.entry-image {
+			@extend %all-entryimage !optional;
+			@extend %blog-entryimage !optional;
+		}
+			.entry-image.alignleft {
+				@extend %all-entryimagealignleft !optional;
+				@extend %blog-entryimagealignleft !optional;
+			}
+			img.entry-image.alignleft {
+				@extend %all-imgentryimagealignleft !optional;
+				@extend %blog-imgentryimagealignleft !optional;
+			}
+			.entry-image.alignright {
+				@extend %all-entryimagealignright !optional;
+				@extend %blog-entryimagealignright !optional;
+			}
+			img.entry-image.alignright {
+				@extend %all-imgentryimagealignright !optional;
+				@extend %blog-imgentryimagealignright !optional;
+			}
+	}

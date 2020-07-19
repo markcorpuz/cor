@@ -1,0 +1,50 @@
+/* BASE_226 | CONTENT | 226_CORMAIN | HEADLINE - 2016-03-23 */
+
+// -------------------------------------
+// FORMULA
+
+	%headline-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	%headline {
+		font-family: "Lato",arial,sans-serif;
+		line-height: $lineheight-hx;
+		margin: 0;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+// HEADLINE
+
+	h1, .h1 {
+		@extend %headline-formula !optional;
+		@extend %headline !optional;
+	}
+
+	h2, .h2 {
+		@extend %headline-formula !optional;
+		@extend %headline !optional;
+	}
+
+	h3, .h3 {
+		@extend %headline-formula !optional;
+		@extend %headline !optional;
+	}
+
+	h4, .h4 {
+		@extend %headline-formula !optional;
+		@extend %headline !optional;
+	}
+
+	h5, .h5 {
+		@extend %headline-formula !optional;
+		@extend %headline !optional;
+	}
+
+	h6, .h6 {
+		@extend %headline-formula !optional;
+		@extend %headline !optional;
+	}

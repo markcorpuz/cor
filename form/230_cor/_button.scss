@@ -1,0 +1,79 @@
+/* BASE_230 | FORM | 230_BASE | BUTTON - 2016-08-05 */
+
+// -------------------------------------
+// EXTEND
+
+// INPUT BUTTON
+
+	%input-button {}
+	%input-button-link {}
+	%input-button-hover {}
+
+// INPUT RESET
+
+	%input-reset {}
+	%input-reset-link {}
+	%input-reset-hover {}
+
+// INPUT SUBMIT
+
+	%input-submit {}
+	%input-submit-link {}
+	%input-submit-hover {}
+
+// INPUT FOCUS
+
+	%input-focus {}
+	%input-focus-link {}
+	%input-focus-hover {}
+
+// -------------------------------------
+// SELECTORS
+
+// BUTTON
+
+	button {
+		@extend %button !optional;
+	}
+	button:hover {
+		@extend %button-hover !optional;
+	}
+	button:focus {
+		@extend %button-focus !optional;
+	}
+
+// INPUT BUTTON
+
+	input[type="button"] {
+		@extend %button !optional;
+	}
+	input:hover[type="button"] {
+		@extend %button-hover !optional;
+	}
+	input:focus[type="button"] {
+		@extend %button-focus !optional;
+	}
+
+// INPUT RESET
+
+	input[type="reset"] {
+		@extend %button !optional;
+	}
+	input:hover[type="reset"] {
+		@extend %button-hover !optional;
+	}
+	input:focus[type="reset"] {
+		@extend %button-focus !optional;
+	}
+
+// INPUT SUBMIT
+
+	input[type="submit"] {
+		@extend %button !optional;
+	}
+	input:hover[type="submit"] {
+		@extend %button-hover !optional;
+	}
+	input:focus[type="submit"] {
+		@extend %button-focus !optional;
+	}

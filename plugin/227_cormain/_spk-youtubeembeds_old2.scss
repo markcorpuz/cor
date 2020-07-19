@@ -1,0 +1,53 @@
+/* BASE_226 | PLUGIN | 227_CORMAIN | SPK-YOUTUBEEMBEDS - 2016-04-20 */
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+#video-main::before,
+#video-main::after {}
+
+#video-main {
+    background-color: red;
+
+    position: relative;
+    //padding-bottom: 56.25%;
+    //padding-top: 30px;
+    //height: 0;
+    //overflow: hidden;
+    //border-top: 1px solid yellow;
+    //border-bottom: 1px solid green;
+}
+
+#thumbnail_div {
+    width: 100%;
+    background-color: green;
+    position: relative;
+}
+
+#thumbnail_div img {
+    width: 100%;
+    height: auto;
+}
+
+#thumbnail {
+    cursor: pointer;
+    cursor: hand;
+    width: 100%;
+    height: auto;
+}
+
+#thumbnail_div {
+    //max-width: 560px;
+    //max-height: 315px;
+}
+
+#video_iframe {
+    width: 100%;
+    height: auto;
+}

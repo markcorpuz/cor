@@ -1,0 +1,31 @@
+/* BASE_230 | SELECTOR | 250_SETUP | DISPLAY - 2017-07-19 */
+
+// -------------------------------------
+// EXTEND
+
+	%display-block {
+		display: block;
+	}
+
+	%display-inline {
+		display: inline;
+	}
+
+	%display-inlineblock {
+		display: inline-block;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.display-block {
+		@extend %display-block !optional;
+	}
+
+	.display-inline {
+		@extend %display-inline !optional;
+	}
+	
+	.display-inlineblock {
+		@extend %display-inlineblock !optional;
+	}

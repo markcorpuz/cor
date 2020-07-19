@@ -1,0 +1,19 @@
+/* BASE_230 | SELECTOR | 230_BASE | FIGURE - 2017-03-23 */
+
+// -------------------------------------
+// EXTEND
+
+	// FIGURE
+
+	%figure {
+		margin: 0;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	// TEXT-ALIGN (bootstrap)
+
+	.figure {
+		@extend %figure !optional;
+	}

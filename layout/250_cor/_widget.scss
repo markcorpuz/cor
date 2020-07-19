@@ -1,0 +1,129 @@
+/* BASE_230 | LAYOUT | 250_COR | WIDGET - 2017-07-18 */
+// BASE_230 | WIDGET | 230_BASE
+
+// -------------------------------------
+// EXTEND
+
+	// WIDGET
+
+	%widget_layout {
+		//margin-bottom: 1rem;
+	}
+
+		%sidebar-widget_layout {}
+		%sidebarprimary-widget_layout {
+			background-color: #fff;
+			border: 1px solid #ccc;
+			box-shadow: 2px 2px 2px 0px #bbbbbb;
+			margin-bottom: 1rem;
+
+			// BASEUP
+			@include responsive-range(baseup) {
+				padding: 1.5rem;
+			}
+
+			// BASEDOWN
+			@include responsive-range(basedown) {
+				padding: 1rem;
+			}
+
+			@include responsive-range(lrgbelowdown) {	
+				background-color: #fff;
+			}
+
+			@include responsive-range(smldown) {
+				//box-shadow: none;
+			}
+		}
+		%sidebarsecondary-widget_layout {}
+		%siteheader-widget {}
+		%footerwidgets-widget {}
+		%afterentry-widget {}
+
+	// WIDGET-WRAP
+
+	%widget-wrap_layout {}
+
+	// WIDGET-TITLE
+
+	%widget-title_layout {
+		font-family: $fontfamily-widgettitle;
+		font-size: #{$fontsize-titlewidget}rem;
+		color: #ffcc00;
+		background-color: #333;
+		padding: 5px 5px 5px 8px;
+		font-size: #{$fontsize-sml}rem;
+		font-weight: $fontweight-thicker;
+		margin-bottom: 1rem;
+
+		@include responsive-range(medbelowdown) {
+			margin-bottom: 0.5rem;
+		}
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+	// WIDGET
+
+	.widget {
+		@extend %widget !optional;
+		@extend %widget_layout !optional;
+	}
+
+		// SIDEBAR
+
+		.sidebar {
+			.widget {
+				@extend %sidebar-widget_layout !optional;
+			}
+		}
+		.sidebar.sidebar-primary {
+			.widget {
+				@extend %sidebarprimary-widget_layout !optional;
+			}
+		}
+		.sidebar.sidebar-secondary {
+			.widget {
+				@extend %sidebarsecondary-widget_layout !optional;
+			}
+		}
+
+		// SITE-HEADER
+
+		.site-header {
+			.widget {
+				@extend %siteheader-widget !optional;				
+			}
+		}
+
+		// FOOTER-WIDGETS
+
+		.footer-widgets {
+			.widget {
+				@extend %footerwidgets-widget !optional;
+			}
+		}
+
+		// AFTER-ENTRY
+
+		.after-entry {
+			.widget {
+				@extend %afterentry-widget !optional;
+			}
+		}
+
+	// WIDGET-WRAP
+
+	.widget-wrap {
+		@extend %widget-wrap !optional;
+		@extend %widget-wrap_layout !optional;
+	}
+
+	// WIDGET-TITLE
+
+	.widget-title {
+		@extend %widget-title !optional;
+		@extend %widget-title_layout !optional;
+	}

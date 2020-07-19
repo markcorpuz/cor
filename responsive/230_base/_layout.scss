@@ -1,0 +1,46 @@
+/* BASE_230 | RESPONSIVE | 230_BASE | LAYOUT - 2017-02-07 */
+
+// -------------------------------------
+// EXTEND
+
+	%responsive-layout-max {
+		@include responsive-range(medbelowdown) {
+			float: none;
+			width: 100%;
+		}
+	}
+
+	%responsive-layout-max-basedown {
+		@include responsive-range(basedown) {
+			float: none;
+			width: 100%;
+		}
+	}
+
+	%responsive-layout-max-basebelowdown {
+		@include responsive-range(basebelowdown) {
+			float: none;
+			width: 100%;
+		}
+	}
+
+	%responsive-layout-max-meddown {
+		@include responsive-range(meddown) {
+			float: none;
+			width: 100%;
+		}
+	}
+
+	%responsive-layout-max-medbelowdown {
+		@include responsive-range(medbelowdown) {
+			float: none;
+			width: 100%;
+		}
+	}
+
+	%responsive-layout-max-smlbelowdown {
+		@include responsive-range(smlbelowdown) {
+			float: none;
+			width: 100%;
+		}
+	}

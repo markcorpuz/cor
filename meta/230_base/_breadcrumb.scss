@@ -1,0 +1,31 @@
+/* BASE_230 | META | 230_BASE | BREADCRUMB - 2017-01-12 */
+
+// -------------------------------------
+// EXTEND
+
+	%breadcrumb {
+		font-size: #{$fontsize-xsml}rem;
+		border-bottom: 1px solid #bbb;
+		margin-bottom: #{$space}rem;
+		padding-bottom: #{$space-half}rem;
+	}
+		%breadcrumb-a {}
+		%breadcrumb-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+	.breadcrumb {
+		@extend %breadcrumb-formula !optional;
+		@extend %breadcrumb !optional;
+	
+		a {
+			@extend %breadcrumb-a-formula !optional;
+			@extend %breadcrumb-a !optional;
+		}
+
+		a:hover {
+			@extend %breadcrumb-hvr-formula !optional;
+			@extend %breadcrumb-hvr !optional;
+		}
+	}

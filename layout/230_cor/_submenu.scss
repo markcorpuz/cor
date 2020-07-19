@@ -1,0 +1,108 @@
+/* BASE_230 | LAYOUT | 230_BASE | SUBMENU - 2016-08-04 */
+
+// -------------------------------------
+// EXTEND
+
+	// SUBMENU
+	%submenu_layout {
+		margin-bottom: 0;
+		margin-left: 0;
+		list-style-type: none;
+	}
+	%submenu-submenu_layout {}
+
+	// MENU-PRIMARY & MENU-SECONDARY
+	// determines the width of the submenu (needs to match %dropdown-menuprisec-submenu-menuitemwchildhvr-submenu)
+	%menuboth-submenu_layout {
+		width: 150px;
+		box-sizing: border-box;
+	}
+	%menuprisec-submenu-submenu_layout {}
+
+	// MENU-PRIMARY
+	%menuprimary-submenu_layout {
+		//background-color: #ccc;
+	}
+	%menuprimary-submenu-submenu_layout {}
+
+ 	// MENU-SECONDARY
+	%menusecondary-submenu_layout {
+		//background-color: #ddd;
+	}
+	%menusecondary-submenu-submenu_layout {}
+
+ 	// WIDGET
+	// defines the hierarchial structure of menus entered in the widget
+	%widget-submenu_layout {
+		margin-left: #{$fontsize-default}rem;
+	}
+	%widget-submenu-submenu_layout {}
+
+	// SIDEBAR
+	%sidebar-submenu_layout {}
+	%sidebar-submenu-submenu_layout {}
+
+	// FOOTER-WIDGETS
+	%footerwidgets-submenu_layout {}
+	%footerwidgets-submenu-submenu_layout {}
+
+// -------------------------------------
+// SELECTORS
+
+	.sub-menu {
+		@extend %submenu !optional;
+		@extend %submenu_layout !optional;
+	}
+		.sub-menu .sub-menu {
+			@extend %submenu-submenu !optional;
+			@extend %submenu-submenu_layout !optional;
+		}
+
+	.menu-primary .sub-menu {
+		@extend %menuprimary-submenu !optional;
+		@extend %menuboth-submenu_layout !optional;
+		@extend %menuprimary-submenu_layout !optional;
+	}
+		.menu-primary .sub-menu .sub-menu {
+			@extend %menuprimary-submenu-submenu !optional;
+			@extend %menuboth-submenu-submenu_layout !optional;
+			@extend %menuprimary-submenu-submenu_layout !optional;
+		}
+
+	.menu-secondary .sub-menu {
+		@extend %menusecondary-submenu !optional;
+		@extend %menuboth-submenu_layout !optional;
+		@extend %menusecondary-submenu_layout !optional;
+	}
+		.menu-secondary .sub-menu .sub-menu {
+			@extend %menusecondary-submenu-submenu !optional;
+			@extend %menuboth-submenu-submenu_layout !optional;
+			@extend %menusecondary-submenu-submenu_layout !optional;
+		}
+
+	.widget .sub-menu {
+		@extend %widget-submenu !optional;
+		@extend %widget-submenu_layout !optional;
+	}
+		.widget .sub-menu .sub-menu {
+			@extend %widget-submenu-submenu !optional;
+			@extend %widget-submenu-submenu_layout !optional;
+		}
+
+	.sidebar .sub-menu {
+		@extend %sidebar-submenu !optional;
+		@extend %sidebar-submenu_layout !optional;
+	}
+		.sidebar .sub-menu .sub-menu {
+			@extend %sidebar-submenu-submenu !optional;
+			@extend %sidebar-submenu-submenu_layout !optional;
+		}
+
+	.footer-widgets .sub-menu {
+		@extend %footerwidgets-submenu !optional;
+		@extend %footerwidgets-submenu_layout !optional;
+	}
+		.footer-widgets .sub-menu .sub-menu {
+			@extend %footerwidgets-submenu-submenu !optional;
+			@extend %footerwidgets-submenu-submenu_layout !optional;
+		}

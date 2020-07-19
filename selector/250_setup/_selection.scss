@@ -1,0 +1,18 @@
+/* BASE_230 | SELECTOR | 250_SETUP | SELECTION - 2017-07-19 */
+
+// -------------------------------------
+// EXTEND
+
+	%selection {}
+
+// -------------------------------------
+// SELECTORS
+
+	::selection {
+		background-color: $bgcolor-selection;
+		color: $color-selection;
+	}
+	::-moz-selection {
+		background-color: $bgcolor-selection;
+		color: $color-selection;
+	}

@@ -1,0 +1,69 @@
+/* BASE_230 | FOOTER | 230_BASE | GUIDE - 2017-02-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%footerwidgets-guide {
+		background-color: darkred;
+	}
+	%footerwidgetswrap-guide {
+		background-color: yellow;
+	}
+	%footerwidgetswraponly-guide {}
+
+
+	%footerwidgets1-guide {
+		background-color: pink;
+	}
+	%footerwidgets2-guide {
+		background-color: orange;
+	}
+	%footerwidgets3-guide {
+		background-color: red;
+	}
+
+
+	%sitefooter-guide {
+		background-color: #dbdbdb;
+	}
+	%sitefooterwrap-guide {
+		background-color: #ddd;
+	}
+	%sitefooterwraponly-guide {}
+
+// -------------------------------------
+// SELECTORS
+
+	body .footer-widgets {
+		@extend %footerwidgets-guide !optional;
+
+		.wrap {
+			@extend %footerwidgetswrap-guide !optional;
+		}
+	}
+	body .footer-widgets > .wrap {
+		@extend %footerwidgetswraponly-guide !optional;
+	}
+
+
+	body .footer-widgets-1 {
+		@extend %footerwidgets1-guide !optional;
+	}
+	body .footer-widgets-2 {
+		@extend %footerwidgets2-guide !optional;
+	}
+	body .footer-widgets-3 {
+		@extend %footerwidgets3-guide !optional;
+	}
+
+
+	body .site-footer {
+		@extend %sitefooter-guide !optional;
+
+		.wrap {
+			@extend %sitefooterwrap-guide !optional;
+		}
+	}
+	body .site-footer > .wrap {
+		@extend %sitefooterwraponly-guide !optional;
+	}

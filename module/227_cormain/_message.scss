@@ -1,0 +1,39 @@
+/* BASE_226 | MODULE | 227_CORMAIN | MESSAGE - 2016-04-08 */
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+// MESSAGE
+
+	%message {
+		color: #555;
+		background-color: #fafafa;
+		border: 1px solid #c6c6c6;
+		padding: 1rem;
+		padding-right: 1.2rem;
+		margin-bottom: 1rem;
+		overflow: hidden;
+		box-shadow: 2px 2px 2px 0px #d6d6d6;
+	}
+
+// QUOTE
+
+	%quote {
+		color: #E57E00;
+	}
+
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+// MESSAGE
+
+	.message {
+		@extend %message !optional;
+	}
+
+	.quote {
+		@extend %quote !optional;
+	}

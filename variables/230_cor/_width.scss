@@ -1,0 +1,70 @@
+/* BASE_230 | VARIABLES | 230_BASE > COR | WIDTH - 2016-10-10 */
+
+// -------------------------------------
+// VARIABLES
+
+
+// NOTE: RELATIVE WIDTHS BASED ON SITE DESIGN FUNCTIONALITY
+
+	$width-outer:						160;		// 2560px
+
+	//$width-base:						82.5;		// 1320px	IDEAL FOR ADS
+	$width-base:						77;			// 1232px
+
+	$width-home:						77;			// 1232px
+
+	$size-inside:						77;			// 1232px	OBSOLETE REPLACE
+
+	$width-inner:						77;			// 1232px
+		$width-inner-large:				64;			// 1024px
+		$width-inner-medium:			48;			// 768px
+		$width-inner-small:				26.563;		// 425px
+
+// NOTE: RELATIVE WIDTHS BASED ON OVERALL SCALE
+
+	$width-huge:						160;		// 2560px
+	$width-xlrg:						77;			// 1232px
+	$width-lrg:							64;			// 1024px
+	$width-med:							48;			// 768px
+	$width-sml:							26.563;		// 425px
+	$width-xsml:						20;			// 320px
+
+// NOTE: RELATIVE WIDTHS ACCORDING TO GOOGLE
+
+// 4K
+
+	$width-4k:							160;		// 2560px
+
+// LAPTOP (GOOGLE)
+
+	$width-laptop:						90;			// 1440px
+		$width-laptoplrg:				90;			// 1440px
+		$width-laptopmed:				64;			// 1024px
+		$width-laptopsml:				60;			// 960px
+	
+// TABLET (GOOGLE)
+
+	$width-tablet:						48;			// 768px
+		$width-tabletlrg:				48;			// 768px
+		$width-tabletmed:				48;			// 768px
+		$width-tabletsml:				48;			// 768px
+
+// MOBILE (GOOGLE)
+
+	$width-mobile:						26.563;		// 425px
+		$width-mobilelrg:				26.563;		// 425px
+		$width-mobilemed:				23.438;		// 375px
+		$width-mobilesml:				20;			// 320px
+
+
+// NOTE: FUNCTIONAL WIDTHS
+
+	$width-pixel:						0.0625;		// 1px
+	$width-zero: 						0;
+
+// IMG
+
+	$width-img-thumbnail:				9.375;		// 150px
+	$width-img-medium:					18.75;		// 300px
+	$width-img-large:					48;			// 768px
+	$width-img-full:					72.5;		// 1160px

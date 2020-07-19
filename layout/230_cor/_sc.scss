@@ -1,0 +1,37 @@
+/* BASE_230 | LAYOUT | 230_BASE | SC - 2016-07-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%sc-csw_layout {
+		float: right;
+		width: 100%;
+		@extend %responsive-layout-max !optional;
+	}
+
+	%sc-content_layout {
+		float: right;
+		width: 70%;
+		@extend %responsive-layout-max !optional;
+	}
+
+	%sc-sidebarprimary_layout {
+		float: left;
+		width: 30%;
+		@extend %responsive-layout-max !optional;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.sidebar-content .content-sidebar-wrap {
+		@extend %sc-csw_layout !optional;
+	}
+
+	.sidebar-content .content {
+		@extend %sc-content_layout !optional;
+	}
+
+	.sidebar-content .sidebar-primary {
+		@extend %sc-sidebarprimary_layout !optional;
+	}

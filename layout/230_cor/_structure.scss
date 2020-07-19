@@ -1,0 +1,37 @@
+/* BASE_230 | LAYOUT | 230_BASE > COR | STRUCTURE - 2016-10-10 */
+
+// -------------------------------------
+// EXTEND
+
+	%sitecontainer_layout {
+		@extend %clearfix !optional;
+		background-color: #fff;
+		max-width: #{$width-base}rem;
+		margin: 0 auto 5rem;
+		padding: 1rem;
+
+		@include responsive-range(xlrgbelowdown) {
+			margin-bottom: 1.5rem;
+		}
+
+		@include responsive-range(medbelowdown) {
+			padding: 0;
+		}
+	}
+
+	%sitecontainer-home_layout {
+		//max-width: #{$width-inner}rem;
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+	.site-container {
+		@extend %sitecontainer !optional;
+		@extend %sitecontainer_layout !optional;
+	}
+
+	.home .site-container {
+		@extend %sitecontainer-home_layout !optional;
+	}

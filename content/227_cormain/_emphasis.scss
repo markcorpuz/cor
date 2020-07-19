@@ -1,0 +1,36 @@
+/* BASE_226 | CONTENT | 227_CORMAIN_STYLE | EMPHASIS - 2016-03-30 */
+
+// -------------------------------------
+// EXTEND
+
+	%em {}
+
+	%strong {}
+	%strongnote {
+	color: #333;
+	font-weight: 500;
+	font-style: normal;
+	background-color: #ddd;
+	padding-left: 3px;
+	padding-right: 3px;
+	}
+
+	%code {}
+
+// -------------------------------------
+// SELECTORS
+
+	em {
+		@extend %em !optional;
+	}
+
+	strong {
+		@extend %strong !optional;
+	}
+	strong.note {
+		@extend %strongnote !optional;
+	}
+
+	code {
+		@extend %code !optional;
+	}

@@ -1,0 +1,37 @@
+/* BASE_230 | VARIABLES | 230_BASE | WIDTH - 2017-06-06 */
+
+// -------------------------------------
+// VARIABLES
+
+
+// NOTE: RELATIVE WIDTHS BASED ON SITE DESIGN FUNCTIONALITY
+
+	$width-outer:						160;		// 2560px
+
+	$width-base:						75;			// 1200px
+
+	$width-inner:						75;			// 1200px
+		$width-inner-large:				64;			// 1024px
+		$width-inner-medium:			48;			// 768px
+		$width-inner-small:				26.563;		// 425px
+
+// NOTE: RELATIVE WIDTHS BASED ON OVERALL SCALE
+
+	$width-huge:						160;		// 2560px
+	$width-xlrg:						75;			// 1200px
+	$width-lrg:							64;			// 1024px
+	$width-med:							48;			// 768px
+	$width-sml:							26.563;		// 425px
+	$width-xsml:						20;			// 320px
+
+// NOTE: FUNCTIONAL WIDTHS
+
+	$width-pixel:						0.0625;		// 1px
+	$width-zero: 						0;
+
+// IMG
+
+	$width-img-thumb:					9.375;		// 150px
+	$width-img-med:						18.75;		// 300px
+	$width-img-lrg:						48;			// 768px
+	$width-img-full:					72.5;		// 1160px

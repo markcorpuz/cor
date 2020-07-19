@@ -1,0 +1,65 @@
+/* BASE_230 | ENTRY-ARCHIVE | 250_MODEL-BASICSETUP | ENTRYFOOTER - 2017-06-13 */
+// BASE_230 | ENTRY-ARCHIVE | 230_BASE
+
+// -------------------------------------
+// EXTEND
+
+	%all-entryfooter {}
+
+	%archive-entryfooter {}
+	%category-entryfooter {}
+	%tag-entryfooter {}
+	%blog-entryfooter {}
+
+	%haspostthumbnail-all-entryfooter {}
+
+// -------------------------------------
+// SELECTORS
+
+	// ARCHIVE
+
+	.archive {
+		.entry-footer {
+			@extend %all-entryfooter !optional;
+			@extend %archive-entryfooter !optional;
+		}
+		.has-post-thumbnail .entry-footer {
+			@extend %haspostthumbnail-all-entryfooter !optional;
+		}
+	}
+
+	// CATEGORY
+
+	.category {
+		.entry-footer {
+			@extend %all-entryfooter !optional;
+			@extend %category-entryfooter !optional;
+		}
+		.has-post-thumbnail .entry-footer {
+			@extend %haspostthumbnail-all-entryfooter !optional;
+		}
+	}
+
+	// TAG
+
+	.tag {
+		.entry-footer {
+			@extend %all-entryfooter !optional;
+			@extend %tag-entryfooter !optional;
+		}
+		.has-post-thumbnail .entry-footer {
+			@extend %haspostthumbnail-all-entryfooter !optional;
+		}
+	}
+
+	// BLOG
+
+	.blog {
+		.entry-footer {
+			@extend %all-entryfooter !optional;
+			@extend %blog-entryfooter !optional;
+		}
+		.has-post-thumbnail .entry-footer {
+			@extend %haspostthumbnail-all-entryfooter !optional;
+		}
+	}

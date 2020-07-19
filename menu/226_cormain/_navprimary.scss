@@ -1,0 +1,37 @@
+/* BASE_226 | MENU | 226_CORMAIN_STYLE | NAVPRIMARY - 2016-01-20 */
+
+// -------------------------------------
+// FORMULA
+
+	%navprimary-formula {}
+	%navprimarywrap-formula {}
+	%navprimarywraponly-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	%navprimary {
+		background-color: #234367;
+	}
+	%navprimarywrap {
+		max-width: #{$width-base}rem;
+		margin: 0 auto;
+	}
+	%navprimarywraponly {}
+
+// -------------------------------------
+// SELECTORS
+
+	.nav-primary {
+		@extend %navprimary-formula !optional;
+		@extend %navprimary !optional;
+
+		.wrap {
+			@extend %navprimarywrap-formula !optional;
+			@extend %navprimarywrap !optional;
+		}
+	}
+	.nav-primary > .wrap {
+		@extend %navprimarywraponly-formula !optional;
+		@extend %navprimarywraponly !optional;
+	}

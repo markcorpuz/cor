@@ -1,0 +1,28 @@
+/* BASE_230 | CONTENT | 230_BASE | ASIDE - 2017-01-12 */
+
+// -------------------------------------
+// EXTEND
+
+	// ALIGN
+
+	%aside {}
+
+	%asideleft {
+		float: left;
+	}
+	%asideright {
+		float: right;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	aside {
+		@extend %aside !optional;
+	}
+	aside.alignleft {
+		@extend %asideleft !optional;
+	}
+	aside.alignright {
+		@extend %asideright !optional;
+	}

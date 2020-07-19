@@ -1,0 +1,23 @@
+/* BASE_230 | SELECTORS | 250_SETUP | OVERFLOW - 2017-07-19 */
+
+// -------------------------------------
+// EXTEND
+
+	%overflow-hidden {
+		overflow: hidden;
+	}
+
+	%overflow-visible {
+		overflow: visible;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.overflow-hidden {
+		@extend %overflow-hidden !optional;
+	}
+	
+	.overflow-visible {
+		@extend %overflow-visible !optional;
+	}

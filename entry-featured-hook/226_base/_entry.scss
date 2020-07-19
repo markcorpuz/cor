@@ -1,0 +1,32 @@
+/* BASE_226 | ENTRY-FEATURED-HOOK | 226_BASE | ENTRY-FEATUREDCONTENT - 2016-01-19 */
+
+// -------------------------------------
+// FORMULA
+
+	%featuredcontent-entry-formula {}
+		%featuredcontent-entryfot-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	%featuredcontent-entry {
+		margin-bottom: #{$space-default}rem;
+	}
+		%featuredcontent-entryfot {}
+
+// -------------------------------------
+// SELECTORS
+
+	.featured-content {
+		.entry {
+			@extend %featuredcontent-entry-formula !optional;
+			@extend %featuredcontent-entry !optional;
+		}
+	}
+
+	.featured-content {
+		article.entry:first-of-type {
+			@extend %featuredcontent-entryfot-formula !optional;
+			@extend %featuredcontent-entryfot !optional;
+		}
+	}

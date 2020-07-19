@@ -1,0 +1,21 @@
+/* BASE_230 | PLUGIN | 250_COR | SWP-SOLILOQUYSLIDER - 2017-07-24 */
+
+// -------------------------------------
+// VARIABLES
+
+// -------------------------------------
+// EXTEND
+
+// -------------------------------------
+// SELECTORS
+
+	body .soliloquy-wrapper {
+		background-color: #fff;
+	}
+
+	body .soliloquy-fc-slider .soliloquy-caption-inside .soliloquy-fc-title, 
+	body .soliloquy-fc-slider .soliloquy-caption-inside .soliloquy-fc-title-link {
+		font-size: 1rem;
+		font-weight: 700;
+		margin-bottom: 0;		
+	}

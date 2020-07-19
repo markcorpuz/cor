@@ -1,0 +1,98 @@
+/* BASE_230 | ITEM | COR_250 | ITEM-MEMBERS - 2018-03-06 */
+
+// -------------------------------------
+// UNIVERSAL
+// -------------------------------------
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+	%members-tabs {
+		display: flex;
+		justify-content: space-between;
+		//align-items: stretch;
+		margin-bottom: -1px;
+	}
+
+	%members-tabs-div {
+		flex: 1 33%;
+	}
+
+	%members-tab {
+		display: flex;
+	}
+	%members-tab-p {
+		display: none;
+	}
+
+	%members-tab-current {
+		display: block;
+		background-color: #f0f0f0;
+		border-top: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+	}
+
+	%members-tab-link {
+		//display: block;
+		background-color: #ccc;
+		border-top: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		border-left: 1px solid #ddd;
+		flex: 1;
+	}
+
+	%members-tab-hover {
+		background-color: #f0f0f0;
+		border-top: 1px solid #ccc;
+		border-right: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+	}
+
+	%members-tab-active {}
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+	.members-tabs {
+		@extend %members-tabs !optional;	
+	}
+
+	.members-tabs > div {
+		@extend %members-tabs-div !optional;
+	}
+
+	.members-tab {
+		@extend %members-tab !optional;
+	}
+	.members-tab > a {
+		@extend %members-tab-a !optional;	
+	}
+	.members-tab p {
+		@extend %members-tab-p !optional;
+	}
+
+	.members-tab-current {
+		@extend %members-tab-current !optional;	
+	}
+	.members-tab-current p {
+		@extend %members-tab-p !optional;
+	}
+
+	.members-tab > a:link {
+		@extend %members-tab-link !optional;	
+	}
+
+	.members-tab > a:link {
+		@extend %members-tab-link !optional;	
+	}
+
+	.members-tab > a:hover {
+		@extend %members-tab-hover !optional;
+	}
+
+	.members-tab > a:active {
+		@extend %members-tab-active !optional;
+	}

@@ -1,0 +1,51 @@
+/* BASE_230 | ENTRY-FEATURED-HOOK | 250_COR | ENTRYHEADER-FEATUREDCONTENT - 2017-07-24 */
+
+// -------------------------------------
+// EXTEND
+
+	%featuredcontent-entryheader {
+		margin-bottom: 1rem;
+	}
+
+	// SIDEBAR-PRIMARY
+	%sidebarprimary-featuredcontent-entryheader {}
+
+	// SIDEBAR-SECONDARY
+	%sidebarsecondary-featuredcontent-entryheader {}
+
+	// FOOTER-WIDGETS
+	%sidebarsecondary-featuredcontent-entryheader {}
+
+// -------------------------------------
+// SELECTORS
+
+	.feature-60x60 .entry-header,
+	.feature-150x150 .entry-header {
+		@include responsive-range(smldown) {
+			overflow: hidden;
+		}
+	}
+
+	.featured-content {
+		.entry-header {
+			@extend %featuredcontent-entryheader !optional;
+		}
+	}
+
+	.sidebar-primary .featured-content {
+		.entry-header {
+			@extend %sidebarprimary-featuredcontent-entryheader !optional;
+		}
+	}
+
+	.sidebar-secondary .featured-content {
+		.entry-header {
+			@extend %sidebarsecondary-featuredcontent-entryheader !optional;
+		}
+	}
+
+	.footer-widgets .featured-content {
+		.entry-header {
+			@extend %footerwidgets-featuredcontent-entryheader !optional;
+		}
+	}

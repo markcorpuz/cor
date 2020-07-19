@@ -1,0 +1,71 @@
+/* BASE_230 | LAYOUT | 250_COR | CS - 2017-08-09*/
+
+// -------------------------------------
+// EXTEND
+
+	%cs-csw_layout {
+
+		// MEDDOWN
+		@include responsive-range(meddown) {}
+	}
+
+	%cs-content_layout {
+
+		// BASEUP
+		@include responsive-range(baseup) {
+			float: left;
+			width: 68%;
+		}
+		// BASEDOWN
+		@include responsive-range(basedown) {
+			float: left;
+			width: 64%;
+		}
+		// LARGEDOWN
+		@include responsive-range(largedown) {}
+		// MEDBELOWDOWN
+		@include responsive-range(medbelowdown) {
+			float: none;
+			width: 100%;
+		}
+
+		//@extend %responsive-layout-max !optional;
+	}
+
+	%cs-sidebarprimary_layout {
+
+		// BASEUP
+		@include responsive-range(baseup) {
+			float: right;
+			width: 32%;
+		}
+		// BASEDOWN
+		@include responsive-range(basedown) {
+			float: right;
+			width: 35%;
+		}
+		// LARGEDOWN
+		@include responsive-range(largedown) {}
+		// MEDBELOWDOWN
+		@include responsive-range(medbelowdown) {
+			float: none;
+			width: 100%;
+		}
+
+		//@extend %responsive-layout-max !optional;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.content-sidebar .content-sidebar-wrap {
+		@extend %cs-csw_layout !optional;
+	}
+
+	.content-sidebar .content {
+		@extend %cs-content_layout !optional;
+	}
+
+	.content-sidebar .sidebar-primary {
+		@extend %cs-sidebarprimary_layout !optional;
+	}

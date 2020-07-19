@@ -1,0 +1,89 @@
+/* BASE_230 | LAYOUT | 230_BASE > COR | WIDGETAREA - 2016-9-14 */
+
+// -------------------------------------
+// EXTEND
+
+	// CSWBEFORE
+
+	%cswbefore {
+
+		max-width: 728px;
+		margin: 0 auto;
+		padding-bottom: 1rem;
+
+		@include responsive-range(lrgbelowdown) {
+			float: none;
+			width: 100%;
+		}
+
+		@include responsive-range(medbelowdown) {
+			max-width: 100%;
+			padding: 0;
+			padding-bottom: 0.5rem;
+		}
+
+	}
+
+	// CSWBEFOREWIDGETAREA
+
+	%cswbeforewidgetarea {
+		@include responsive-range(smlbelowdown) {
+			padding-bottom: 0;
+		}
+	}
+
+	// CSAFTER
+
+	%cswafter {
+
+		max-width: 728px;
+		margin: 0 auto;
+		padding-top: 1rem;
+
+		@include responsive-range(lrgbelowdown) {
+			float: none;
+			width: 100%;
+		}
+		@include responsive-range(medbelowdown) {
+			max-width: 100%;
+			padding: 0;
+			padding-top: 0.5rem;
+		}
+
+	}
+
+	// CSWBEFOREWIDGETAREA
+
+	%cswafterwidgetarea {
+		@include responsive-range(smlbelowdown) {
+			padding-top: 0;
+		}
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+	// CSWBEFORE
+
+	.cswbefore {
+		@extend %cswbefore !optional;
+	}
+
+	// CSWBEFOREWIDGETAREA
+
+	.cswbefore.widget-area {
+		@extend %cswbeforewidgetarea !optional;
+	}
+
+	// CSWAFTER
+
+	.cswafter {
+		@extend %cswafter !optional;
+	}
+
+	// CSWAFTERWIDGETAREA
+
+	.cswafter.widget-area {
+		@extend %cswafterwidgetarea !optional;
+	}

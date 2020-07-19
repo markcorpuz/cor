@@ -1,0 +1,46 @@
+/* BASE_230 | COMMENT | 230_MODEL-BASICSETUP | COMMENTRESPOND-FORM - 2017-04-19 */
+// BASE_230 | COMMENT | 230_BASE
+
+// -------------------------------------
+// EXTEND
+
+// COMMENT-RESPOND
+
+	%commentrespond {}
+
+	// COMMENT-RESPOND LABEL
+
+		%commentrespond-label {}
+
+	// COMMENT-RESPOND INPUT
+
+		%commentrespond-input {
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+	// COMMENT-RESPOND TEXTAREA
+
+		%commentrespond-textarea {
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+// -------------------------------------
+// SELECTORS
+
+// COMMENT-RESPOND
+
+	.comment-respond {
+		@extend %commentrespond !optional;
+
+		label {
+			@extend %commentrespond-label !optional;
+		}
+		input {
+			@extend %commentrespond-input !optional;
+		}
+		textarea {
+			@extend %commentrespond-textarea !optional;
+		}
+	}

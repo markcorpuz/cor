@@ -1,0 +1,67 @@
+/* BASE_250 | ITEM | 250_COR | ITEM-ADSENSE - 2018-03-12 */
+
+// -------------------------------------
+// UNIVERSAL
+// -------------------------------------
+
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+// ADSENSE-LEADERBOARD
+
+	%adsense-leaderboard {
+		text-align: center;
+	
+		// @extend %adsense-leaderboard-responsive !optional;
+		// hide 0-sml
+	}
+
+// ADSENSE-MOBILE
+
+	%adsense-mobile {
+		text-align: center;
+		overflow: hidden;
+
+		// @extend %adsense-leaderboard-responsive !optional;
+		// hide 0-sml
+	}
+
+// ADSENSE-SIDEBAR
+
+	%adsense-sidebar {}
+
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+// ADSENSE-LEADERBOARD
+
+	.adsense-leaderboard {
+		@extend %adsense-leaderboard !optional;
+	}
+
+// ADSENSE-MOBILE
+
+	.adsense-mobile {
+		@extend %adsense-mobile !optional;
+	}
+
+// ADSENSE-SIDEBAR
+
+
+	@media only screen and (min-width: 321px) {
+		.adsense-sidebar {
+			margin: 0 auto;
+			max-width: 300px;
+		}
+	}
+
+	@media only screen and (max-width: 320px) {
+		.adsense-sidebar {
+			text-align: center;
+			overflow: hidden;
+		}
+	}

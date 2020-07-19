@@ -1,0 +1,547 @@
+/* BASE_230 | GUI | 230_BASE | PAD - 2016-07-21 */
+
+// -------------------------------------
+// EXTEND
+
+	// PAD
+
+	// ALL
+	%pad {
+		padding: #{$space-default}rem;
+	}
+
+	// TOP, RIGHT, BOTTOM, LEFT
+	%padtop {
+		padding-top: #{$space-default}rem;
+	}
+	%padright {
+		padding-right: #{$space-default}rem;
+	}
+	%padbottom {
+		padding-bottom: #{$space-default}rem;
+	}
+	%padleft {
+		padding-left: #{$space-default}rem;
+	}
+
+	// VERTICAL
+	%padvertical {
+		@extend %padtop !optional;
+		@extend %padbottom !optional;
+	}
+	// HORIZONTAL
+	%padhorizontal {
+		@extend %padleft !optional;
+		@extend %padright !optional;
+	}
+
+	// RIGHT TOP
+	%padrighttop {
+		@extend %padright !optional;
+		@extend %padtop !optional;
+	}
+	// RIGHT BOTTOM
+	%padrightbottom {
+		@extend %padright !optional;
+		@extend %padbottom !optional;
+	}
+	// LEFT BOTTOM
+	%padleftbottom {
+		@extend %padleft !optional;
+		@extend %padbottom !optional;
+	}
+	// LEFT TOP
+	%padlefttop {
+		@extend %padleft !optional;
+		@extend %padtop !optional;
+	}
+
+	// PAD-DOUBLE
+
+	// ALL
+	%pad-double {
+		padding: #{$space-double}rem;
+	}
+
+	// TOP, RIGHT, BOTTOM, LEFT
+	%padtop-double {
+		padding-top: #{$space-double}rem;
+	}
+	%padright-double {
+		padding-right: #{$space-double}rem;
+	}
+	%padbottom-double {
+		padding-bottom: #{$space-double}rem;
+	}
+	%padleft-double {
+		padding-left: #{$space-double}rem;
+	}
+
+	// VERTICAL
+	%padvertical-double {
+		@extend %padtop-double !optional;
+		@extend %padbottom-double !optional;
+	}
+	// HORIZONTAL
+	%padhorizontal-double {
+		@extend %padleft-double !optional;
+		@extend %padright-double !optional;
+	}
+
+	// RIGHT TOP
+	%padrighttop-double {
+		@extend %padright-double !optional;
+		@extend %padtop-double !optional;
+	}
+	// RIGHT BOTTOM
+	%padrightbottom-double {
+		@extend %padright-double !optional;
+		@extend %padbottom-double !optional;
+	}
+	// LEFT BOTTOM
+	%padleftbottom-double {
+		@extend %padleft-double !optional;
+		@extend %padbottom-double !optional;
+	}
+	// LEFT TOP
+	%padlefttop-double {
+		@extend %padleft-double !optional;
+		@extend %padtop-double !optional;
+	}
+
+	// PAD-TRIPLE
+
+	// ALL
+	%pad-triple {
+		padding: #{$space-triple}rem;
+	}
+
+	// TOP, RIGHT, BOTTOM, LEFT
+	%padtop-triple {
+		padding-top: #{$space-triple}rem;
+	}
+	%padright-triple {
+		padding-right: #{$space-triple}rem;
+	}
+	%padbottom-triple {
+		padding-bottom: #{$space-triple}rem;
+	}
+	%padleft-triple {
+		padding-left: #{$space-triple}rem;
+	}
+
+	// VERTICAL
+	%padvertical-triple {
+		@extend %padtop-triple !optional;
+		@extend %padbottom-triple !optional;
+	}
+	// HORIZONTAL
+	%padhorizontal-triple {
+		@extend %padleft-triple !optional;
+		@extend %padright-triple !optional;
+	}
+
+	// RIGHT TOP
+	%padrighttop-triple {
+		@extend %padright-triple !optional;
+		@extend %padtop-triple !optional;
+	}
+	// RIGHT BOTTOM
+	%padrightbottom-triple {
+		@extend %padright-triple !optional;
+		@extend %padbottom-triple !optional;
+	}
+	// LEFT BOTTOM
+	%padleftbottom-triple {
+		@extend %padleft-triple !optional;
+		@extend %padbottom-triple !optional;
+	}
+	// LEFT TOP
+	%padlefttop-triple {
+		@extend %padleft-triple !optional;
+		@extend %padtop-triple !optional;
+	}
+
+	// PAD-HALF
+
+	// ALL
+	%pad-half {
+		padding: #{$space-half}rem;
+	}
+
+	// TOP, RIGHT, BOTTOM, LEFT
+	%padtop-half {
+		padding-top: #{$space-half}rem;
+	}
+	%padright-half {
+		padding-right: #{$space-half}rem;
+	}
+	%padbottom-half {
+		padding-bottom: #{$space-half}rem;
+	}
+	%padleft-half {
+		padding-left: #{$space-half}rem;
+	}
+
+	// VERTICAL
+	%padvertical-half {
+		@extend %padtop-half !optional;
+		@extend %padbottom-half !optional;
+	}
+	// HORIZONTAL
+	%padhorizontal-half {
+		@extend %padleft-half !optional;
+		@extend %padright-half !optional;
+	}
+
+	// RIGHT TOP
+	%padrighttop-half {
+		@extend %padright-half !optional;
+		@extend %padtop-half !optional;
+	}
+	// RIGHT BOTTOM
+	%padrightbottom-half {
+		@extend %padright-half !optional;
+		@extend %padbottom-half !optional;
+	}
+	// LEFT BOTTOM
+	%padleftbottom-half {
+		@extend %padleft-half !optional;
+		@extend %padbottom-half !optional;
+	}
+	// LEFT TOP
+	%padlefttop-half {
+		@extend %padleft-half !optional;
+		@extend %padtop-half !optional;
+	}
+
+	// PAD-QUARTER
+
+	// ALL
+	%pad-quarter {
+		padding: #{$space-quarter}rem;
+	}
+
+	// TOP, RIGHT, BOTTOM, LEFT
+	%padtop-quarter {
+		padding-top: #{$space-quarter}rem;
+	}
+	%padright-quarter {
+		padding-right: #{$space-quarter}rem;
+	}
+	%padbottom-quarter {
+		padding-bottom: #{$space-quarter}rem;
+	}
+	%padleft-quarter {
+		padding-left: #{$space-quarter}rem;
+	}
+
+	// VERTICAL
+	%padvertical-quarter {
+		@extend %padtop-quarter !optional;
+		@extend %padbottom-quarter !optional;
+	}
+	// HORIZONTAL
+	%padhorizontal-quarter {
+		@extend %padleft-quarter !optional;
+		@extend %padright-quarter !optional;
+	}
+
+	// RIGHT TOP
+	%padrighttop-quarter {
+		@extend %padright-quarter !optional;
+		@extend %padtop-quarter !optional;
+	}
+	// RIGHT BOTTOM
+	%padrightbottom-quarter {
+		@extend %padright-quarter !optional;
+		@extend %padbottom-quarter !optional;
+	}
+	// LEFT BOTTOM
+	%padleftbottom-quarter {
+		@extend %padleft-quarter !optional;
+		@extend %padbottom-quarter !optional;
+	}
+	// LEFT TOP
+	%padlefttop-quarter {
+		@extend %padleft-quarter !optional;
+		@extend %padtop-quarter !optional;
+	}
+
+	// PAD-ZERO
+
+	// ALL
+	%pad-zero {
+		padding: 0;
+	}
+
+	// TOP, RIGHT, BOTTOM, LEFT
+	%padtop-zero {
+		padding-top: 0;
+	}
+	%padright-zero {
+		padding-right: 0;
+	}
+	%padbottom-zero {
+		padding-bottom: 0;
+	}
+	%padleft-zero {
+		padding-left: 0;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	// PAD
+
+	// DEFAULT
+	.pad {
+		@extend %pad !optional;
+	}
+	// DOUBLE
+	.pad-double {
+		@extend %pad-double !optional;
+	}
+	// TRIPLE
+	.pad-triple {
+		@extend %pad-triple !optional;
+	}
+	// HALF
+	.pad-half {
+		@extend %pad-half !optional;
+	}
+	// QUARTER
+	.pad-quarter {
+		@extend %pad-quarter !optional;
+	}
+
+	// PAD VERTICAL
+
+	// DEFAULT
+	.pad-vertical {
+		@extend %padvertical !optional;
+	}
+	// DOUBLE
+	.pad-vertical-double {
+		@extend %padvertical-double !optional;
+	}
+	// TRIPLE
+	.pad-vertical-triple {
+		@extend %padvertical-triple !optional;
+	}
+	// HALF
+	.pad-vertical-half {
+		@extend %padvertical-half !optional;
+	}	
+	// QUARTER
+	.pad-vertical-quarter {
+		@extend %padvertical-quarter !optional;
+	}
+
+	// PAD HORIZONTAL
+
+	// DEFAULT
+	.pad-horizontal {
+		@extend %padhorizontal !optional;
+	}
+	// DOUBLE
+	.pad-horizontal-double {
+		@extend %padhorizontal-double !optional;
+	}
+	// TRIPLE
+	.pad-horizontal-triple {
+		@extend %padhorizontal-triple !optional;
+	}
+	// HALF
+	.pad-horizontal-half {
+		@extend %padhorizontal-half !optional;
+	}
+	// QUARTER
+	.pad-horizontal-quarter {
+		@extend %padhorizontal-quarter !optional;
+	}
+
+	// PAD CORNER
+
+	// DEFAULT
+	.pad-corner.alignleft {
+		@extend %padrightbottom !optional;
+	}
+	.pad-corner.alignright {
+		@extend %padleftbottom !optional;
+	}
+	.pad-righttop {
+		//@extend %padrighttop !optional;
+	}
+	.pad-rightbottom {
+		//@extend %padrightbottom !optional;
+	}
+	.pad-leftbottom {
+		//@extend %padleftbottom !optional;
+	}
+	.pad-lefttop {
+		//@extend %padlefttop !optional;
+	}
+	// DOUBLE
+	.pad-corner-double.alignleft {
+		@extend %padrightbottom-double !optional;
+	}
+	.pad-corner-double.alignright {
+		@extend %padleftbottom-double !optional;
+	}
+	.pad-righttop-double {
+		//@extend %padrighttop-double !optional;
+	}
+	.pad-rightbottom-double {
+		//@extend %padrightbottom-double !optional;
+	}
+	.pad-leftbottom-double {
+		//@extend %padleftbottom-double !optional;
+	}
+	.pad-lefttop-double {
+		//@extend %padlefttop-double !optional;
+	}
+	// TRIPLE
+	.pad-corner-triple.alignleft {
+		@extend %padrightbottom-triple !optional;
+	}
+	.pad-corner-triple.alignright {
+		@extend %padleftbottom-triple !optional;
+	}
+	.pad-righttop-triple {
+		//@extend %padrighttop-triple !optional;
+	}
+	.pad-rightbottom-triple {
+		//@extend %padrightbottom-triple !optional;
+	}
+	.pad-leftbottom-triple {
+		//@extend %padleftbottom-triple !optional;
+	}
+	.pad-lefttop-triple {
+		//@extend %padlefttop-triple !optional;
+	}
+	// HALF
+	.pad-corner-half.alignleft {
+		@extend %padrightbottom-half !optional;
+	}
+	.pad-corner-half.alignright {
+		@extend %padleftbottom-half !optional;
+	}
+	.pad-righttop-half {
+		//@extend %padrighttop-half !optional;
+	}
+	.pad-rightbottom-half {
+		//@extend %padrightbottom-half !optional;
+	}
+	.pad-leftbottom-half {
+		//@extend %padleftbottom-half !optional;
+	}
+	.pad-lefttop-half {
+		//@extend %padlefttop-half !optional;
+	}
+	// QUARTER
+	.pad-corner-quarter.alignleft {
+		@extend %padrightbottom-quarter !optional;
+	}
+	.pad-corner-quarter.alignright {
+		@extend %padleftbottom-quarter !optional;
+	}
+	.pad-righttop-quarter {
+		//@extend %padrighttop-quarter !optional;
+	}
+	.pad-rightbottom-quarter {
+		//@extend %padrightbottom-quarter !optional;
+	}
+	.pad-leftbottom-quarter {
+		//@extend %padleftbottom-quarter !optional;
+	}
+	.pad-lefttop-quarter {
+		//@extend %padlefttop-quarter !optional;
+	}
+
+	// PAD SPECIFIC
+
+	// DEFAULT
+	.pad-top {
+		@extend %padtop !optional;
+	}
+	.pad-right {
+		@extend %padright !optional;
+	}
+	.pad-bottom {
+		@extend %padbottom !optional;
+	}
+	.pad-left {
+		@extend %padleft !optional;
+	}
+	// DOUBLE
+	.pad-top-double {
+		@extend %padtop-double !optional;
+	}
+	.pad-right-double {
+		@extend %padright-double !optional;
+	}
+	.pad-bottom-double {
+		@extend %padbottom-double !optional;
+	}
+	.pad-left-double {
+		@extend %padleft-double !optional;
+	}
+	// TRIPLE
+	.pad-top-triple {
+		@extend %padtop-triple !optional;
+	}
+	.pad-right-triple {
+		@extend %padright-triple !optional;
+	}
+	.pad-bottom-triple {
+		@extend %padbottom-triple !optional;
+	}
+	.pad-left-triple {
+		@extend %padleft-triple !optional;
+	}
+	// HALF
+	.pad-top-half {
+		@extend %padtop-half !optional;
+	}
+	.pad-right-half {
+		@extend %padright-half !optional;
+	}
+	.pad-bottom-half {
+		@extend %padbottom-half !optional;
+	}
+	.pad-left-half {
+		@extend %padleft-half !optional;
+	}
+	// QUARTER
+	.pad-top-quarter {
+		@extend %padtop-quarter !optional;
+	}
+	.pad-right-quarter {
+		@extend %padright-quarter !optional;
+	}
+	.pad-bottom-quarter {
+		@extend %padbottom-quarter !optional;
+	}
+	.pad-left-quarter {
+		@extend %padleft-quarter !optional;
+	}
+
+	// PAD ZERO
+
+	.pad-zero {
+		@extend %pad-zero !optional;
+	}
+
+	.pad-top-zero {
+		@extend %padtop-zero !optional;
+	}
+	.pad-right-zero {
+		@extend %padright-zero !optional;
+	}
+	.pad-bottom-zero {
+		@extend %padbottom-zero !optional;
+	}
+	.pad-left-zero {
+		@extend %padleft-zero !optional;
+	}

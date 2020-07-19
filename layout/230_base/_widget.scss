@@ -1,0 +1,43 @@
+/* BASE_230 | LAYOUT | 230_BASE | WIDGET - 2016-07-20 */
+
+// -------------------------------------
+// EXTEND
+
+	// WIDGET
+
+	%widget_layout {}
+
+	// WIDGET-WRAP
+
+	%widget-wrap_layout {}
+
+	// WIDGET-TITLE
+
+	%widget-title_layout {
+		font-family: $fontfamily-widgettitle;
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+	// WIDGET
+
+	.widget {
+		@extend %widget !optional;
+		@extend %widget_layout !optional;
+	}
+
+	// WIDGET-WRAP
+
+	.widget-wrap {
+		@extend %widget-wrap !optional;
+		@extend %widget-wrap_layout !optional;
+	}
+
+	// WIDGET-TITLE
+
+	.widget-title {
+		@extend %widget-title !optional;
+		@extend %widget-title_layout !optional;
+	}

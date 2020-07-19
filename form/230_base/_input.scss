@@ -1,0 +1,97 @@
+/* BASE_230 | FORM | 230_BASE | INPUT - 2016-10-25 */
+
+// -------------------------------------
+// EXTEND
+
+// INPUT
+
+	%input {}
+
+	%input-minus {
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+	}
+
+// INPUT FOCUS
+
+	%input-focus {
+		outline: none;
+	}
+
+// INPUT TYPE SELECTIONS
+
+	%input-type-selections {
+		width: auto;
+	}
+
+// INPUT TYPE BUTTONS
+
+	%input-type-buttons {
+		//@extend %buttons !optional;
+	}
+
+// TEXTAREA
+
+	%textarea {}
+
+// SELECT
+
+	%select {
+		-webkit-appearance: menulist;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+// INPUT
+
+	input {
+		@extend %input !optional;
+	}
+
+// INPUT TYPE SELECTIONS
+
+	input[type="checkbox"] {
+		@extend %input-type-selections !optional;
+	}
+	input[type="image"] {
+		@extend %input-type-selections !optional;
+	}
+	input[type="radio"] {
+		@extend %input-type-selections !optional;
+	}
+
+// INPUT TYPE BUTTONS
+
+	input[type="submit"] {
+		@extend %input-type-buttons !optional;
+	}
+
+// INPUT:FOCUS
+
+	input:focus {
+		@extend %input-focus !optional;
+	}
+	textarea:focus {
+		@extend %input-focus !optional;
+	}
+
+// INPUT (MINUS SUBMIT & FILE)
+
+	input:not([type=submit]):not([type=file]):not([type=image]) {
+		@extend %input-minus !optional;
+	}
+
+// TEXTAREA
+
+	textarea {
+		@extend %input-minus !optional;
+		@extend %textarea !optional;
+	}
+
+// SELECT
+
+	select {
+		@extend %input-minus !optional;
+		@extend %select !optional;
+	}

@@ -1,0 +1,42 @@
+/* BASE_230 | META | 230_BASE | PAGINATION - 2017-01-12 */
+
+// -------------------------------------
+// EXTEND
+
+	%pagination {}
+
+		%pagination-ul {
+			margin-left: 0;
+		}
+
+		%pagination-li {
+			list-style: none;
+			display: inline-block;
+		}
+
+		%pagination-a {}
+
+		%pagination-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+	.pagination {
+		@extend %pagination !optional;
+
+		ul{
+			@extend %pagination-ul !optional;
+		}
+	
+		li {
+			@extend %pagination-li !optional;
+		}
+
+		a {
+			@extend %pagination-a !optional;
+		}
+
+		a:hover {
+			@extend %pagination-hvr !optional;
+		}
+	}

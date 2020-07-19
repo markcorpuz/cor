@@ -1,0 +1,29 @@
+/* BASE_230 | ENTRY | 230_BASE | ARCHIVEDESCRIPTION - 2017-02-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%archivedescription {}
+	%archivetitle {}
+	%archivedescription-p {}
+
+	%taxonomydescription {}
+
+// -------------------------------------
+// SELECTORS
+
+	.archive-description {
+		@extend %archivedescription !optional;
+	}
+
+	.archive-title {
+		@extend %archivetitle !optional;
+	}
+
+	.archive-description p {
+		@extend %archivedescription-p !optional;
+	}
+
+	.taxonomy-description {
+		@extend %taxonomydescription !optional;
+	}

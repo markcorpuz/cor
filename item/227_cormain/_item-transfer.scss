@@ -1,0 +1,43 @@
+/* BASE_227 | ITEM | COR_227 | ITEM-TRANSFER - 2016-7-14 */
+
+// -------------------------------------
+// UNIVERSAL
+// -------------------------------------
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+	%item-transfer-widget {
+		@include responsive-range(medbelowdown) {
+		    padding: 1rem;
+		    margin-bottom: 0.5rem;
+		    overflow: hidden;
+		    background-color: #fff;
+		    color: #333;
+		    border: 1px solid #ccc;
+		    box-shadow: 2px 2px 2px 0px #bbbbbb;
+		}
+	}
+
+	%item-transfer-subscribeto {
+		@include responsive-range(medbelowdown) {
+			margin-top: 1rem;
+		}
+	}
+
+	%item-transfer-booksto {}
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+	.transfer-subscribeto {
+		@extend %item-transfer-widget !optional;
+		@extend %item-transfer-subscribeto !optional;
+	}
+
+	.transfer-booksto {
+		@extend %item-transfer-widget !optional;
+		@extend %item-transfer-booksto !optional;
+	}

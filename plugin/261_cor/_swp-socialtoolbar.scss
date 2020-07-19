@@ -1,0 +1,424 @@
+/* BASE_230 | PLUGIN | 261_COR | SWP-SOCIALTOOLBAR - 2018-06-14 */
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+#at15pf, #at16pf { display: none !important; }
+
+.addthis_pill_style {
+	width: 50px !important;
+}
+
+.st_desktop,
+.st_mobile {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #ddd;
+	border-top: 1px solid #ccc;
+	display:none;
+	z-index: 10;
+}
+
+.st_desktop > .wrap {
+    padding: 10px 5px 5px 20px;
+    margin: 0 auto;
+    //max-width: 1160px;
+	max-width: #{$width-inner}rem;
+    box-sizing: border-box;
+}
+
+/* FIRST SET */
+
+.st_desktop_follow,
+.st_desktop_donate,
+.st_desktop_book,
+.st_desktop_products,
+.st_desktop_coaching,
+.st_desktop_share {
+	float: left;
+}
+
+.st_desktop_follow {
+    margin: 0 5px 0 0;
+}
+
+	.st_desktop_follow span {
+		list-style-type: none;
+		float: left;
+		margin-right: 5px;
+	}
+	.st_desktop_follow .item-icon {
+		//background-image: url("images/sprites.png");
+		//background-repeat: no-repeat;
+		//width: 32px;
+		//height: 32px;
+		//display: block;
+	}
+	.st_desktop_follow .icon-twitter {
+		//background-position: -20px -108px;
+	}
+	.st_desktop_follow .icon-facebook {
+		//background-position: -60px -108px;		
+	}
+	.st_desktop_follow .icon-linkedin {
+		//background-position: -100px -108px;
+	}
+	.st_desktop_follow .icon-youtube {
+		//background-position: -140px -108px;
+	}
+	.st_desktop_follow .icon-googleplus {
+		//background-position: -180px -108px;
+	}
+	.st_desktop_follow .icon-instagram {
+		//background-position: -220px -108px;
+	}
+	.st_desktop_follow .icon-pinterest {
+		//background-position: -260px -108px;
+	}
+
+	.st_desktop_follow img {
+		//width: 32px;
+	}
+
+.st_desktop_donate,
+.st_desktop_book,
+.st_desktop_products {
+	margin: 0 10px 0 0;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.st_desktop_coaching {}
+
+.st_desktop_share {}
+
+    .st_desktop_share > .wrap > span {
+        float: left;
+        margin: 0 5px 0 0;
+    }
+    .st_desktop_share .fb_iframe_widget {
+        line-height: 1;
+    }
+    .st_desktop_share > .wrap > span.gplus {
+        margin-top: -1px;
+    }
+
+.paypal_btn{
+	padding-top:10px;
+}
+
+.st_desktop_donate_pop,
+.st_desktop_book_pop,
+.st_desktop_products_pop {
+	position: fixed;
+    	bottom: 56px;
+	width: 100%;
+	background-color: #f0f0f0;
+	display:none;
+	z-index: 10;
+}
+.st_desktop_donate_pop .wrap,
+.st_desktop_book_pop .wrap,
+.st_desktop_products_pop .wrap {
+    max-width: 1160px;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.st_desktop_donate_pop .item-pic {
+	background-image: url("images/sprites.png");
+	background-position: -236px -157px;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 48px;
+	display: block;
+
+	@media (-webkit-min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi) {
+		background-image: url("images/sprites2x.png");
+		background-size: 1000px;
+	}
+}
+
+.st-desktop-cta-donate,
+.st-desktop-cta-book,
+.st-desktop-cta-product {
+    background-image: url("images/sprites.png");
+
+	@media (-webkit-min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi) {
+		background-image: url("images/sprites2x.png");
+		background-size: 1000px;
+	}
+}
+.st-desktop-cta-donate {
+    width: 187px;
+    height: 42px;
+    background-position: -21px -377px;
+}
+.st-desktop-cta-donate:hover {
+    background-position: -21px -432px;  
+}
+.st-desktop-cta-book {
+    width: 202px;
+    height: 44px;
+    background-position: -21px -267px;
+}
+.st-desktop-cta-book:hover {
+    background-position: -21px -322px;
+}
+.st-desktop-cta-product {
+    width: 187px;
+    height: 42px;
+    background-position: -21px -157px;
+}
+.st-desktop-cta-product:hover {
+    background-position: -21px -212px;  
+}
+
+/* SECOND SET */
+
+/* COMPACT */
+.st_mobile_follow,
+.st_mobile_donate,
+.st_mobile_share,
+.st_mobile_buybook {
+	font-family: "Lato",arial,sans-serif;
+	font-size: 0.75rem;
+	font-weight: 900;
+	box-sizing: border-box;
+	width: 25%;
+	float:left;
+	padding: 5px;
+	text-align: center;
+	cursor: pointer;
+	cursor: hand;
+}
+
+/* FOLLOW */
+.st_mobile_follow {
+	background-color: #FE3939;
+}
+
+/* DONATE */
+.st_mobile_donate {
+	background-color: #BDC736;
+}
+
+/* SHARE */
+.st_mobile_share {
+	background-color: #55ACEE;
+}
+
+/* BUY BOOK */    
+.st_mobile_buybook {
+	background-color: #ffcc00;
+}
+
+/* **** SECOND SET - COMPACT - CONTENTS *** */
+.st_mobile_follow_2,
+.st_mobile_donate_2,
+.st_mobile_share_2,
+.st_mobile_buybook_2 {
+	position: fixed;
+	bottom: 22px;
+	width: 100%;
+	display: none;
+	z-index: 10;
+}
+
+.st_mobile_follow_2 .wrap,
+.st_mobile_donate_2 .wrap,
+.st_mobile_share_2 .wrap,
+.st_mobile_buybook_2 .wrap {
+	padding: 10px 20px;
+	background-color: #f0f0f0;
+	border-top: 1px solid #999;
+}
+
+.st_mobile_follow_2 {
+	float: left;
+	/*background-color: #55ACEE;*/
+}
+	.st_mobile_follow_2 span {
+		list-style-type: none;
+		float: left;
+		margin-right: 5px;
+	}
+	.st_mobile_follow_2 img {
+		width: 32px;
+	}
+
+.st_mobile_donate_2 {
+	/*background-color: #BDC736;*/
+}
+
+.st_mobile_share_2 {
+	/*background-color: #FE3939;*/
+}
+
+    .st_mobile_share_2 > .wrap > span {
+        float: left;
+        margin: 0 5px 10px 0;
+    }
+    .st_mobile_share_2 > .wrap > span.gplus {
+        margin-top: -1px;
+    }
+    .st_mobile_share_2 .fb_iframe_widget {
+        line-height: 1;
+    }
+
+.st_mobile_buybook_2 {
+	/*background-color: #ffcc00;*/
+}
+
+.rotate0 {
+    -moz-transform: rotate(0deg);
+    -webkit-transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.rotate180 {
+    -moz-transform: rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.showhide {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	display:none;
+}
+
+.showhide_icon {
+	float: right;
+	margin-right: 5px;
+	opacity: 0.7;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.ur_additional {
+	background-color:#000;
+	color:#00f6ff;
+}
+
+.item-pic.pic-paypal {
+	background-image: url("images/sprites.png");
+	background-position: -238px -154px;
+	background-repeat: no-repeat;
+	width: 197px;
+	height: 50px;
+	display: block;
+
+	@media (-webkit-min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi) {
+		background-image: url("images/sprites2x.png");
+		background-size: 1000px;
+	}
+}
+.item-pic.pic-ebook {
+	background-image: url("images/sprites.png");
+	background-position: -22px -699px;
+	background-repeat: no-repeat;
+	width: 102px;
+	height: 85px;
+	display: block;
+
+	@media (-webkit-min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi) {
+		background-image: url("images/sprites2x.png");
+		background-size: 1000px;
+	}
+
+	@include responsive-range(smlbelowdown) {
+		display: none;
+	}
+
+}
+.item-icon {
+	background-image: url("images/sprites.png");
+	background-repeat: no-repeat;
+	width: 32px;
+	height: 32px;
+	display: block;
+
+	@media (-webkit-min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi) {
+		background-image: url("images/sprites2x.png");
+		background-size: 1000px;
+	}	
+}
+.item-icon.icon-twitter {
+	background-position: -20px -108px;
+}
+.item-icon.icon-facebook {
+	background-position: -60px -108px;		
+}
+.item-icon.icon-linkedin {
+	background-position: -100px -108px;
+}
+.item-icon.icon-youtube {
+	background-position: -140px -108px;
+}
+.item-icon.icon-googleplus {
+	background-position: -180px -108px;
+}
+.item-icon.icon-instagram {
+	background-position: -220px -108px;
+}
+.item-icon.icon-pinterest {
+	background-position: -260px -108px;
+}
+.item-icon.icon-phonecoaching {
+	background-position: -300px -108px;
+}
+.item-icon.icon-emailcoaching {
+	background-position: -340px -108px;
+}
+.item-icon.icon-amazon {
+	background-position: -380px -108px;
+}
+.item-icon.icon-medium {
+	background-position: -420px -108px;
+}
+.item-icon.icon-soundcloud {
+	background-position: -630px -18px;
+}
+
+.item-icon-bar {
+	background-image: url("images/sprites.png");
+	background-repeat: no-repeat;
+	display: block;
+
+	@media (-webkit-min-device-pixel-ratio: 2),
+	(min-resolution: 192dpi) {
+		background-image: url("images/sprites2x.png");
+		background-size: 1000px;
+	}	
+}
+.item-icon-bar.icon-twitter {
+	background-position: -797px -18px;
+	width: 55px;
+	height: 19px;
+}
+.item-icon-bar.icon-facebook {
+	background-position: -796px -66px;
+	width: 53px;
+	height: 20px;
+}
+.item-icon-bar.icon-googleplus {
+	background-position: -799px -43px;
+	width: 51px;
+	height: 20px;
+}

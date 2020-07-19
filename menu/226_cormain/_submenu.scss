@@ -1,0 +1,200 @@
+/* BASE_226 | MENU | 226_CORMAIN | SUBMENU - 2016-10-10 */
+
+// -------------------------------------
+// FORMULA
+
+	%submenu-formula {}
+	%submenu-submenu-formula {}
+	
+	%gnm-submenu-formula {}
+	%gnm-submenu-submenu-formula {}
+
+	%navheader-submenu-formula {}
+	%navheader-submenu-submenu-formula {}
+
+	%menuprisec-submenu-formula {}
+	%menuprisec-submenu-submenu-formula {}
+
+	%menuprimary-submenu-formula {}
+	%menuprimary-submenu-submenu-formula {}
+
+	%menusecondary-submenu-formula {}
+	%menusecondary-submenu-submenu-formula {}
+
+	%widget-submenu-formula {}
+	%widget-submenu-submenu-formula {}
+
+	%sidebar-submenu-formula {}
+	%sidebar-submenu-submenu-formula {}
+
+	%footerwidgets-submenu-formula {}
+	%footerwidgets-submenu-submenu-formula {}
+
+	%sidebarprimary-submenu-formula {}
+	%sidebarprimary-submenu-submenu-formula {}
+
+	%sidebarsecondary-submenu-formula {}
+	%sidebarsecondary-submenu-submenu-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	%submenu {
+		margin-bottom: 0;
+	}
+	%submenu-submenu {}
+	
+	%gnm-submenu {}
+	%gnm-submenu-submenu {}
+
+	%navheader-submenu {}
+	%navheader-submenu-submenu {}
+
+	// determines the width of the submenu (needs to match %dropdown-menuprisec-submenu-menuitemwchildhvr-submenu)
+	%menuprisec-submenu {
+		background-color: #f3f3f3;
+		box-sizing: border-box;
+		width: 150px;
+		box-sizing: border-box;
+	}
+	%menuprisec-submenu-submenu {}
+
+	%menuprimary-submenu {}
+	%menuprimary-submenu-submenu {}
+
+	%menusecondary-submenu {}
+	%menusecondary-submenu-submenu {}
+
+	// defines the hierarchial structure of menus entered in the widget
+	%widget-submenu {
+		margin-left: #{$space-default}rem;
+		list-style-type: none;
+	}
+	%widget-submenu-submenu {}
+
+	%sidebar-submenu {}
+	%sidebar-submenu-submenu {}
+
+	%footerwidgets-submenu {}
+	%footerwidgets-submenu-submenu {}
+
+	%sidebarprimary-submenu {}
+	%sidebarprimary-submenu-submenu {}
+
+	%sidebarsecondary-submenu {}
+	%sidebarsecondary-submenu-submenu {}
+
+// -------------------------------------
+// SELECTORS
+
+	.sub-menu {
+		@extend %submenu-formula !optional;
+		@extend %submenu !optional;
+	}
+
+		.sub-menu .sub-menu {
+			@extend %submenu-submenu-formula !optional;
+			@extend %submenu-submenu !optional;
+		}
+
+	.genesis-nav-menu .sub-menu {
+		@extend %gnm-submenu-formula !optional;
+		@extend %gnm-submenu !optional;
+	}
+
+		.genesis-nav-menu .sub-menu .sub-menu {
+			@extend %gnm-submenu-submenu-formula !optional;
+			@extend %gnm-submenu-submenu !optional;
+		}
+
+	.nav-header .sub-menu {
+		@extend %navheader-submenu-formula !optional;
+		@extend %navheader-submenu !optional;
+	}
+
+		.nav-header .sub-menu .sub-menu {
+			@extend %navheader-submenu-submenu-formula !optional;
+			@extend %navheader-submenu-submenu !optional;
+		}
+
+	.menu-primary .sub-menu,
+	.menu-secondary .sub-menu {
+		@extend %menuprisec-submenu-formula !optional;
+		@extend %menuprisec-submenu !optional;
+	}
+
+		.menu-primary .sub-menu .sub-menu,
+		.menu-secondary .sub-menu .sub-menu {
+			@extend %menuprisec-submenu-submenu-formula !optional;
+			@extend %menuprisec-submenu-submenu !optional;
+		}
+
+	.menu-primary .sub-menu {
+		@extend %menuprimary-submenu-formula !optional;
+		@extend %menuprimary-submenu !optional;
+	}
+
+		.menu-primary .sub-menu .sub-menu {
+			@extend %menuprimary-submenu-submenu-formula !optional;
+			@extend %menuprimary-submenu-submenu !optional;
+		}
+
+	.menu-secondary .sub-menu {
+		@extend %menusecondary-submenu-formula !optional;
+		@extend %menusecondary-submenu !optional;
+	}
+
+		.menu-secondary .sub-menu .sub-menu {
+			@extend %menusecondary-submenu-submenu-formula !optional;
+			@extend %menusecondary-submenu-submenu !optional;
+		}
+
+	.widget .sub-menu {
+		@extend %widget-submenu-formula !optional;
+		@extend %widget-submenu !optional;
+	}
+
+		.widget .sub-menu .sub-menu {
+			@extend %widget-submenu-submenu-formula !optional;
+			@extend %widget-submenu-submenu !optional;
+		}
+
+	.sidebar .sub-menu {
+		@extend %sidebar-submenu-formula !optional;
+		@extend %sidebar-submenu !optional;
+	}
+
+		.sidebar .sub-menu .sub-menu {
+			@extend %sidebar-submenu-submenu-formula !optional;
+			@extend %sidebar-submenu-submenu !optional;
+		}
+
+	.footer-widgets .sub-menu {
+		@extend %footerwidgets-submenu-formula !optional;
+		@extend %footerwidgets-submenu !optional;
+	}
+
+		.footer-widgets .sub-menu .sub-menu {
+			@extend %footerwidgets-submenu-submenu-formula !optional;
+			@extend %footerwidgets-submenu-submenu !optional;
+		}
+
+	.sidebar-primary .sub-menu {
+		@extend %sidebarprimary-submenu-formula !optional;
+		@extend %sidebarprimary-submenu !optional;
+	}
+
+		.sidebar-primary .sub-menu .sub-menu {
+			@extend %sidebarprimary-submenu-submenu-formula !optional;
+			@extend %sidebarprimary-submenu-submenu !optional;
+		}
+
+	.sidebar-secondary .sub-menu {
+		@extend %sidebarsecondary-submenu-formula !optional;
+		@extend %sidebarsecondary-submenu !optional;
+	}
+
+		.sidebar-secondary .sub-menu .sub-menu {
+			@extend %sidebarsecondary-submenu-submenu-formula !optional;
+			@extend %sidebarsecondary-submenu-submenu !optional;
+		}

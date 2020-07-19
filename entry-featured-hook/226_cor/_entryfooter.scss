@@ -1,0 +1,60 @@
+/* BASE_226 | ENTRY-FEATURED-HOOK | 226_BASE | ENTRYFOOTER-FEATUREDCONTENT - 2016-01-19 */
+
+// -------------------------------------
+// FORMULA
+
+	%featuredcontent-entryfooter-formula {}
+
+	// SIDEBAR-PRIMARY
+	%sidebarprimary-featuredcontent-entryfooter-formula {}
+
+	// SIDEBAR-SECONDARY
+	%sidebarsecondary-featuredcontent-entryfooter-formula {}
+
+	// FOOTER-WIDGETS
+	%sidebarsecondary-featuredcontent-entryfooter-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	%featuredcontent-entryfooter {}
+
+	// SIDEBAR-PRIMARY
+	%sidebarprimary-featuredcontent-entryfooter {}
+
+	// SIDEBAR-SECONDARY
+	%sidebarsecondary-featuredcontent-entryfooter {}
+
+	// FOOTER-WIDGETS
+	%sidebarsecondary-featuredcontent-entryfooter {}
+
+// -------------------------------------
+// SELECTORS
+
+	.featured-content {
+		.entry-footer {
+			@extend %featuredcontent-entryfooter-formula !optional;
+			@extend %featuredcontent-entryfooter !optional;
+		}
+	}
+
+	.sidebar-primary .featured-content {
+		.entry-footer {
+			@extend %sidebarprimary-featuredcontent-entryfooter-formula !optional;
+			@extend %sidebarprimary-featuredcontent-entryfooter !optional;
+		}
+	}
+
+	.sidebar-secondary .featured-content {
+		.entry-footer {
+			@extend %sidebarsecondary-featuredcontent-entryfooter-formula !optional;
+			@extend %sidebarsecondary-featuredcontent-entryfooter !optional;
+		}
+	}
+
+	.footer-widgets .featured-content {
+		.entry-footer {
+			@extend %footerwidgets-featuredcontent-entryfooter-formula !optional;
+			@extend %footerwidgets-featuredcontent-entryfooter !optional;
+		}
+	}

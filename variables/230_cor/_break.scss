@@ -1,0 +1,96 @@
+/* BASE_230 | VARIABLES | 230_BASE > COR | BREAK - 2016-10-25 */
+
+// -------------------------------------
+// VARIABLES
+
+// NOTE: RELATIVE BREAKPOINTS BASED ON SITE DESIGN FUNCTIONALITY
+
+	$break-outer:						160;		// 2560px
+
+	$break-base:						77;			// 1232px
+
+	$break-inner:						77;			// 1232px
+		$break-inner-large:				64;			// 1024px
+		$break-inner-medium:			48;			// 768px
+		$break-inner-small:				26.563;		// 425px
+
+// NOTE: RELATIVE BREAKPOINTS BASED ON OVERALL SCALE
+
+	$break-huge:						160;		// 2560px
+	$break-xlrg:						77;			// 1232px
+	$break-lrg:							64;			// 1024px
+	$break-med:							48;			// 768px
+	$break-sml:							26.563;		// 425px
+	$break-xsml:						20;			// 320px
+
+// NOTE: RELATIVE BREAKPOINTS ACCORDING TO GOOGLE
+
+// 4K
+
+	$break-4k:							160;		// 2560px
+
+// LAPTOP (GOOGLE)
+
+	$break-laptop:						90;			// 1440px
+		$break-laptoplrg:				90;			// 1440px
+		$break-laptopmed:				64;			// 1024px
+		$break-laptopsml:				60;			// 960px
+	
+// TABLET (GOOGLE)
+
+	$break-tablet:						48;			// 768px
+		$break-tabletlrg:				48;			// 768px
+		$break-tabletmed:				48;			// 768px
+		$break-tabletsml:				48;			// 768px
+
+// MOBILE (GOOGLE)
+
+	$break-mobile:						26.563;		// 425px
+		$break-mobilelrg:				26.563;		// 425px
+		$break-mobilemed:				23.438;		// 375px
+		$break-mobilesml:				20;			// 320px
+
+
+// NOTE: FUNCTIONAL BREAKPOINTS
+
+	$break-pixel:						0.0625;		// 1px
+	$break-zero: 						0;
+
+
+
+// BREAKPOINTS
+
+	$break-base-up: 					72.563;		// 1161px
+	$break-base:						72.5;		// 1160px
+	$break-base-down: 					72.438;		// 1159px
+
+	$break-huge-up: 					72.563;		// 1161px
+	$break-huge: 						72.5;		// 1160px
+	$break-huge-down: 					72.438;		// 1159px
+
+	$break-lrg-up: 						60.063;		// 961px
+	$break-lrg: 						60;			// 960px
+	$break-lrg-down: 					59.938;		// 959px
+
+	$break-med-up: 						48.063; 	// 769px
+	$break-med: 						48;			// 768px
+	$break-med-down: 					47.938; 	// 767px
+
+	$break-sml-up: 						30.063;		// 481px
+	$break-sml: 						30;			// 480px
+	$break-sml-down: 					29.938; 	// 479px
+
+	$break-tiny-up: 					20.063;		// 321px
+	$break-tiny:						20;			// 320px
+	$break-tiny-down: 					19.938;		// 319px
+
+	$break-zero: 						0;
+
+// DESKTOP
+
+	$break-desktop-up: 					72.563;		// 1161px
+	$break-desktop:						72.5;		// 1160px
+
+// MOBILE
+
+	$break-mobile-down: 				72.438;		// 1159px

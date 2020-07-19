@@ -1,0 +1,151 @@
+/* BASE_230 | ENTRY-ARCHIVE | 230_BASE | ENTRYMETA - 2016-07-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%all-entrymeta {}
+		%all-entrymeta-a {}
+		%all-entrymeta-hvr {}
+
+	%archive-entrymeta {}
+		%archive-entrymeta-a {}
+		%archive-entrymeta-hvr {}
+
+	%category-entrymeta {}
+		%category-entrymeta-a {}
+		%category-entrymeta-hvr {}
+
+	%tag-entrymeta {}
+		%tag-entrymeta-a {}
+		%tag-entrymeta-hvr {}
+
+	%blog-entrymeta {}
+		%blog-entrymeta-a {}
+		%blog-entrymeta-hvr {}
+
+	%haspostthumbnail-all-entrymeta {}
+		%haspostthumbnail-all-entrymeta-a {}
+		%haspostthumbnail-all-entrymeta-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+	// ARCHIVE
+
+	.archive {
+		.entry-meta {
+			@extend %all-entrymeta !optional;
+			@extend %archive-entrymeta !optional;
+
+			a {
+				@extend %all-entrymeta-a !optional;
+				@extend %archive-entrymeta-a !optional;
+
+				&:hover {
+					@extend %all-entrymeta-hvr !optional;
+					@extend %archive-entrymeta-hvr !optional;
+				}
+			}
+		}
+		.has-post-thumbnail .entry-meta {
+			@extend %haspostthumbnail-all-entrymeta !optional;
+
+			a {
+				@extend %haspostthumbnail-all-entrymeta-a !optional;
+
+				&:hover {
+					@extend %haspostthumbnail-all-entrymeta-hvr !optional;
+				}
+			}
+		}
+	}
+
+	// CATEGORY
+
+	.category {
+		.entry-meta {
+			@extend %all-entrymeta !optional;
+			@extend %category-entrymeta !optional;
+
+			a {
+				@extend %all-entrymeta-a !optional;
+				@extend %category-entrymeta-a !optional;
+
+				&:hover {
+					@extend %all-entrymeta-hvr !optional;
+					@extend %category-entrymeta-hvr !optional;
+				}
+			}
+		}
+		.has-post-thumbnail .entry-meta {
+			@extend %haspostthumbnail-all-entrymeta !optional;
+
+			a {
+				@extend %haspostthumbnail-all-entrymeta-a !optional;
+
+				&:hover {
+					@extend %haspostthumbnail-all-entrymeta-hvr !optional;
+				}
+			}
+		}
+	}
+
+	// TAG
+
+	.tag {
+		.entry-meta {
+			@extend %all-entrymeta !optional;
+			@extend %tag-entrymeta !optional;
+
+			a {
+				@extend %all-entrymeta-a !optional;
+				@extend %tag-entrymeta-a !optional;
+
+				&:hover {
+					@extend %all-entrymeta-hvr !optional;
+					@extend %tag-entrymeta-hvr !optional;
+				}
+			}
+		}
+		.has-post-thumbnail .entry-meta {
+			@extend %haspostthumbnail-all-entrymeta !optional;
+
+			a {
+				@extend %haspostthumbnail-all-entrymeta-a !optional;
+
+				&:hover {
+					@extend %haspostthumbnail-all-entrymeta-hvr !optional;
+				}
+			}
+		}
+	}
+
+	// TAG
+
+	.blog {
+		.entry-meta {
+			@extend %all-entrymeta !optional;
+			@extend %blog-entrymeta !optional;
+
+			a {
+				@extend %all-entrymeta-a !optional;
+				@extend %blog-entrymeta-a !optional;
+
+				&:hover {
+					@extend %all-entrymeta-hvr !optional;
+					@extend %blog-entrymeta-hvr !optional;
+				}
+			}
+		}
+		.has-post-thumbnail .entry-meta {
+			@extend %haspostthumbnail-all-entrymeta !optional;
+
+			a {
+				@extend %haspostthumbnail-all-entrymeta-a !optional;
+
+				&:hover {
+					@extend %haspostthumbnail-all-entrymeta-hvr !optional;
+				}
+			}
+		}
+	}

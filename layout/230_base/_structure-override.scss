@@ -1,0 +1,14 @@
+/* BASE_230 | LAYOUT | 230_BASE | STRUCTURE-OVERRIDE - 2016-10-03 */
+
+// -------------------------------------
+// EXTEND
+
+	%sitecontainer_override {}
+
+
+// -------------------------------------
+// SELECTORS
+
+	.override .site-container {
+		@extend %sitecontainer_override !optional;
+	}

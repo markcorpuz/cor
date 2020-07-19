@@ -1,0 +1,91 @@
+/* BASE_227 | ITEM | 227_CORMAIN | ITEM-CTACONTENT - 2016-06-05 */
+
+// -------------------------------------
+// UNIVERSAL
+// -------------------------------------
+
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+// CTACONTENT-CONTAINER
+
+	%item-ctacontent {
+		width: 47%;
+		margin-right: 6%;
+		float: left;
+		box-shadow: 2px 2px 2px 0px #bbbbbb;	
+		border: 1px solid #ccc;
+		padding: 1rem;
+		box-sizing: border-box;
+		background-color: #fff;
+		text-align: center;
+
+		@include responsive-range(meddown) {
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: 1rem;
+		}
+	}
+	%item-ctacontentlast {
+		margin-right: 0;
+	}
+	%item-ctacontentwide {
+		margin-right: 0;
+		width: 100%;
+	}
+
+	%item-ctacontent-title {}
+
+// CTACONTENT-HEADER
+
+	%item-ctacontent-header {}
+
+// CTACONTENT-INNER
+
+	%item-ctacontent-inner {}
+
+// CTACONTENT-FOOTER
+
+	%item-ctacontent-footer {}
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+// CTACONTENT-CONTAINER
+
+	.item-ctacontent {
+		@extend %item-ctacontent !optional;
+	}
+	.item-ctacontent.last {
+		@extend %item-ctacontentlast !optional;
+	}
+	.item-ctacontent.wide {
+		@extend %item-ctacontentwide !optional;
+	}
+
+// CTACONTENT-HEADER
+
+	.item-ctacontent-header {
+		@extend %item-ctacontent-header !optional;
+	}
+
+// CTACONTENT-INNER
+
+	.item-ctacontent-inner {
+		@extend %item-ctacontent-inner !optional;
+	}
+
+// CTACONTENT-FOOTER
+
+	.item-ctacontent-footer {
+		@extend %item-ctacontent-footer !optional;
+	}
+
+// CTACONTENT-TITLE
+
+	.panel-ctacontent .item-title {
+		@extend %item-ctacontent-title !optional;
+	}

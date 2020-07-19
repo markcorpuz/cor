@@ -1,0 +1,49 @@
+/* BASE_230 | TYPOGRAPHY | 250_SETUP | WEIGHT - 2017-07-19 */
+
+// -------------------------------------
+// EXTEND
+
+	%fontweight-thinnest {
+		font-weight: $fontweight-thinnest;	// 100
+	}
+	%fontweight-thinner {
+		font-weight: $fontweight-thinner;	// 100
+	}
+	%fontweight-thin {
+		font-weight: $fontweight-thin;		// 300
+	}
+	%fontweight-normal {
+		font-weight: $fontweight-normal;	// 400
+	}
+	%fontweight-thick {
+		font-weight: $fontweight-thick;		// 500
+	}
+	%fontweight-thicker {
+		font-weight: $fontweight-thicker;	// 700
+	}
+	%fontweight-thickest {
+		font-weight: $fontweight-thickest;	// 700
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.fontweight-thinner {
+		@extend %fontweight-thinner !optional;
+	}
+
+	.fontweight-thin {
+		@extend %fontweight-thin !optional;
+	}
+
+	.fontweight-normal {
+		@extend %fontweight-normal !optional;
+	}
+
+	.fontweight-thick {
+		@extend %fontweight-thick !optional;
+	}
+
+	.fontweight-thicker {
+		@extend %fontweight-thicker !optional;
+	}

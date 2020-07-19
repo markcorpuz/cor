@@ -1,0 +1,84 @@
+/* BASE_226 | MENU | 226_BASE | MENUITEM - 2016-01-12 */
+
+// -------------------------------------
+// FORMULA
+
+	// MENU-ITEM
+	// .menu-item
+	%menuitem-formula {}
+	%menuitem-a-formula {}
+	%menuitem-hvr-formula {}
+		
+		// LEVEL 1 MENU-ITEM
+		// .menu > .menu-item
+		%menu-menuitem-formula {}
+		%menu-menuitem-a-formula {}
+		%menu-menuitem-hvr-formula {}
+
+		// MENU-ITEM MENU-ITEM-HAS-CHILDREN
+		// .menu .menu-item.menu-item-has-children
+		%menu-menuitemhaschildren-formula {}
+		%menu-menuitemhaschildren-a-formula {}
+		%menu-menuitemhaschildren-hvr-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	// MENU-ITEM
+	%menuitem {}
+	%menuitem-a {}
+	%menuitem-hvr {}
+		// LEVEL 1 MENU-ITEM
+		%menu-menuitem {}
+		%menu-menuitem-a {}
+		%menu-menuitem-hvr {}
+		// MENU-ITEM MENU-ITEM-HAS-CHILDREN
+		%menu-menuitemhaschildren {}
+		%menu-menuitemhaschildren-a {}
+		%menu-menuitemhaschildren-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+	// MENU-ITEM
+	.menu-item {
+		@extend %menuitem-formula !optional;
+		@extend %menuitem !optional;
+	
+		a {
+			@extend %menuitem-a-formula !optional;
+			@extend %menuitem-a !optional;
+		
+			&:hover {
+				@extend %menuitem-hvr-formula !optional;
+				@extend %menuitem-hvr !optional;
+			}
+		}
+	}
+		// LEVEL 1 MENU-ITEM
+		.menu > .menu-item {
+			@extend %menu-menuitem-formula !optional;
+			@extend %menu-menuitem !optional;
+		}
+		.menu > .menu-item > a {
+			@extend %menu-menuitem-a-formula !optional;
+			@extend %menu-menuitem-a !optional;
+		}
+		.menu > .menu-item > a:hover {
+			@extend %menu-menuitem-hvr-formula !optional;
+			@extend %menu-menuitem-hvr !optional;
+		}
+
+		// MENU-ITEM.MENU-ITEM-HAS-CHILDREN
+		.menu .menu-item.menu-item-has-children {
+			@extend %menuitemhaschildren-formula !optional;
+			@extend %menuitemhaschildren !optional;
+		}
+		.menu .menu-item.menu-item-has-children > a {
+			@extend %menuitemhaschildren-a-formula !optional;
+			@extend %menuitemhaschildren-a !optional;
+		}
+		.menu .menu-item.menu-item-has-children > a:hover {
+			@extend %menuitemhaschildren-hvr-formula !optional;
+			@extend %menuitemhaschildren-hvr !optional;
+		}

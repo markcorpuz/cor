@@ -1,0 +1,22 @@
+/* BASE_230 | HEADER | 230_BASE | SITEHEADER - 2016-07-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%siteheader {}
+	%siteheaderwrap {}
+	%siteheaderwraponly {}
+
+// -------------------------------------
+// SELECTORS
+
+	.site-header {
+		@extend %siteheader !optional;
+
+		.wrap {
+			@extend %siteheaderwrap !optional;
+		}
+	}
+	.site-header > .wrap {
+		@extend %siteheaderwraponly !optional;
+	}

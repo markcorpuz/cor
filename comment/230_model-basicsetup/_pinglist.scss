@@ -1,0 +1,53 @@
+/* BASE_230 | COMMENT | 230_MODEL-BASICSETUP | PINGLIST - 2017-04-19 */
+// BASE_230 | COMMENT | 230_BASE
+
+// -------------------------------------
+// EXTEND
+
+// PING-LIST
+
+	%pinglist {
+		list-style-type: none;
+		//margin-top: #{$space-default}rem;
+		margin-left: 0;
+		margin-top: #{$space-default}rem;
+	}
+
+// PING-LIST LI
+
+	%pinglist-li {}
+
+	// PING-LIST LI A
+
+		%pinglist-li-a {}
+
+	// PING-LIST LI A:HOVER
+
+		%pinglist-li-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+	.ping-list {
+		@extend %pinglist !optional;
+
+		li.pingback {
+			@extend %pinglist-li !optional;
+		}
+	}
+
+	ol.ping-list {
+		@extend %pinglist !optional;
+
+		li.pingback {
+			@extend %pinglist-li !optional;
+
+			a {
+				@extend %pinglist-li-a !optional;
+
+				&:hover {
+					@extend %pinglist-li-hvr !optional;
+				}
+			}
+		}
+	}

@@ -1,0 +1,53 @@
+/* BASE_230 | CONTENT | 230_BASE | INPUT - 2016-07-21 */
+
+// -------------------------------------
+// EXTEND
+
+// INPUT
+
+	%input {}
+
+	%input-minus {
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+	}
+
+// TEXTAREA
+
+	%textarea {}
+
+// SELECT
+
+	%select {
+		-webkit-appearance: menulist;
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+// INPUT
+
+	input {
+		@extend %input !optional;
+	}
+
+// INPUT (MINUS SUBMIT & FILE)
+
+	input:not([type=submit]):not([type=file]):not([type=image]) {
+		@extend %input-minus !optional;
+	}
+
+// TEXTAREA
+
+	textarea {
+		@extend %input-minus !optional;
+		@extend %textarea !optional;
+	}
+
+// SELECT
+
+	select {
+		@extend %input-minus !optional;
+		@extend %select !optional;
+	}

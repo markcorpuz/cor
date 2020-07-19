@@ -1,0 +1,24 @@
+/* BASE_230 | CONTENT | 230_BASE | LINK - 2016-08-05 */
+
+// -------------------------------------
+// EXTEND
+
+	%link {
+		color: $color-link;
+		text-decoration: none;
+	}
+	%hover {
+		color: $color-hover;
+		text-decoration: none;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	a {
+		@extend %link !optional;
+	}
+
+	a:hover {
+		@extend %hover !optional;
+	}	

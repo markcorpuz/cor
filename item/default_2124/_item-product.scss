@@ -1,0 +1,59 @@
+/* BASIC_2123 | ITEM-COR | DEFAULT_2124 | ITEM-PRODUCT - 2015-7-14 */
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+// ITEM-PRODUCTDESCRIPTION
+
+	%item-productdescription {
+		padding: 20px;
+	}
+
+// ITEM-PRODUCTCTA
+
+	%item-productcta {
+		width: 35%;
+		padding: 20px;
+		border: 1px solid #ccc;
+		//border-right: 1px solid #999;
+		//border-bottom: 1px solid #999;
+		text-align: center;
+		margin: 20px 0 20px 20px;
+		float: right;
+		box-sizing: border-box;
+	
+		@extend %item-productcta-responsive !optional;
+	}
+
+// ITEM-PRODUCTBOX {
+	%item-productbox {
+		padding: 30px 40px 10px 50px;
+		background-color: #f0f0f0;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+
+		@extend %item-productbox-responsive !optional;
+	}
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+// ITEM-PRODUCTDESCRIPTION
+
+	.item-productdescription {
+		@extend %item-productdescription !optional;
+	}
+
+// ITEM-PRODUCTCTA
+
+	.item-productcta {
+		@extend %item-productcta !optional;
+	}
+
+// ITEM-PRODUCTBOX
+
+	.item-productbox {
+		@extend %item-productbox !optional;
+	}

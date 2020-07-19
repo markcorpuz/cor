@@ -1,0 +1,60 @@
+/* BASE_230 | ENTRY-FEATURED-HOOK | 250_MODEL-BASICSETUP | ENTRYHEADER-FEATUREDCONTENT - 2017-06-22 */
+
+// -------------------------------------
+// FORMULA
+
+	%featuredcontent-entryheader-formula {}
+
+	// SIDEBAR-PRIMARY
+	%sidebarprimary-featuredcontent-entryheader-formula {}
+
+	// SIDEBAR-SECONDARY
+	%sidebarsecondary-featuredcontent-entryheader-formula {}
+
+	// FOOTER-WIDGETS
+	%sidebarsecondary-featuredcontent-entryheader-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	%featuredcontent-entryheader {}
+
+	// SIDEBAR-PRIMARY
+	%sidebarprimary-featuredcontent-entryheader {}
+
+	// SIDEBAR-SECONDARY
+	%sidebarsecondary-featuredcontent-entryheader {}
+
+	// FOOTER-WIDGETS
+	%sidebarsecondary-featuredcontent-entryheader {}
+
+// -------------------------------------
+// SELECTORS
+
+	.featured-content {
+		.entry-header {
+			@extend %featuredcontent-entryheader-formula !optional;
+			@extend %featuredcontent-entryheader !optional;
+		}
+	}
+
+	.sidebar-primary .featured-content {
+		.entry-header {
+			@extend %sidebarprimary-featuredcontent-entryheader-formula !optional;
+			@extend %sidebarprimary-featuredcontent-entryheader !optional;
+		}
+	}
+
+	.sidebar-secondary .featured-content {
+		.entry-header {
+			@extend %sidebarsecondary-featuredcontent-entryheader-formula !optional;
+			@extend %sidebarsecondary-featuredcontent-entryheader !optional;
+		}
+	}
+
+	.footer-widgets .featured-content {
+		.entry-header {
+			@extend %footerwidgets-featuredcontent-entryheader-formula !optional;
+			@extend %footerwidgets-featuredcontent-entryheader !optional;
+		}
+	}

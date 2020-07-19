@@ -1,0 +1,88 @@
+/* BASE_230 | SELECTOR | 230_BASE | ALIGN - 2017-01-12 */
+
+// -------------------------------------
+// EXTEND
+
+	// ALIGN
+
+	%alignleft {
+		float: left;
+	}
+	%alignright {
+		float: right;
+	}
+	%aligncenter {
+		margin-right: auto;
+		margin-left: auto;
+	}
+	%alignnone {
+		float: none;
+	}
+	%aligncenter-item {
+		display: block;
+	}
+
+	// TEXTALIGN
+
+	%textleft {
+		text-align: left;
+	}
+	%textright {
+		text-align: right;
+	}
+	%textcenter {
+		text-align: center;
+	}
+	%textjustify {
+		text-align: justify;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	// TEXT-ALIGN (bootstrap)
+
+	.textleft {
+		@extend %textleft !optional;
+	}
+	.textright {
+		@extend %textright !optional;
+	}
+	.textcenter {
+		@extend %textcenter !optional;
+	}
+	.textjustify {
+		@extend %textjustify !optional;
+	}
+
+	// ALIGN
+
+	.alignleft {
+		@extend %alignleft !optional;
+	}
+	.alignright {
+		@extend %alignright !optional;
+	}
+	.aligncenter {
+		@extend %aligncenter !optional;
+		@extend %aligncenter-item !optional;
+	}
+	.alignnone {
+		@extend %alignnone !optional;
+	}
+
+	// IMG.ALIGN
+
+	img.alignleft {
+		@extend .alignleft !optional;
+	}
+	img.alignright {
+		@extend .alignright !optional;
+	}
+	img.aligncenter {
+		@extend %aligncenter !optional;
+		@extend %aligncenter-item !optional;
+	}
+	.img.alignnone {
+		@extend %alignnone !optional;
+	}

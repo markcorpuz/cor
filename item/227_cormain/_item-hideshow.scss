@@ -1,0 +1,110 @@
+/* BASE_227 | ITEM | 227_CORMAIN | ITEM-HIDESHOW - 2016-5-17 */
+
+// -------------------------------------
+// VARIABLES
+// -------------------------------------
+
+	// 320 iPhone portrait
+	// 480 iPhone landscape
+	// 768 iPad portrait
+	// 1024 iPad landscape
+
+	// break-tiny-up 	321
+	// break-tiny 		320
+
+	// break-sml-up		481
+	// break-sml 		480
+	// break-sml-down	479
+
+	// break-med-up		769
+	// break-med 		768
+	// break-med-down	767
+
+	// break-xlrg-up	1025
+	// break-xlrg 		1024
+	// break-xlrg-down	1023
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+// HIDE & SHOW
+
+	.show-sml {
+		//@extend %hide-sml-above !optional;
+		@include responsive-range(smlup) {
+			display: none;
+		}
+	}
+	.show-med {
+		//@extend %hide-smldown-below !optional;
+		@include responsive-range(smlbelowdown) {
+			display: none;
+		}
+		//@extend %hide-med-above !optional;
+		@include responsive-range(medup) {
+			display: none;
+		}
+	}
+	.show-xlrg {
+		//@extend %hide-meddown-below !optional;
+		@include responsive-range(lrgbelowdown) {
+			display: none;
+		}
+		//@extend %hide-base-above !optional;
+		@include responsive-range(baseup) {
+			display: none;
+		}
+	}
+	.show-base {
+		//@extend %hide-basedown-below !optional;
+		@include responsive-range(basedown) {
+			display: none;
+		}
+	}
+	.hide-alldevices {
+		//@extend %hide-alldevices !optional;
+		display: none;
+	}
+	.hide-basebelow {
+		//@extend %hide-basedown-below !optional;
+		@include responsive-range(basebelowdown) {
+			display: none;
+		}
+	}
+	.hide-base-above {
+		//@extend %hide-base-above !optional;
+		@include responsive-range(baseaboveup) {
+			display: none;
+		}
+	}
+	.hide-medaboveup {
+		@include responsive-range(medaboveup) {
+			display: none;
+		}
+	}
+	.hide-meddown {
+		@include responsive-range(meddown) {
+			display: none;
+		}
+	}
+	.hide-medbelowdown {
+		@include responsive-range(meddown) {
+			display: none;
+		}
+	}
+	.hide-smlaboveup {
+		@include responsive-range(smlaboveup) {
+			display: none;
+		}
+	}
+	.hide-smldown {
+		@include responsive-range(smldown) {
+			display: none;
+		}
+	}
+	.hide-smlbelowdown {
+		@include responsive-range(smlbelowdown) {
+			display: none;
+		}
+	}

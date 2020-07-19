@@ -1,0 +1,13 @@
+/* BASE_230 | STRUCTURE | 230_BASE | SITECONTAINER - 2017-02-13 */
+
+// -------------------------------------
+// EXTEND
+
+	%sitecontainer {}
+
+// -------------------------------------
+// SELECTORS
+
+	.site-container {
+		@extend %sitecontainer !optional;
+	}

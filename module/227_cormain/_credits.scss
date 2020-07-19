@@ -1,0 +1,20 @@
+/* BASE_226 | MODULE | 227_CORMAIN | CREDITS - 2016-05-09 */
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+	.module-credits {}
+
+	.module-credits .module-wrap {
+		padding: 0.5rem 0 0;
+
+		@include responsive-range(medbelowdown) {
+			padding: 0.5rem 1rem;
+		}
+	}

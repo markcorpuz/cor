@@ -1,0 +1,65 @@
+/* BASE_230 | ENTRY-ARCHIVE | 250_MODEL-BASICSETUP | ENTRYCONTENT - 2017-06-13 */
+// BASE_230 | ENTRY-ARCHIVE | 230_BASE
+
+// -------------------------------------
+// EXTEND
+
+	%all-entrycontent {}
+
+	%archive-entrycontent {}
+	%category-entrycontent {}
+	%tag-entrycontent {}
+	%blog-entrycontent {}
+
+	%haspostthumbnail-all-entrycontent {}
+
+// -------------------------------------
+// SELECTORS
+
+	// ARCHIVE
+
+	.archive {
+		.entry-content {
+			@extend %all-entrycontent !optional;
+			@extend %archive-entrycontent !optional;
+		}
+		.has-post-thumbnail .entry-content {
+			@extend %haspostthumbnail-all-entrycontent !optional;
+		}
+	}
+
+	// CATEGORY
+
+	.category {
+		.entry-content {
+			@extend %all-entrycontent !optional;
+			@extend %category-entrycontent !optional;
+		}
+		.has-post-thumbnail .entry-content {
+			@extend %haspostthumbnail-all-entrycontent !optional;
+		}
+	}
+
+	// TAG
+
+	.tag {
+		.entry-content {
+			@extend %all-entrycontent !optional;
+			@extend %tag-entrycontent !optional;
+		}
+		.has-post-thumbnail .entry-content {
+			@extend %haspostthumbnail-all-entrycontent !optional;
+		}
+	}
+
+	// BLOG
+
+	.blog {
+		.entry-content {
+			@extend %all-entrycontent !optional;
+			@extend %blog-entrycontent !optional;
+		}
+		.has-post-thumbnail .entry-content {
+			@extend %haspostthumbnail-all-entrycontent !optional;
+		}
+	}

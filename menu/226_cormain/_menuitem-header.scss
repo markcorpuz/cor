@@ -1,0 +1,131 @@
+/* BASE_226 | MENU | 226_BASE | MENUITEM-HEADER - 2016-01-12 */
+
+// -------------------------------------
+// FORMULA
+
+	// NAV-HEADER
+	// .nav-header .menu .menu-item
+	%navheader-menu-menuitem-formula {}
+	%navheader-menu-menuitem-a-formula {}
+	%navheader-menu-menuitem-hvr-formula {}
+		
+		// LEVEL 1 MENU-ITEM
+		// .nav-header > .menu > .menu-item
+		%navheader-menu-menuitemlvlone-formula {}
+		%navheader-menu-menuitemlvlone-a-formula {}
+		%navheader-menu-menuitemlvlone-hvr-formula {}
+
+		// MENU-ITEM MENU-ITEM-HAS-CHILDREN
+		// .nav-header .menu-item.menu-item-has-children
+		%navheader-menu-menuitemhaschildren-formula {}
+		%navheader-menu-menuitemhaschildren-a-formula {}
+		%navheader-menu-menuitemhaschildren-hvr-formula {}
+
+		// SUB-MENU MENU-ITEM
+		// .nav-header .sub-menu .menu-item
+		%navheader-submenu-menuitem-formula {}
+		%navheader-submenu-menuitem-a-formula {}
+		%navheader-submenu-menuitem-hvr-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	// MENU-ITEM
+	%navheader-menu-menuitem {}
+	%navheader-menu-menuitem-a {}
+	%navheader-menu-menuitem-hvr {}
+		// LEVEL 1 MENU-ITEM
+		%navheader-menu-menuitemlvlone {
+			display: inline-block;
+			vertical-align: top;
+			margin-right: #{$space-half}rem;
+		}
+		%navheader-menu-menuitemlvlone-a {
+			color: #fff;
+			display: block;
+			padding: #{$space-half}rem #{$space-half}rem;
+			box-sizing: border-box;
+		}
+		%navheader-menu-menuitemlvlone-hvr {
+			color: #333;
+			background-color: #f3f3f3;
+		}
+		// MENU-ITEM MENU-ITEM-HAS-CHILDREN
+		%navheader-menu-menuitemhaschildren {}
+		%navheader-menu-menuitemhaschildren-a {}
+		%navheader-menu-menuitemhaschildren-hvr {}
+		// SUB-MENU MENU-ITEM
+		%navheader-submenu-menuitem {
+			text-align: left;
+		}
+		%navheader-submenu-menuitem-a {
+			display: block;
+			padding: #{$space-quarter}rem #{$space-half}rem;
+			box-sizing: border-box;
+			color: #666;
+			background-color: #f0f0f0;
+		}
+		%navheader-submenu-menuitem-hvr {
+			color: #333;
+			background-color: #e0e0e0;
+		}
+
+// -------------------------------------
+// SELECTORS
+
+	// MENU-ITEM
+	.nav-header .menu .menu-item {
+		@extend %navheader-menu-menuitem-formula !optional;
+		@extend %navheader-menu-menuitem !optional;
+	
+		a {
+			@extend %navheader-menu-menuitem-a-formula !optional;
+			@extend %navheader-menu-menuitem-a !optional;
+		
+			&:hover {
+				@extend %navheader-menu-menuitem-hvr-formula !optional;
+				@extend %navheader-menu-menuitem-hvr !optional;
+			}
+		}
+	}
+		// LEVEL 1 MENU-ITEM
+		.nav-header > .menu > .menu-item {
+			@extend %navheader-menu-menuitemlvlone-formula !optional;
+			@extend %navheader-menu-menuitemlvlone !optional;
+		}
+		.nav-header > .menu > .menu-item > a {
+			@extend %navheader-menu-menuitemlvlone-a-formula !optional;
+			@extend %navheader-menu-menuitemlvlone-a !optional;
+		}
+		.nav-header > .menu > .menu-item > a:hover {
+			@extend %navheader-menu-menuitemlvlone-hvr-formula !optional;
+			@extend %navheader-menu-menuitemlvlone-hvr !optional;
+		}
+
+		// MENU-ITEM.MENU-ITEM-HAS-CHILDREN
+		.nav-header .menu-item.menu-item-has-children {
+			@extend %navheader-menu-menuitemhaschildren-formula !optional;
+			@extend %navheader-menu-menuitemhaschildren !optional;
+		}
+		.nav-header .menu-item.menu-item-has-children > a {
+			@extend %navheader-menu-menuitemhaschildren-a-formula !optional;
+			@extend %navheader-menu-menuitemhaschildren-a !optional;
+		}
+		.nav-header .menu-item.menu-item-has-children > a:hover {
+			@extend %navheader-menu-menuitemhaschildren-hvr-formula !optional;
+			@extend %navheader-menu-menuitemhaschildren-hvr !optional;
+		}
+
+		// .SUB-MENU MENU-ITEM
+		.nav-header .sub-menu > .menu-item {
+			@extend %navheader-submenu-menuitem-formula !optional;
+			@extend %navheader-submenu-menuitem !optional;
+		}
+		.nav-header .sub-menu > .menu-item > a {
+			@extend %navheader-submenu-menuitem-a-formula !optional;
+			@extend %navheader-submenu-menuitem-a !optional;
+		}
+		.nav-header .sub-menu > .menu-item > a:hover {
+			@extend %navheader-submenu-menuitem-hvr-formula !optional;
+			@extend %navheader-submenu-menuitem-hvr !optional;
+		}

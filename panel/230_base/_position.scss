@@ -1,0 +1,118 @@
+/* BASE_230 | PANEL | 230_BASE | POSITION - 2016-08-09 */
+
+// -------------------------------------
+// FORMULA
+
+// -------------------------------------
+// EXTEND
+
+	%panel-nofloat {
+		float: none;
+	}
+	%panel-last {
+		margin-right: 0;
+	}
+	%panel-nomargin {
+		margin: 0;
+	}
+
+	%panel-left {
+		float: left;
+	}
+	%panel-right {
+		float: right;
+	}
+	%panel-center {
+		float: none;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	%panel-outer {}
+	%panel-inner {}
+
+	%panel-ms {}
+	%panel-ms-main {
+		//float: left;
+	}
+	%panel-ms-side {
+		//float: right;
+	}
+
+	%panel-sm {}
+	%panel-sm-main {
+		//float: right;
+	}
+	%panel-sm-side {
+		//float: left;
+	}
+
+	%panel-aligncenter {}
+	%panel-alignleft {}
+	%panel-alignright {}
+
+
+// -------------------------------------
+// SELECTORS
+
+	.panel > .outer {
+		@extend %panel-outer !optional;
+	}
+	.panel > .outer > .inner {
+		@extend %panel-inner !optional;
+		@extend %panel-aligncenter !optional;
+	}
+	.panel > .inner {
+		@extend %panel-inner !optional;
+		@extend %panel-aligncenter !optional;
+	}
+
+	.panel.ms {
+		@extend %panel-ms !optional;
+	}
+	.panel.ms > .main {
+		@extend %panel-ms-main !optional;
+		@extend %panel-left !optional;
+	}
+	.panel.ms > .side {
+		@extend %panel-ms-side !optional;
+		@extend %panel-right !optional;
+		@extend %panel-last !optional;
+	}
+
+	.panel.sm {
+		@extend %panel-sm !optional;
+	}
+	.panel.sm > .main {
+		@extend %panel-sm-main !optional;
+		@extend %panel-right !optional;
+		@extend %panel-last !optional;
+	}
+	.panel.sm > .side {
+		@extend %panel-sm-side !optional;
+		@extend %panel-left !optional;
+	}
+
+	.panel .aligncenter,
+	.panel .main.aligncenter,
+	.panel .side.aligncenter {
+		@extend %panel-nomargin !optional;
+		@extend %panel-center !optional;
+		@extend %panel-aligncenter !optional;
+	}
+
+	.panel .alignleft,
+	.panel .main.alignleft,
+	.panel .side.alignleft {
+		@extend %panel-nomargin !optional;
+		@extend %panel-left !optional;
+		@extend %panel-alignleft !optional;
+	}
+
+	.panel .alignright,
+	.panel .main.alignright,
+	.panel .side.alignright {
+		@extend %panel-nomargin !optional;
+		@extend %panel-right !optional;
+		@extend %panel-alignright !optional;
+	}

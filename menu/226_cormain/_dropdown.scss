@@ -1,0 +1,184 @@
+/* BASE_226 | MENU | 226_CORMAIN | DROPDOWN - 2016-03-17 */
+
+// -------------------------------------
+// FORMULA
+
+	// DROPDOWN GNM
+	// .genesis-nav-menu .menu-item.menu-item-has-children
+	%dropdown-gnm-menuitemwchild-formula {}
+	// .genesis-nav-menu .menu-item.menu-item-has-children:hover > .sub-menu
+	%dropdown-gnm-menuitemwchild-hvr-submenu-formula {}
+	// .genesis-nav-menu .menu-item
+	%dropdown-gnm-submenu-dropdown-formula {}
+	// .genesis-nav-menu .sub-menu > .menu-item-has-children:hover > .sub-menu
+	%dropdown-gnm-submenu-menuitemwchildhvr-submenu-formula {}
+
+	// DROPDOWN MENU-PRIMARY & MENU-SECONDARY
+	// .menu-primary .menu-item.menu-item-has-children
+	// .menu-secondary .menu-item.menu-item-has-children
+	%dropdown-menuprisec-menuitemwchild-formula {}
+	// .menu-primary .menu-item.menu-item-has-children:hover > .sub-menu
+	// .menu-secondary .menu-item.menu-item-has-children:hover > .sub-menu
+	%dropdown-menuprisec-menuitemwchild-hvr-submenu-formula {}
+	// .menu-primary .menu-item
+	// .menu-secondary .menu-item
+	%dropdown-menuprisec-submenu-dropdown-formula {}
+	// .menu-primary .sub-menu > .menu-item-has-children:hover > .sub-menu
+	// .menu-secondary .sub-menu > .menu-item-has-children:hover > .sub-menu
+	%dropdown-menuprisec-submenu-menuitemwchildhvr-submenu-formula {}
+
+	// DROPDOWN MENU-PRIMARY
+	// .menu-primary .menu-item.menu-item-has-children
+	%dropdown-menuprimary-menuitemwchild-formula {}
+	// .menu-primary .menu-item.menu-item-has-children:hover > .sub-menu
+	%dropdown-menuprimary-menuitemwchild-hvr-submenu-formula {}
+	// .menu-primary .menu-item
+	%dropdown-menuprimary-submenu-dropdown-formula {}
+	// .menu-primary .sub-menu > .menu-item-has-children:hover > .sub-menu
+	%dropdown-menuprimary-submenu-menuitemwchildhvr-submenu-formula {}
+
+	// DROPDOWN MENU-SECONDARY
+	// .menu-secondary .menu-item.menu-item-has-children
+	%dropdown-menusecondary-menuitemwchild-formula {}
+	// .menu-secondary .menu-item.menu-item-has-children:hover > .sub-menu
+	%dropdown-menusecondary-menuitemwchild-hvr-submenu-formula {}
+	// .menu-secondary .menu-item
+	%dropdown-menusecondary-submenu-dropdown-formula {}
+	// .menu-secondary .sub-menu > .menu-item-has-children:hover > .sub-menu
+	%dropdown-menusecondary-submenu-menuitemwchildhvr-submenu-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	// DROPDOWN GNM
+	%dropdown-gnm-menuitemwchild {}
+	%dropdown-gnm-menuitemwchild-hvr-submenu {}
+	%dropdown-gnm-submenu-dropdown {}
+	%dropdown-gnm-submenu-menuitemwchildhvr-submenu {}
+
+	// DROPDOWN MENU-PRIMARY & MENU-SECONDARY
+	%dropdown-menuprisec-menuitemwchild {
+		position: relative;
+	}
+	%dropdown-menuprisec-menuitemwchild-hvr-submenu {
+		left: 0;
+		opacity: 1;
+	}
+	%dropdown-menuprisec-submenu {
+		position: absolute;
+		left: -9999px;
+		opacity: 0;
+		z-index: 99;
+		-webkit-transition: opacity .4s ease-in-out;
+		-moz-transition:    opacity .4s ease-in-out;
+		-ms-transition:     opacity .4s ease-in-out;
+		-o-transition:      opacity .4s ease-in-out;
+		transition:         opacity .4s ease-in-out;
+		margin: 0;
+		padding: 0;
+	}
+	// determines the space of the child submenu relative to the parent submenu
+	%dropdown-menuprisec-submenu-menuitemwchildhvr-submenu {
+		left: 150px;
+		top: 0;
+		box-sizing: border-box;
+	}
+
+	// DROPDOWN MENU-PRIMARY
+	%dropdown-menuprimary-menuitemwchild {}
+	%dropdown-menuprimary-menuitemwchild-hvr-submenu {}
+	%dropdown-menuprimary-submenu-dropdown {}
+	%dropdown-menuprimary-submenu-menuitemwchildhvr-submenu {}
+
+	// DROPDOWN MENU-SECONDARY
+	%dropdown-menusecondary-menuitemwchild {}
+	%dropdown-menusecondary-menuitemwchild-hvr-submenu {}
+	%dropdown-menusecondary-submenu-dropdown {}
+	%dropdown-menusecondary-submenu-menuitemwchildhvr-submenu {}
+
+// -------------------------------------
+// SELECTORS
+
+	// DROPDOWN GNM
+	.genesis-nav-menu {
+		.menu-item.menu-item-has-children {
+			@extend %dropdown-gnm-menuitemwchild-formula !optional;
+			@extend %dropdown-gnm-menuitemwchild !optional;
+		}
+		.menu-item.menu-item-has-children:hover > .sub-menu {
+			@extend %dropdown-gnm-menuitemwchild-hvr-submenu-formula !optional;
+			@extend %dropdown-gnm-menuitemwchild-hvr-submenu !optional;
+		}
+		.sub-menu {
+			@extend %dropdown-gnm-submenu-formula !optional;
+			@extend %dropdown-gnm-submenu !optional;
+		}
+		.sub-menu > .menu-item-has-children:hover > .sub-menu {
+			@extend %dropdown-gnm-submenu-menuitemwchildhvr-submenu-formula !optional;
+			@extend %dropdown-gnm-submenu-menuitemwchildhvr-submenu !optional;
+		}
+	}
+
+	// DROPDOWN MENU-PRIMARY
+	.menu-primary {
+		.menu-item.menu-item-has-children {
+			@extend %dropdown-menuprisec-menuitemwchild-formula !optional;
+			@extend %dropdown-menuprisec-menuitemwchild !optional;
+
+			@extend %dropdown-menuprimary-menuitemwchild-formula !optional;
+			@extend %dropdown-menuprimary-menuitemwchild !optional;
+		}
+		.menu-item.menu-item-has-children:hover > .sub-menu {
+			@extend %dropdown-menuprisec-menuitemwchild-hvr-submenu-formula !optional;
+			@extend %dropdown-menuprisec-menuitemwchild-hvr-submenu !optional;
+
+			@extend %dropdown-menuprimary-menuitemwchild-hvr-submenu-formula !optional;
+			@extend %dropdown-menuprimary-menuitemwchild-hvr-submenu !optional;
+		}
+		.sub-menu {
+			@extend %dropdown-menuprisec-submenu-formula !optional;
+			@extend %dropdown-menuprisec-submenu !optional;
+
+			@extend %dropdown-menuprimary-submenu-formula !optional;
+			@extend %dropdown-menuprimary-submenu !optional;
+		}
+		.sub-menu > .menu-item-has-children:hover > .sub-menu {
+			@extend %dropdown-menuprisec-submenu-menuitemwchildhvr-submenu-formula !optional;
+			@extend %dropdown-menuprisec-submenu-menuitemwchildhvr-submenu !optional;
+
+			@extend %dropdown-menuprimary-submenu-menuitemwchildhvr-submenu-formula !optional;
+			@extend %dropdown-menuprimary-submenu-menuitemwchildhvr-submenu !optional;
+		}
+	}
+
+	// DROPDOWN MENU-SECONDARY
+	.menu-secondary {
+		.menu-item.menu-item-has-children {
+			@extend %dropdown-menuprisec-menuitemwchild-formula !optional;
+			@extend %dropdown-menuprisec-menuitemwchild !optional;
+			
+			@extend %dropdown-menusecondary-menuitemwchild-formula !optional;
+			@extend %dropdown-menusecondary-menuitemwchild !optional;
+		}
+		.menu-item.menu-item-has-children:hover > .sub-menu {
+			@extend %dropdown-menuprisec-menuitemwchild-hvr-submenu-formula !optional;
+			@extend %dropdown-menuprisec-menuitemwchild-hvr-submenu !optional;
+
+			@extend %dropdown-menusecondary-menuitemwchild-hvr-submenu-formula !optional;
+			@extend %dropdown-menusecondary-menuitemwchild-hvr-submenu !optional;
+		}
+		.sub-menu {
+			@extend %dropdown-menuprisec-submenu-formula !optional;
+			@extend %dropdown-menuprisec-submenu !optional;
+
+			@extend %dropdown-menusecondary-submenu-formula !optional;
+			@extend %dropdown-menusecondary-submenu !optional;
+		}
+		.sub-menu > .menu-item-has-children:hover > .sub-menu {
+			@extend %dropdown-menuprisec-submenu-menuitemwchildhvr-submenu-formula !optional;
+			@extend %dropdown-menuprisec-submenu-menuitemwchildhvr-submenu !optional;
+
+			@extend %dropdown-menusecondary-submenu-menuitemwchildhvr-submenu-formula !optional;
+			@extend %dropdown-menusecondary-submenu-menuitemwchildhvr-submenu !optional;
+		}
+	}

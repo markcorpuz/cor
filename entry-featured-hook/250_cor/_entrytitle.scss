@@ -1,0 +1,84 @@
+/* BASE_230 | ENTRY-FEATURED-HOOK | 250_COR | ENTRYTITLE-FEATUREDCONTENT - 2017-07-24 */
+
+// -------------------------------------
+// EXTEND
+
+	%featuredcontent-entrytitle {
+		font-size: #{$fontsize-med}rem;
+	}
+		%featuredcontent-entrytitle-a {}
+		%featuredcontent-entrytitle-hvr {}
+
+	// SIDEBAR-PRIMARY
+	%sidebarprimary-featuredcontent-entrytitle {}
+		%sidebarprimary-featuredcontent-entrytitle-a {}
+		%sidebarprimary-featuredcontent-entrytitle-hvr {}
+
+	// SIDEBAR-SECONDARY
+	%sidebarsecondary-featuredcontent-entrytitle {}
+		%sidebarsecondary-featuredcontent-entrytitle-a {}
+		%sidebarsecondary-featuredcontent-entrytitle-hvr {}
+
+	// FOOTER-WIDGETS
+	%sidebarsecondary-featuredcontent-entrytitle {}
+		%sidebarsecondary-featuredcontent-entrytitle-a {}
+		%sidebarsecondary-featuredcontent-entrytitle-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+	.featured-content {
+		.entry-title {
+			@extend %featuredcontent-entrytitle !optional;
+
+			a {
+				@extend %featuredcontent-entrytitle-a !optional;
+
+				&:hover {
+					@extend %featuredcontent-entrytitle-hvr !optional;
+				}
+			}
+		}
+	}
+
+	.sidebar-primary .featured-content {
+		.entry-title {
+			@extend %sidebarprimary-featuredcontent-entrytitle !optional;
+
+			a {
+				@extend %sidebarprimary-featuredcontent-entrytitle-a !optional;
+
+				&:hover {
+					@extend %sidebarprimary-featuredcontent-entrytitle-hvr !optional;
+				}
+			}
+		}
+	}
+
+	.sidebar-secondary .featured-content {
+		.entry-title {
+			@extend %sidebarsecondary-featuredcontent-entrytitle !optional;
+
+			a {
+				@extend %sidebarsecondary-featuredcontent-entrytitle-a !optional;
+
+				&:hover {
+					@extend %sidebarsecondary-featuredcontent-entrytitle-hvr !optional;
+				}
+			}
+		}
+	}
+
+	.footer-widgets .featured-content {
+		.entry-title {
+			@extend %footerwidgets-featuredcontent-entrytitle !optional;
+
+			a {
+				@extend %footerwidgets-featuredcontent-entrytitle-a !optional;
+
+				&:hover {
+					@extend %footerwidgets-featuredcontent-entrytitle-hvr !optional;
+				}
+			}
+		}
+	}

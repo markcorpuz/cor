@@ -1,0 +1,32 @@
+/* BASE_230 | GUI | 250_SETUP | ASPECTRATIO - 2017-07-28 */
+
+// -------------------------------------
+// EXTEND
+
+	@mixin aspect-ratio($width, $height) {
+		position: relative;
+		&:before {
+			display: block;
+			content: "";
+			width: 100%;
+			padding-top: ($height / $width) * 100%;
+		}
+		> .aspect {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.aspectratio-16-9 {
+		@include aspect-ratio(16, 9);
+	}
+
+	.aspectratio-4-3 {
+		@include aspect-ratio(4, 3);
+	}

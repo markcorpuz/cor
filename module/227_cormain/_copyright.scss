@@ -1,0 +1,37 @@
+/* BASE_226 | MODULE | 227_CORMAIN | COPYRIGHT - 2016-01-12 */
+
+// -------------------------------------
+// FORMULA
+
+	%copyright-formula {}
+		%copyright-a-formula {}
+		%copyright-hvr-formula {}
+
+// -------------------------------------
+// EXTEND
+
+	%copyright {
+		color: #666;
+		@extend %fonttype-compact !optional;
+		font-size: #{$fontsize-xxsml}rem;
+	}
+		%copyright-a {}
+		%copyright-hvr {}
+
+// -------------------------------------
+// SELECTORS
+
+	.copyright {
+		@extend %copyright-formula !optional;
+		@extend %copyright !optional;
+
+		a {
+			@extend %copyright-a-formula !optional;
+			@extend %copyright-a !optional;
+
+			&:hover {
+				@extend %copyright-hvr-formula !optional;
+				@extend %copyright-hvr !optional;
+			}
+		}
+	}

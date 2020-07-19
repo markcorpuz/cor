@@ -1,0 +1,22 @@
+/* BASE_230 | COMMENT | 230_MODEL-BASICSETUP | COMMENTEDITLINK - 2017-04-19 */
+// BASE_230 | COMMENT | 230_BASE
+
+// -------------------------------------
+// EXTEND
+
+// COMMENT-EDIT-LINK
+
+	%commenteditlink {
+		font-size: #{$fontsize-xxsml}rem;
+		line-height: 1.2;
+		display: none;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+// COMMENT-EDIT-LINK
+
+	.comment-edit-link {
+		@extend %commenteditlink !optional;
+	}

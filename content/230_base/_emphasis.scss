@@ -1,0 +1,25 @@
+/* BASE_230 | CONTENT | 230_BASE | EMPHASIS - 2016-08-05 */
+
+// -------------------------------------
+// EXTEND
+
+	%em {}
+
+	%strong {}
+
+	%code {}
+
+// -------------------------------------
+// SELECTORS
+
+	em {
+		@extend %em !optional;
+	}
+
+	strong {
+		@extend %strong !optional;
+	}
+
+	code {
+		@extend %code !optional;
+	}

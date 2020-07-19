@@ -1,0 +1,27 @@
+/* BASE_230 | SELECTOR | 250_SETUP | TRANSITION - 2017-07-19 */
+
+// -------------------------------------
+// EXTEND
+
+	%transition {
+		-webkit-transition: all 0.1s ease-in-out;
+		-moz-transition:    all 0.1s ease-in-out;
+		-ms-transition:     all 0.1s ease-in-out;
+		-o-transition:      all 0.1s ease-in-out;
+		transition:         all 0.1s ease-in-out;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	a,
+	button,
+	input:focus,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
+	textarea:focus,
+	.button,
+	.gallery img {
+		@extend %transition !optional;
+	}

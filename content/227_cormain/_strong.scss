@@ -1,0 +1,22 @@
+/* BASE_226 | CONTENT | 227_CORMAIN_STYLE | STRONG - 2016-03-30 */
+
+// -------------------------------------
+// EXTEND
+
+	%strong {}
+
+	%strongnote {
+		color: red;
+		font-style: italic;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	strong {
+		@extend %strong !optional;
+	}
+
+	blockquote.note {
+		@extend %strongnote !optional;
+	}

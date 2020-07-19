@@ -1,0 +1,38 @@
+/* BASE_230 | LAYOUT | 230_BASE > COR | BODY - 2017-08-19 */
+
+// -------------------------------------
+// EXTEND
+
+	// HTML
+
+	%html_layout {}
+
+	// BODY
+
+	%body_layout {
+		font-family: $fontfamily-body;
+		font-weight: $fontweight-normal;
+		//font-weight: 800;
+		//color: $color-body;
+		color: red;
+		background-color: $bgcolor-body;
+		line-height: $lineheight-body;
+	}
+
+
+// -------------------------------------
+// SELECTORS
+
+	// HTML
+
+	html {
+		@extend %html !optional;
+		@extend %html_layout !optional;
+	}
+
+	// BODY
+
+	body {
+		@extend %body !optional;
+		@extend %body_layout !optional;
+	}

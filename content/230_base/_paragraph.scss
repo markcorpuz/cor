@@ -1,0 +1,101 @@
+/* BASE_230 | CONTENT | 230_BASE | PARAGRAPH - 2016-08-19 */
+
+// -------------------------------------
+// EXTEND
+
+	%paragraph {
+		font-family: $fontfamily-paragraph;
+		line-height: $lineheight-paragraph;
+		margin-top: 0;
+		margin-bottom: #{$fontsize-default}rem;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	p {
+		@extend %paragraph !optional;
+	}
+
+	p.space-top {
+		@extend %spacetop !optional;
+	}
+	p.space-top-double {
+		@extend %spacetop-double !optional;
+	}
+	p.space-top-half {
+		@extend %spacetop-half !optional;
+	}
+
+	p.space-bottom {
+		@extend %spacebottom !optional;
+	}
+	p.space-bottom-double {
+		@extend %spacebottom-double !optional;
+	}
+	p.space-bottom-half {
+		@extend %spacebottom-half !optional;
+	}
+	p.space-bottom-zero {
+		@extend %spacebottom-zero !optional;
+	}
+
+	p.space-left {
+		@extend %spaceleft !optional;
+	}
+	p.space-left-double {
+		@extend %spaceleft-double !optional;
+	}
+	p.space-left-half {
+		@extend %spaceleft-half !optional;
+	}
+
+	p.space-right {
+		@extend %spaceright !optional;
+	}
+	p.space-right-double {
+		@extend %spaceright-double !optional;
+	}
+	p.space-right-half {
+		@extend %spaceright-half !optional;
+	}
+
+	p.pad-top {
+		@extend %padtop !optional;
+	}
+	p.pad-top-double {
+		@extend %padtop-double !optional;
+	}
+	p.pad-top-half {
+		@extend %padtop-half !optional;
+	}
+
+	p.pad-bottom {
+		@extend %padbottom !optional;
+	}
+	p.pad-bottom-double {
+		@extend %padbottom-double !optional;
+	}
+	p.pad-bottom-half {
+		@extend %padbottom-half !optional;
+	}
+
+	p.pad-left {
+		@extend %padleft !optional;
+	}
+	p.pad-left-double {
+		@extend %padleft-double !optional;
+	}
+	p.pad-left-half {
+		@extend %padleft-half !optional;
+	}
+
+	p.pad-right {
+		@extend %padright !optional;
+	}
+	p.pad-right-double {
+		@extend %padright-double !optional;
+	}
+	p.pad-right-half {
+		@extend %padright-half !optional;
+	}

@@ -1,0 +1,124 @@
+/* BASE_230 | LAYOUT | 230_BASE > COR | INNER - 2016-10-10 */
+
+// -------------------------------------
+// EXTEND
+
+	// SITE-INNER
+
+	%siteinner_layout {
+		@extend %clearfix !optional;
+		background-color: #ddd;
+	}
+	%siteinnerwrap_layout {}
+	%siteinnerwraponly_layout {
+		@extend %clearfix !optional;
+		margin: 0 auto;
+		padding: 1rem;
+
+		@include responsive-range(lrgbelowdown) {
+			padding: 1rem;
+		}
+
+		@include responsive-range(medbelowdown) {
+			padding: 0.5rem;
+		}
+	}
+
+	// CONTENT-SIDEBAR-WRAP
+
+	%csw_layout {
+		@extend %clearfix !optional;
+		float: left;
+		width: 100%;
+		margin-bottom: 1rem;
+
+		@include responsive-range(lrgbelowdown) {
+			margin-bottom: 1rem;
+		}
+
+		@include responsive-range(medbelowdown) {
+			margin-bottom: 0.5rem;
+		}
+	}
+
+	// CONTENT
+
+	%content_layout {
+		@extend %clearfix !optional;
+		width: 100%;
+		padding: 1.5rem;
+		overflow: hidden;
+		background-color: #fff;
+		color: #333;
+		border: 1px solid #ccc;
+		box-shadow: 2px 2px 2px 0px #bbbbbb;
+
+		@include responsive-range(lrgbelowdown) {
+			padding: 1rem;
+		}
+
+		@include responsive-range(medbelowdown) {
+			margin-bottom: 0.5rem;
+		}
+	}
+
+	// SIDEBAR-PRIMARY
+
+	%sidebarprimary_layout {
+		@extend %clearfix !optional;
+		width: 100%;
+	}
+
+	// SIDEBAR-SECONDARY
+
+	%sidebarsecondary_layout {
+		@extend %clearfix !optional;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	// SITE-INNER
+
+	.site-inner {
+		@extend %siteinner !optional;
+		@extend %siteinner_layout !optional;
+
+		.wrap {
+			@extend %siteinnerwrap !optional;
+			@extend %siteinnerwrap_layout !optional;
+		}
+	}
+	.site-inner > .wrap {
+		@extend %siteinnerwraponly !optional;
+		@extend %siteinnerwraponly_layout !optional;
+	}
+
+	// CONTENT-SIDEBAR-WRAP
+
+	.content-sidebar-wrap {
+		@extend %csw !optional;
+		@extend %csw_layout !optional;
+	}
+
+	// CONTENT
+
+	.content {
+		@extend %content !optional;
+		@extend %content_layout !optional;
+	}
+
+	// SIDEBAR-PRIMARY
+
+	.sidebar-primary {
+		@extend %sidebarprimary !optional;
+		@extend %sidebarprimary_layout !optional;
+	}
+
+	// SIDEBAR-SECONDARY
+
+	.sidebar-secondary {
+		@extend %sidebarsecondary !optional;
+		@extend %sidebarsecondary_layout !optional;
+	}
+

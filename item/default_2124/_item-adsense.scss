@@ -1,0 +1,44 @@
+/* BASIC_2123 | ITEM-COR | DEFAULT_2124 | ITEM-ADSENSE - 2015-7-14 */
+
+// -------------------------------------
+// UNIVERSAL
+// -------------------------------------
+
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+// ADSENSE-LEADERBOARD
+
+	%adsense-leaderboard {
+		text-align: center;
+	
+		@extend %adsense-leaderboard-responsive !optional;
+	}
+
+// ADSENSE-MOBILE
+
+	%adsense-mobile {
+		text-align: center;
+		overflow: hidden;
+
+		@extend %adsense-mobile-responsive !optional;
+	}
+
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+// ADSENSE-LEADERBOARD
+
+	.adsense-leaderboard {
+		@extend %adsense-leaderboard !optional;
+	}
+
+// ADSENSE-MOBILE
+
+	.adsense-mobile {
+		@extend %adsense-mobile !optional;
+	}

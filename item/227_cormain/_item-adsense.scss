@@ -1,0 +1,59 @@
+/* BASE_227 | ITEM | 227_CORMAIN | ITEM-ADSENSE - 2016-5-17 */
+
+// -------------------------------------
+// UNIVERSAL
+// -------------------------------------
+
+
+// -------------------------------------
+// SILENT CLASS
+// -------------------------------------
+
+// ADSENSE-LEADERBOARD
+
+	%adsense-leaderboard {
+		text-align: center;
+	
+		// @extend %adsense-leaderboard-responsive !optional;
+		// hide 0-sml
+	}
+
+// ADSENSE-MOBILE
+
+	%adsense-mobile {
+		text-align: center;
+		overflow: hidden;
+
+		// @extend %adsense-leaderboard-responsive !optional;
+		// hide 0-sml
+	}
+
+// ADSENSE-SIDEBAR
+
+	%adsense-sidebar {
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+
+// -------------------------------------
+// CODE
+// -------------------------------------
+
+// ADSENSE-LEADERBOARD
+
+	.adsense-leaderboard {
+		@extend %adsense-leaderboard !optional;
+	}
+
+// ADSENSE-MOBILE
+
+	.adsense-mobile {
+		@extend %adsense-mobile !optional;
+	}
+
+// ADSENSE-SIDEBAR
+
+	.adsense-sidebar {
+		@extend %adsense-sidebar !optional;
+	}

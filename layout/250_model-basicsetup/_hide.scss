@@ -1,0 +1,31 @@
+/* BASE_250 | LAYOUT | 250_MODEL-BASICSETUP | HIDE - 2017-06-08 */
+
+// -------------------------------------
+// EXTEND
+
+	%hide {
+		display: none;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+	.hide-header .site-header {
+		@extend %hide !optional;
+	}
+
+	.hide-inner .site-inner {
+		@extend %hide !optional;
+	}
+
+	.hide-footerwidgets .footer-widgets {
+		@extend %hide !optional;
+	}
+
+	.hide-footer .site-footer {
+		@extend %hide !optional;
+	}
+
+	.hide-archivedescription .archive-description {
+		@extend %hide !optional;
+	}
