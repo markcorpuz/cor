@@ -1,0 +1,221 @@
+/* SETUP | GRID | 250_SETUPBASIC | LAST-ZEROGUTTER - 2018-08-21 */
+
+// -------------------------------------
+// FORMULA
+
+// -------------------------------------
+// EXTEND
+
+// -------------------------------------
+// SELECTORS
+
+// FULL
+
+	.full.last,
+	.full.space-right-zero {
+		@extend %columnzerogutter-guide !optional;
+		@extend %columnzerogutter-last !optional;
+	}
+
+// HALF
+
+	.half.last,
+	.half.space-right-zero {
+		@extend %columnzerogutter-guide !optional;
+		@extend %columnzerogutter-last !optional;
+	}
+	.half-grid > li.last,
+	.half-grid > li.space-right-zero {
+		@extend %gridzerogutter-guide !optional;
+		@extend %gridzerogutter-last !optional;
+	}
+	.half-push,
+	.half-push.last {
+		@extend %pushzerogutter-guide !optional;
+		@extend %pushzerogutter-last !optional;
+	}
+
+// THIRD
+
+	.third.last,
+	.third.space-right-zero {
+		@extend %columnzerogutter-guide !optional;
+		@extend %columnzerogutter-last !optional;
+	}
+	.third-grid > li.last,
+	.third-grid > li.space-right-zero {
+		@extend %gridzerogutter-guide !optional;
+		@extend %gridzerogutter-last !optional;
+	}
+	.third-push.last,
+	.third-push.space-right-zero {
+		@extend %pushzerogutter-guide !optional;
+		@extend %pushzerogutter-last !optional;
+	}
+
+		.twothirds.last,
+		.twothirds.space-right-zero {
+			@extend %columnzerogutter-guide !optional;
+			@extend %columnzerogutter-last !optional;
+		}
+		.twothirds-push.last,
+		.twothirds-push.space-right-zero {
+			@extend %pushzerogutter-guide !optional;
+			@extend %pushzerogutter-last !optional;
+		}
+
+// FOURTH
+
+	.fourth.last,
+	.fourth.space-right-zero {
+		@extend %columnzerogutter-guide !optional;
+		@extend %columnzerogutter-last !optional;
+	}
+	.fourth-grid > li.last,
+	.fourth-grid > li.space-right-zero {
+		@extend %gridzerogutter-guide !optional;
+		@extend %gridzerogutter-last !optional;
+	}
+	.fourth-push.last,
+	.fourth-push.space-right-zero {
+		@extend %pushzerogutter-guide !optional;
+		@extend %pushzerogutter-last !optional;
+	}
+
+		.threefourths.last,
+		.threefourths.space-right-zero {
+			@extend %columnzerogutter-guide !optional;
+			@extend %columnzerogutter-last !optional;
+		}
+		.threefourths-push.last,
+		.threefourths-push.space-right-zero {
+			@extend %pushzerogutter-guide !optional;
+			@extend %pushzerogutter-last !optional;
+		}
+
+// FIFTH
+
+	.fifth.last,
+	.fifth.space-right-zero {
+		@extend %columnzerogutter-guide !optional;
+		@extend %columnzerogutter-last !optional;
+	}
+	.fifth-grid > li.last,
+	.fifth-grid > li.space-right-zero {
+		@extend %gridzerogutter-guide !optional;
+		@extend %gridzerogutter-last !optional;
+	}
+	.fifth-push.last,
+	.fifth-push.space-right-zero {
+		@extend %pushzerogutter-guide !optional;
+		@extend %pushzerogutter-last !optional;
+	}
+
+		.twofifths.last,
+		.twofifths.space-right-zero {
+			@extend %columnzerogutter-guide !optional;
+			@extend %columnzerogutter-last !optional;
+		}
+		.twofifths-push.last,
+		.twofifths-push.space-right-zero {
+			@extend %pushzerogutter-guide !optional;
+			@extend %pushzerogutter-last !optional;
+		}
+
+		.threefifths.last,
+		.threefifths.space-right-zero {
+			@extend %columnzerogutter-guide !optional;
+			@extend %columnzerogutter-last !optional;
+		}
+		.threefifths-push.last,
+		.threefifths-push.space-right-zero {
+			@extend %pushzerogutter-guide !optional;
+			@extend %pushzerogutter-last !optional;
+		}
+
+		.fourfifths.last,
+		.fourfifths.space-right-zero {
+			@extend %columnzerogutter-guide !optional;
+			@extend %columnzerogutter-last !optional;
+		}
+		.fourfifths-push.last,
+		.fourfifths-push.space-right-zero {
+			@extend %pushzerogutter-guide !optional;
+			@extend %pushzerogutter-last !optional;
+		}
+
+// SIXTH
+
+	.sixth.last,
+	.sixth.space-right-zero {
+		@extend %columnzerogutter-guide !optional;
+		@extend %columnzerogutter-last !optional;
+	}
+	.sixth-grid > li.last,
+	.sixth-grid > li.space-right-zero {
+		@extend %gridzerogutter-guide !optional;
+		@extend %gridzerogutter-last !optional;
+	}
+	.sixth-push.last,
+	.sixth-push.space-right-zero {
+		@extend %pushzerogutter-guide !optional;
+		@extend %pushzerogutter-last !optional;
+	}
+
+		.fivesixths.last,
+		.fivesixths.space-right-zero {
+			@extend %columnzerogutter-guide !optional;
+			@extend %columnzerogutter-last !optional;
+		}
+		.fivesixths-push.last,
+		.fivesixths-push.space-right-zero {
+			@extend %pushzerogutter-guide !optional;
+			@extend %pushzerogutter-last !optional;
+		}
+
+// SIXTH
+
+	.eight.last,
+	.eight.space-right-zero {
+		@extend %columnzerogutter-guide !optional;
+		@extend %columnzerogutter-last !optional;
+	}
+	.eight-grid > li.last,
+	.eight-grid > li.space-right-zero {
+		@extend %gridzerogutter-guide !optional;
+		@extend %gridzerogutter-last !optional;
+	}
+	.eight-push.last,
+	.eight-push.space-right-zero {
+		@extend %pushzerogutter-guide !optional;
+		@extend %pushzerogutter-last !optional;
+	}
+
+// TWELVE
+
+	.twelve.last,
+	.twelve.space-right-zero {
+		@extend %columnzerogutter-guide !optional;
+		@extend %columnzerogutter-last !optional;
+	}
+	.twelve-grid > li.last,
+	.twelve-grid > li.space-right-zero {
+		@extend %gridzerogutter-guide !optional;
+		@extend %gridzerogutter-last !optional;
+	}
+	.twelve-push.last,
+	.twelve-push.space-right-zero {
+		@extend %pushzerogutter-guide !optional;
+		@extend %pushzerogutter-last !optional;
+	}
+
+		.eleventwelves.last,
+		.eleventwelves.space-right-zero {
+			@extend %columnzerogutter-guide !optional;
+			@extend %columnzerogutter-last !optional;
+		}
+		.eleventwelves-push.last,
+		.eleventwelves-push.space-right-zero {
+			@extend %pushzerogutter-guide !optional;
+			@extend %pushzerogutter-last !optional;
+		}

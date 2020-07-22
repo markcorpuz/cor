@@ -1,0 +1,243 @@
+/* SETUP | GRID | 250_SETUPBASIC | ALIGN - 2018-08-21 */
+
+// -------------------------------------
+// EXTEND
+
+// ALIGNLEFT
+
+	%column-alignleft {
+		float: left;
+	}
+
+// ALIGNLEFT
+
+	%column-alignright {
+		float: right;
+	}
+
+// ALIGNCENTER
+
+	%column-aligncenter {
+		margin: auto;
+		float: none;
+	}
+
+// ALIGNNONE
+
+	%column-alignnone {
+		float: none;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+// FULL
+
+	.full.alignleft {
+		@extend %column-alignleft !optional;
+	}
+	.full.alignright {
+		@extend %column-alignright !optional;
+	}
+	.full.aligncenter {
+		@extend %column-aligncenter !optional;
+	}
+	.full.alignnone {
+		@extend %column-alignnone !optional;
+	}
+
+// HALF
+
+	.half.alignleft {
+		@extend %column-alignleft !optional;
+	}
+	.half.alignright {
+		@extend %column-alignright !optional;
+	}
+	.half.aligncenter {
+		@extend %column-aligncenter !optional;
+	}
+	.half.alignnone {
+		@extend %column-alignnone !optional;
+	}
+
+// THIRD
+
+	.third.alignleft {
+		@extend %column-alignleft !optional;
+	}
+	.third.alignright {
+		@extend %column-alignright !optional;
+	}
+	.third.aligncenter {
+		@extend %column-aligncenter !optional;
+	}
+	.third.alignnone {
+		@extend %column-alignnone !optional;
+	}
+
+		.twothirds.alignleft {
+			@extend %column-alignleft !optional;
+		}
+		.twothirds.alignright {
+			@extend %column-alignright !optional;
+		}
+		.twothirds.aligncenter {
+			@extend %column-aligncenter !optional;
+		}
+		.twothirds.alignnone {
+			@extend %column-alignnone !optional;
+		}
+
+// FOURTH
+
+	.fourth.alignleft {
+		@extend %column-alignleft !optional;
+	}
+	.fourth.alignright {
+		@extend %column-alignright !optional;
+	}
+	.fourth.aligncenter {
+		@extend %column-aligncenter !optional;
+	}
+	.fourth.alignnone {
+		@extend %column-alignnone !optional;
+	}
+
+		.threefourths.alignleft {
+			@extend %column-alignleft !optional;
+		}
+		.threefourths.alignright {
+			@extend %column-alignright !optional;
+		}
+		.threefourths.aligncenter {
+			@extend %column-aligncenter !optional;
+		}
+		.threefourths.alignnone {
+			@extend %column-alignnone !optional;
+		}
+
+// FIFTH
+
+	.fifth.alignleft {
+		@extend %column-alignleft !optional;
+	}
+	.fifth.alignright {
+		@extend %column-alignright !optional;
+	}
+	.fifth.aligncenter {
+		@extend %column-aligncenter !optional;
+	}
+	.fifth.alignnone {
+		@extend %column-alignnone !optional;
+	}
+
+		.twofifths.alignleft {
+			@extend %column-alignleft !optional;
+		}
+		.twofifths.alignright {
+			@extend %column-alignright !optional;
+		}
+		.twofifths.aligncenter {
+			@extend %column-aligncenter !optional;
+		}
+		.twofifths.alignnone {
+			@extend %column-alignnone !optional;
+		}
+
+		.threefifths.alignleft {
+			@extend %column-alignleft !optional;
+		}
+		.threefifths.alignright {
+			@extend %column-alignright !optional;
+		}
+		.threefifths.aligncenter {
+			@extend %column-aligncenter !optional;
+		}
+		.threefifths.alignnone {
+			@extend %column-alignnone !optional;
+		}
+
+		.fourfifths.alignleft {
+			@extend %column-alignleft !optional;
+		}
+		.fourfifths.alignright {
+			@extend %column-alignright !optional;
+		}
+		.fourfifths.aligncenter {
+			@extend %column-aligncenter !optional;
+		}
+		.fourfifths.alignnone {
+			@extend %column-alignnone !optional;
+		}
+
+// SIXTH
+
+	.sixth.alignleft {
+		@extend %column-alignleft !optional;
+	}
+	.sixth.alignright {
+		@extend %column-alignright !optional;
+	}
+	.sixth.aligncenter {
+		@extend %column-aligncenter !optional;
+	}
+	.sixth.alignnone {
+		@extend %column-alignnone !optional;
+	}
+
+		.fivesixths.alignleft {
+			@extend %column-alignleft !optional;
+		}
+		.fivesixths.alignright {
+			@extend %column-alignright !optional;
+		}
+		.fivesixths.aligncenter {
+			@extend %column-aligncenter !optional;
+		}
+		.fivesixths.alignnone {
+			@extend %column-alignnone !optional;
+		}
+
+// SIXTH
+
+	.eight.alignleft {
+		@extend %column-alignleft !optional;
+	}
+	.eight.alignright {
+		@extend %column-alignright !optional;
+	}
+	.eight.aligncenter {
+		@extend %column-aligncenter !optional;
+	}
+	.eight.alignnone {
+		@extend %column-alignnone !optional;
+	}
+
+// TWELVE
+
+	.twelve.alignleft {
+		@extend %column-alignleft !optional;
+	}
+	.twelve.alignright {
+		@extend %column-alignright !optional;
+	}
+	.twelve.aligncenter {
+		@extend %column-aligncenter !optional;
+	}
+	.twelve.alignnone {
+		@extend %column-alignnone !optional;
+	}
+
+		.eleventwelves.alignleft {
+			@extend %column-alignleft !optional;
+		}
+		.eleventwelves.alignright {
+			@extend %column-alignright !optional;
+		}
+		.eleventwelves.aligncenter {
+			@extend %column-aligncenter !optional;
+		}
+		.eleventwelves.alignnone {
+			@extend %column-alignnone !optional;
+		}

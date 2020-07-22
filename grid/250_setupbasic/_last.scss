@@ -1,0 +1,318 @@
+/* SETUP | GRID | 250_SETUPBASIC | LAST - 2018-08-21 */
+
+// -------------------------------------
+// EXTEND
+
+	%column-fulllast {
+		@extend %column-guide !optional;
+	}
+	%grid-fulllast {
+		@extend %grid-guide !optional;
+	}
+	%push-fulllast {
+		@extend %push-guide !optional;
+	}
+
+	%column-halflast {
+		@extend %column-last !optional;
+		@extend %column-guide !optional;
+	}
+	%grid-halflast {
+		@extend %grid-guide !optional;
+	}
+	%push-halflast {
+		@extend %push-guide !optional;
+	}
+
+	%column-thirdlast {
+		@extend %column-last !optional;
+		@extend %column-guide !optional;
+	}
+	%grid-thirdlast {
+		@extend %grid-guide !optional;
+	}
+	%push-thirdlast {
+		@extend %push-guide !optional;
+	}
+
+		%column-twothirdslast {
+			@extend %column-last !optional;
+		}
+		%push-twothirdslast {
+			@extend %push-guide !optional;
+		}
+
+	%column-fourthlast {
+		@extend %column-last !optional;
+		@extend %column-guide !optional;
+	}
+	%grid-fourthlast {
+		@extend %grid-guide !optional;
+	}
+	%push-fourthlast {
+		@extend %push-guide !optional;
+	}
+
+		%column-threefourthslast {
+			@extend %column-last !optional;
+		}
+		%push-threefourthslast {
+			@extend %push-guide !optional;
+		}
+
+	%column-fifthlast {
+		@extend %column-last !optional;
+		@extend %column-guide !optional;
+	}
+	%grid-fifthlast {
+		@extend %grid-guide !optional;
+	}
+	%push-fifthlast {
+		@extend %push-guide !optional;
+	}
+
+		%column-twofifthslast {
+			@extend %column-last !optional;
+		}
+		%push-twofifthslast {
+			@extend %push-guide !optional;
+		}
+
+		%column-threefifthslast {
+			@extend %column-last !optional;
+		}
+		%push-threefifthslast {
+			@extend %push-guide !optional;
+		}
+
+		%column-fourfifthslast {
+			@extend %column-last !optional;
+		}
+		%push-fourfifthslast {
+			@extend %push-guide !optional;
+		}
+
+	%column-sixthlast {
+		@extend %column-last !optional;
+		@extend %column-guide !optional;
+	}
+	%grid-sixthlast {
+		@extend %grid-guide !optional;
+	}
+	%push-sixthlast {
+		@extend %push-guide !optional;
+	}
+
+		%column-fivesixthslast {
+			@extend %column-last !optional;
+		}
+		%push-fivesixthslast {
+			@extend %push-guide !optional;
+		}
+
+	%column-eightlast {
+		@extend %column-last !optional;
+		@extend %column-guide !optional;
+	}
+	%grid-eightlast {
+		@extend %grid-guide !optional;
+	}
+	%push-eightlast {
+		@extend %push-guide !optional;
+	}
+
+	%column-twelvelast {
+		@extend %column-last !optional;
+		@extend %column-guide !optional;
+	}
+	%grid-twelvelast {
+		@extend %grid-guide !optional;
+	}
+	%push-twelvelast {
+		@extend %push-guide !optional;
+	}
+
+		%column-eleventwelveslast {
+			@extend %column-last !optional;
+		}
+		%push-eleventwelveslast {
+			@extend %push-guide !optional;
+		}
+
+// -------------------------------------
+// SELECTORS
+
+// FULL
+
+	.full.last,
+	.full.space-right-zero {
+		@extend %column-fulllast !optional;
+	}
+
+// HALF
+
+	.half.last,
+	.half.space-right-zero {
+		@extend %column-halflast !optional;
+	}
+	.half-grid > li.last,
+	.half-grid > li.space-right-zero {
+		@extend %grid-halflast !optional;
+	}
+	.half-push,
+	.half-push.last {
+		@extend %push-halflast !optional;
+	}
+
+// THIRD
+
+	.third.last,
+	.third.space-right-zero {
+		@extend %column-thirdlast !optional;
+	}
+	.third-grid > li.last,
+	.third-grid > li.space-right-zero {
+		@extend %grid-thirdlast !optional;
+	}
+	.third-push.last,
+	.third-push.space-right-zero {
+		@extend %push-thirdlast !optional;
+	}
+
+		.twothirds.last,
+		.twothirds.space-right-zero {
+			@extend %column-twothirdslast !optional;
+		}
+		.twothirds-push.last,
+		.twothirds-push.space-right-zero {
+			@extend %push-twothirdslast !optional;
+		}
+
+// FOURTH
+
+	.fourth.last,
+	.fourth.space-right-zero {
+		@extend %column-fourthlast !optional;
+	}
+	.fourth-grid > li.last,
+	.fourth-grid > li.space-right-zero {
+		@extend %grid-fourthlast !optional;
+	}
+	.fourth-push.last,
+	.fourth-push.space-right-zero {
+		@extend %push-fourthlast !optional;
+	}
+
+		.threefourths.last,
+		.threefourths.space-right-zero {
+			@extend %column-threefourthslast !optional;
+		}
+		.threefourths-push.last,
+		.threefourths-push.space-right-zero {
+			@extend %push-threefourthslast !optional;
+		}
+
+// FIFTH
+
+	.fifth.last,
+	.fifth.space-right-zero {
+		@extend %column-fifthlast !optional;
+	}
+	.fifth-grid > li.last,
+	.fifth-grid > li.space-right-zero {
+		@extend %grid-fifthlast !optional;
+	}
+	.fifth-push.last,
+	.fifth-push.space-right-zero {
+		@extend %push-fifthlast !optional;
+	}
+
+		.twofifths.last,
+		.twofifths.space-right-zero {
+			@extend %column-twofifthslast !optional;
+		}
+		.twofifths-push.last,
+		.twofifths-push.space-right-zero {
+			@extend %push-twofifthslast !optional;
+		}
+
+		.threefifths.last,
+		.threefifths.space-right-zero {
+			@extend %column-threefifthslast !optional;
+		}
+		.threefifths-push.last,
+		.threefifths-push.space-right-zero {
+			@extend %push-threefifthslast !optional;
+		}
+
+		.fourfifths.last,
+		.fourfifths.space-right-zero {
+			@extend %column-fourfifthslast !optional;
+		}
+		.fourfifths-push.last,
+		.fourfifths-push.space-right-zero {
+			@extend %push-fourfifthslast !optional;
+		}
+
+// SIXTH
+
+	.sixth.last,
+	.sixth.space-right-zero {
+		@extend %column-sixthlast !optional;
+	}
+	.sixth-grid > li.last,
+	.sixth-grid > li.space-right-zero {
+		@extend %grid-sixthlast !optional;
+	}
+	.sixth-push.last,
+	.sixth-push.space-right-zero {
+		@extend %push-sixthlast !optional;
+	}
+
+		.fivesixths.last,
+		.fivesixths.space-right-zero {
+			@extend %column-fivesixthslast !optional;
+		}
+		.fivesixths-push.last,
+		.fivesixths-push.space-right-zero {
+			@extend %push-fivesixthslast !optional;
+		}
+
+// SIXTH
+
+	.eight.last,
+	.eight.space-right-zero {
+		@extend %column-eightlast !optional;
+	}
+	.eight-grid > li.last,
+	.eight-grid > li.space-right-zero {
+		@extend %grid-eightlast !optional;
+	}
+	.eight-push.last,
+	.eight-push.space-right-zero {
+		@extend %push-eightlast !optional;
+	}
+
+// TWELVE
+
+	.twelve.last,
+	.twelve.space-right-zero {
+		@extend %column-twelvelast !optional;
+	}
+	.twelve-grid > li.last,
+	.twelve-grid > li.space-right-zero {
+		@extend %grid-twelvelast !optional;
+	}
+	.twelve-push.last,
+	.twelve-push.space-right-zero {
+		@extend %push-twelvelast !optional;
+	}
+
+		.eleventwelves.last,
+		.eleventwelves.space-right-zero {
+			@extend %column-eleventwelveslast !optional;
+		}
+		.eleventwelves-push.last,
+		.eleventwelves-push.space-right-zero {
+			@extend %push-eleventwelveslast !optional;
+		}

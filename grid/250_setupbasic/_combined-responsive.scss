@@ -1,0 +1,462 @@
+/* SETUP | GRID | 250_SETUPBASIC | COMBINED-RESPONSIVE - 2018-08-21 */
+
+// -------------------------------------
+// FORMULA
+
+	%column-full-formula {}
+	%grid-full-formula {}
+	%push-full-formula {}
+
+	%column-half-formula {}
+	%grid-half-formula {}
+	%push-half-formula {}
+
+	%column-third-formula {}
+	%grid-third-formula {}
+	%push-third-formula {}
+
+		%column-twothirds-formula {}
+		%push-twothirds-formula {}
+
+	%column-fourth-formula {}
+	%grid-fourth-formula {}
+	%push-fourth-formula {}
+
+		%column-threefourths-formula {}
+		%push-threefourths-formula {}
+
+	%column-fifth-formula {}
+	%grid-fifth-formula {}
+	%push-fifth-formula {}
+
+		%column-twofifths-formula {}
+		%push-twofifths-formula {}
+
+		%column-threefifths-formula {}
+		%push-threefifths-formula {}
+
+		%column-fourfifths-formula {}
+		%push-fourfifths-formula {}
+
+	%column-sixth-formula {}
+	%grid-sixth-formula {}
+	%push-sixth-formula {}
+
+		%column-fivesixths-formula {}
+		%push-fivesixths-formula {}
+
+	%column-eight-formula {}
+	%grid-eight-formula {}
+	%push-eight-formula {}
+
+	%column-twelve-formula {}
+	%grid-twelve-formula {}
+	%push-twelve-formula {}
+
+		%column-eleventwelves-formula {}
+		%push-eleventwelves-formula {}
+
+// -------------------------------------
+// EXTEND
+
+// SPACE-ZERO
+
+	%column-last {
+		margin-right: 0;
+	}
+
+// LISTSTYLE-ZERO
+
+	%grid-liststyle {
+		list-style-type: none;
+	}
+
+// FULL
+
+	%column-full {
+		width: 100%;
+		@extend %column-last !optional;
+		@extend %column-guide !optional;
+	}
+	%grid-full {
+		width: 100%;
+		@extend %grid-liststyle !optional;
+	}
+	%push-full {
+		@extend %push-guide !optional;
+	}
+
+// HALF
+
+	%column-half {
+		@include span(6 of 12);
+		@extend %column-guide !optional;
+	}
+	%grid-half {
+		@extend %column-half !optional;
+		@extend %grid-liststyle !optional;
+		@extend %grid-guide !optional;
+	}
+	%push-half {
+		@include push(6 of 12);
+		@extend %push-guide !optional;
+	}
+
+// THIRD
+
+	%column-third {
+		@include span(4 of 12);
+		@extend %column-guide !optional;
+	}
+	%grid-third {
+		@extend %column-third !optional;
+		@extend %grid-liststyle !optional;
+		@extend %grid-guide !optional;
+	}
+	%push-third {
+		@include push(4 of 12);
+		@extend %push-guide !optional;
+	}
+
+		%column-twothirds {
+			@include span(8 of 12);
+			@extend %grid-liststyle !optional;
+			@extend %column-guide !optional;
+		}
+		%push-twothirds {
+			@include push(8 of 12);
+			@extend %push-guide !optional;
+		}
+
+// FOURTH
+
+	%column-fourth {
+		@include span(3 of 12);
+		@extend %column-guide !optional;
+	}
+	%grid-fourth {
+		@extend %column-fourth !optional;
+		@extend %grid-liststyle !optional;
+		@extend %grid-guide !optional;
+	}
+	%push-fourth {
+		@include push(3 of 12);
+		@extend %push-guide !optional;
+	}
+
+		%column-threefourths {
+			@include span(9 of 12);
+			@extend %column-guide !optional;
+		}
+		%push-threefourths {
+			@include push(9 of 12);
+			@extend %push-guide !optional;
+		}
+
+// FIFTH
+
+	%column-fifth {
+		@include span(1 of 5);
+		@extend %column-guide !optional;
+	}
+	%grid-fifth {
+		@extend %column-fifth !optional;
+		@extend %grid-liststyle !optional;
+		@extend %grid-guide !optional;
+	}
+	%push-fifth {
+		@include push(1 of 5);
+		@extend %push-guide !optional;
+	}
+
+		%column-twofifths {
+			@include span(2 of 5);
+			@extend %column-guide !optional;
+		}
+		%push-twofifths {
+			@include push(2 of 5);
+			@extend %push-guide !optional;
+		}
+
+		%column-threefifths {
+			@include span(3 of 5);
+			@extend %column-guide !optional;
+		}
+		%push-threefifths {
+			@include push(3 of 5);
+			@extend %push-guide !optional;
+		}
+
+		%column-fourfifths {
+			@include span(4 of 5);
+			@extend %column-guide !optional;
+		}
+		%push-fourfifths {
+			@include push(4 of 5);
+			@extend %push-guide !optional;
+		}
+
+// SIXTH
+
+	%column-sixth {
+		@include span(2 of 12);
+		@extend %column-guide !optional;
+	}
+	%grid-sixth {
+		@extend %column-sixth !optional;
+		@extend %grid-liststyle !optional;
+		@extend %grid-guide !optional;
+	}
+	%push-sixth {
+		@include push(2 of 12);
+		@extend %push-guide !optional;
+	}
+
+		%column-fivesixths {
+			@include span(10 of 12);
+			@extend %column-guide !optional;
+		}
+		%push-fivesixths {
+			@include push(10 of 12);
+			@extend %push-guide !optional;
+		}
+
+// EIGHT
+
+	%column-eight {
+		@include span(1 of 8);
+		@extend %column-guide !optional;
+	}
+	%grid-eight {
+		@extend %column-eight !optional;
+		@extend %grid-liststyle !optional;
+		@extend %grid-guide !optional;
+	}
+	%push-eight {
+		@include push(1 of 8);
+		@extend %push-guide !optional;
+	}
+
+// TWELVE
+
+	%column-twelve {
+		@include span(1 of 12);
+		@extend %column-guide !optional;
+	}
+	%grid-twelve {
+		@extend %column-twelve !optional;
+		@extend %grid-liststyle !optional;
+		@extend %grid-guide !optional;
+	}
+	%push-twelve {
+		@include push(1 of 12);
+		@extend %push-guide !optional;
+	}
+
+		%column-eleventwelves {
+			@include span(11 of 12);
+			@extend %column-guide !optional;
+		}
+		%push-eleventwelves {
+			@include push(11 of 12);
+			@extend %push-guide !optional;
+		}
+
+// -------------------------------------
+// SELECTORS
+
+// FULL
+
+	.full {
+		@extend %column-full-formula !optional;
+		@extend %column-full !optional;
+	}
+
+// HALF
+
+	.half {
+		@extend %column-half-formula !optional;
+		@extend %column-half !optional;
+	}
+	.half-grid > li {
+		@extend %grid-half-formula !optional;
+		@extend %grid-half !optional;
+	}
+	.half-grid > li:nth-of-type(2n+0) {
+		@extend %column-last !optional;
+	}
+	.half-push {
+		@extend %push-half-formula !optional;
+		@extend %push-half !optional;
+	}
+
+// THIRD
+
+	.third {
+		@extend %column-third-formula !optional;
+		@extend %column-third !optional;
+	}
+	.third-grid > li {
+		@extend %grid-third-formula !optional;
+		@extend %grid-third !optional;
+	}
+	.third-grid > li:nth-of-type(3n+0) {
+		@extend %column-last !optional;
+	}
+	.third-push {
+		@extend %push-third-formula !optional;
+		@extend %push-third !optional;
+	}
+
+		.twothirds {
+			@extend %column-twothirds-formula !optional;
+			@extend %column-twothirds !optional;
+		}
+		.twothirds-push {
+			@extend %push-twothirds-formula !optional;
+			@extend %push-twothirds !optional;
+		}
+
+// FOURTH
+
+	.fourth {
+		@extend %column-fourth-formula !optional;
+		@extend %column-fourth !optional;
+	}
+	.fourth-grid > li {
+		@extend %grid-fourth-formula !optional;
+		@extend %grid-fourth !optional;
+	}
+	.fourth-grid > li:nth-of-type(4n+0) {
+		@extend %column-last !optional;
+	}
+	.fourth-push {
+		@extend %push-fourth-formula !optional;
+		@extend %push-fourth !optional;
+	}
+
+		.threefourths {
+			@extend %column-threefourths-formula !optional;
+			@extend %column-threefourths !optional;
+		}
+		.threefourths-push {
+			@extend %push-threefourths-formula !optional;
+			@extend %push-threefourths !optional;
+		}
+
+// FIFTH
+
+	.fifth {
+		@extend %column-fifth-formula !optional;
+		@extend %column-fifth !optional;
+	}
+	.fifth-grid > li {
+		@extend %grid-fifth-formula !optional;
+		@extend %grid-fifth !optional;
+	}
+	.fifth-grid > li:nth-of-type(5n+0) {
+		@extend %column-last !optional;
+	}
+	.fifth-push {
+		@extend %push-fifth-formula !optional;
+		@extend %push-fifth !optional;
+	}
+
+		.twofifths {
+			@extend %column-twofifths-formula !optional;
+			@extend %column-twofifths !optional;
+		}
+		.twofifths-push {
+			@extend %push-twofifths-formula !optional;
+			@extend %push-twofifths !optional;
+		}
+
+		.threefifths {
+			@extend %column-threefifths-formula !optional;
+			@extend %column-threefifths !optional;
+		}
+		.threefifths-push {
+			@extend %push-threefifths-formula !optional;
+			@extend %push-threefifths !optional;
+		}
+
+		.fourfifths {
+			@extend %column-fourfifths-formula !optional;
+			@extend %column-fourfifths !optional;
+		}
+		.fourfifths-push {
+			@extend %push-fourfifths-formula !optional;
+			@extend %push-fourfifths !optional;
+		}
+
+// SIXTH
+
+	.sixth {
+		@extend %column-sixth-formula !optional;
+		@extend %column-sixth !optional;
+	}
+	.sixth-grid > li {
+		@extend %grid-sixth-formula !optional;
+		@extend %grid-sixth !optional;
+	}
+	.sixth-grid > li:nth-of-type(6n+0) {
+		@extend %column-last !optional;
+	}
+	.sixth-push {
+		@extend %push-sixth-formula !optional;
+		@extend %push-sixth !optional;
+	}
+
+		.fivesixths {
+			@extend %column-fivesixths-formula !optional;
+			@extend %column-fivesixths !optional;
+		}
+		.fivesixths-push {
+			@extend %push-fivesixths-formula !optional;
+			@extend %push-fivesixths !optional;
+		}
+
+// SIXTH
+
+	.eight {
+		@extend %column-eight-formula !optional;
+		@extend %column-eight !optional;
+	}
+	.eight-grid > li {
+		@extend %grid-eight-formula !optional;
+		@extend %grid-eight !optional;
+	}
+	.eight-grid > li:nth-of-type(8n+0) {
+		@extend %column-last !optional;
+	}
+	.eight-push {
+		@extend %push-eight-formula !optional;
+		@extend %push-eight !optional;
+	}
+
+// TWELVE
+
+	.twelve {
+		@extend %column-twelve-formula !optional;
+		@extend %column-twelve !optional;
+	}
+	.twelve-grid > li {
+		@extend %grid-twelve-formula !optional;
+		@extend %grid-twelve !optional;
+	}
+	.twelve-grid > li:nth-of-type(12n+0) {
+		@extend %column-last !optional;
+	}
+	.twelve-push {
+		@extend %push-twelve-formula !optional;
+		@extend %push-twelve !optional;
+	}
+
+		.eleventwelves {
+			@extend %column-eleventwelves-formula !optional;
+			@extend %column-eleventwelves !optional;
+		}
+		.eleventwelves-push {
+			@extend %push-eleventwelves-formula !optional;
+			@extend %push-eleventwelves !optional;
+		}

@@ -1,0 +1,284 @@
+/* SETUP | GRID | 250_SETUPBASIC | GRID-RESPONSIVE - 2018-08-21 */
+
+// -------------------------------------
+// MIXIN
+
+	@mixin responsive-twelve($media) {
+
+		@if $media == desktop {
+			@media only screen and (min-width: #{$break-desktop}rem) { @content; }
+		}
+
+		@else if $media == desktopbelow {
+			@media only screen and (max-width: #{$break-desktop}rem) { @content; }
+		}
+
+		@else if $media == desktopabove {
+			@media only screen and (min-width: #{$break-desktop}rem) { @content; }
+		}
+
+		@else if $media == belowdesktop {
+			@media only screen and (max-width: #{$break-desktop - $break-pixel}rem) { @content; }
+		}
+
+		@else if $media == abovedesktop {
+			@media only screen and (min-width: #{$break-desktop + $break-pixel}rem) { @content; }
+		}
+
+		@else if $media == mobile {
+			@media only screen and (max-width: #{$break-mobile}rem) { @content; }
+		}
+
+		@else if $media == mobilebelow {
+			@media only screen and (max-width: #{$break-desktop - $break-pixel}rem) { @content; }
+		}
+
+		@else if $media == mobile-sml {
+			@media only screen and (max-width: #{$break-sml}rem) { @content; }
+		}
+
+		@else if $media == zero-desktopbelow {
+			@media only screen and (min-width: $break-zero) and (max-width: #{$break-desktop - $break-pixel}rem) { @content; }
+		}
+
+		@else if $media == zero-desktop {
+			@media only screen and (min-width: $break-zero) and (max-width: #{$break-desktop}rem) { @content; }
+		}
+
+		@else if $media == zero-desktopabove {
+			@media only screen and (min-width: $break-zero) and (max-width: #{$break-desktop + $break-pixel}rem) { @content; }
+		}
+
+		@else if $media == zero-tiny {
+			@media only screen and (min-width: $break-zero) and (max-width: #{$break-tiny}rem) { @content; }
+		}
+
+		@else if $media == tiny-sml {
+			@media only screen and (min-width: #{$break-tiny + $break-pixel}rem) and (max-width: #{$break-sml}rem) { @content; }
+		}
+
+		@else if $media == sml-med {
+			@media only screen and (min-width: #{$break-sml + $break-pixel}rem) and (max-width: #{$break-med}rem) { @content; }
+		}
+
+		@else if $media == med-lrg {
+			@media only screen and (min-width: #{$break-med + $break-pixel}rem) and (max-width: #{$break-lrg}rem) { @content; }
+		}
+
+		@else if $media == lrg-huge {
+			@media only screen and (min-width: #{$break-lrg + $break-pixel}rem) and (max-width: #{$break-huge}rem) { @content; }
+		}
+
+		@else if $media == zero-med {
+			@media only screen and (min-width: $break-zero) and (max-width: #{$break-med}rem) { @content; }
+		}
+
+		@else if $media == medabove-huge {
+			@media only screen and (min-width: #{$break-med + $break-pixel}rem) and (max-width: #{$break-huge}rem) { @content; }
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// -------------------------------------
+// FORMULA
+
+	%grid-full-formula {}
+	%grid-half-formula {}
+	%grid-third-formula {}
+	%grid-fourth-formula {}
+	%grid-fifth-formula {}
+	%grid-sixth-formula {}
+	%grid-eight-formula {}
+	%grid-twelve-formula {}
+
+// -------------------------------------
+// EXTEND
+
+// SPACE-ZERO
+
+	%column-last {
+		margin-right: 0;
+	}
+
+// LISTSTYLE-ZERO
+
+	%grid-liststyle {
+		list-style-type: none;
+	}
+
+// FULL
+
+	%grid-full {
+		width: 100%;
+		@extend %grid-liststyle !optional;
+	}
+
+// HALF
+
+	%grid-half {
+		@extend %column-half !optional;
+		@extend %grid-liststyle !optional;
+		@extend %grid-guide !optional;
+	}
+
+// THIRD
+
+	%grid-third {
+		@extend %column-third !optional;
+		@extend %grid-liststyle !optional;
+		@extend %grid-guide !optional;
+	}
+
+// FOURTH
+
+	%grid-fourth {
+		@extend %column-fourth !optional;
+		@extend %grid-liststyle !optional;
+		@extend %grid-guide !optional;
+	}
+
+// FIFTH
+
+	%grid-fifth {
+		@extend %column-fifth !optional;
+		@extend %grid-liststyle !optional;
+		@extend %grid-guide !optional;
+	}
+
+// SIXTH
+
+	%grid-sixth {
+		@extend %column-sixth !optional;
+		@extend %grid-liststyle !optional;
+		@extend %grid-guide !optional;
+	}
+
+// EIGHT
+
+	%grid-eight {
+		@extend %column-eight !optional;
+		@extend %grid-liststyle !optional;
+		@extend %grid-guide !optional;
+	}
+
+// TWELVE
+
+	%grid-twelve {
+		@extend %column-twelve !optional;
+		@extend %grid-liststyle !optional;
+		@extend %grid-guide !optional;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+// FULL
+
+	.full {}
+
+// HALF
+
+	.half-grid > li {
+		@extend %grid-half-formula !optional;
+		@extend %grid-half !optional;
+
+		@include responsive-mobile(mobile) {
+			width: 100%;
+			margin-right: 0;
+		}
+	}
+	.half-grid > li:nth-of-type(2n+0) {
+		@extend %column-last !optional;
+	}
+
+// THIRD
+
+	.third-grid > li {
+		@extend %grid-third-formula !optional;
+		@extend %grid-third !optional;
+
+		@include responsive-mobile(mobile) {
+			width: 100%;
+			margin-right: 0;
+		}
+	}
+	.third-grid > li:nth-of-type(3n+0) {
+		@extend %column-last !optional;
+	}
+
+// FOURTH
+
+	.fourth-grid > li {}
+	.fourth-grid > li:nth-of-type(4n+0) {
+		@extend %column-last !optional;
+	}
+
+// FIFTH
+
+	.fifth-grid > li {
+		@extend %grid-fifth-formula !optional;
+		@extend %grid-fifth !optional;
+	}
+	.fifth-grid > li:nth-of-type(5n+0) {
+		@extend %column-last !optional;
+	}
+
+// SIXTH
+
+	@include responsive-mobile(mobile) {
+		width: 100%;
+		margin-right: 0;
+	}
+	.sixth-grid > li {
+	}
+	.sixth-grid > li:nth-of-type(6n+0) {
+		@extend %column-last !optional;
+	}
+
+// SIXTH
+
+	.eight-grid > li {
+		@extend %grid-eight-formula !optional;
+		@extend %grid-eight !optional;
+	}
+	.eight-grid > li:nth-of-type(8n+0) {
+		@extend %column-last !optional;
+	}
+
+// TWELVE
+
+	.twelve-grid > li {
+		@extend %grid-twelve-formula !optional;
+		@extend %grid-twelve !optional;
+	}
+
+	@media only screen and (max-width: #{$break-sml}rem) {
+		.twelve-grid > li {
+			@extend %grid-full !optional;
+		}
+	}
+		
+	.twelve-grid > li:nth-of-type(12n+0) {
+		@extend %column-last !optional;
+	}

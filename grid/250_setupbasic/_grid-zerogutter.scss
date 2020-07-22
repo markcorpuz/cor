@@ -1,0 +1,149 @@
+/* SETUP | GRID | 250_SETUPBASIC | GRID-ZEROGUTTER - 2018-08-21 */
+
+// -------------------------------------
+// EXTEND
+
+// SPACE-ZERO
+
+	%gridzerogutter-last {
+		margin-right: 0;
+	}
+
+// LISTSTYLE-ZERO
+
+	%gridzerogutter-liststyle {
+		list-style-type: none;
+	}
+
+// FULL
+
+	%gridzerogutter-full {
+		width: 100%;
+		@extend %gridzerogutter-liststyle !optional;
+	}
+
+// HALF
+
+	%gridzerogutter-half {
+		@extend %columnzerogutter-half !optional;
+		@extend %gridzerogutter-liststyle !optional;
+		@extend %gridzerogutter-guide !optional;
+	}
+
+// THIRD
+
+	%gridzerogutter-third {
+		@extend %columnzerogutter-third !optional;
+		@extend %gridzerogutter-liststyle !optional;
+		@extend %gridzerogutter-guide !optional;
+	}
+
+// FOURTH
+
+	%gridzerogutter-fourth {
+		@extend %columnzerogutter-fourth !optional;
+		@extend %gridzerogutter-liststyle !optional;
+		@extend %gridzerogutter-guide !optional;
+	}
+
+// FIFTH
+
+	%gridzerogutter-fifth {
+		@extend %columnzerogutter-fifth !optional;
+		@extend %gridzerogutter-liststyle !optional;
+		@extend %gridzerogutter-guide !optional;
+	}
+
+// SIXTH
+
+	%gridzerogutter-sixth {
+		@extend %columnzerogutter-sixth !optional;
+		@extend %gridzerogutter-liststyle !optional;
+		@extend %gridzerogutter-guide !optional;
+	}
+
+// EIGHT
+
+	%gridzerogutter-eight {
+		@extend %columnzerogutter-eight !optional;
+		@extend %gridzerogutter-liststyle !optional;
+		@extend %gridzerogutter-guide !optional;
+	}
+
+// TWELVE
+
+	%gridzerogutter-twelve {
+		@extend %columnzerogutter-twelve !optional;
+		@extend %gridzerogutter-liststyle !optional;
+		@extend %gridzerogutter-guide !optional;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+// FULL
+
+	.full {}
+
+// HALF
+
+	.half-grid > li {
+		@extend %gridzerogutter-half !optional;
+	}
+	.half-grid > li:nth-of-type(2n+0) {
+		@extend %columnzerogutter-last !optional;
+	}
+
+// THIRD
+
+	.third-grid > li {
+		@extend %gridzerogutter-third !optional;
+	}
+	.third-grid > li:nth-of-type(3n+0) {
+		@extend %columnzerogutter-last !optional;
+	}
+
+// FOURTH
+
+	.fourth-grid > li {
+		@extend %gridzerogutter-fourth !optional;
+	}
+	.fourth-grid > li:nth-of-type(4n+0) {
+		@extend %columnzerogutter-last !optional;
+	}
+
+// FIFTH
+
+	.fifth-grid > li {
+		@extend %gridzerogutter-fifth !optional;
+	}
+	.fifth-grid > li:nth-of-type(5n+0) {
+		@extend %columnzerogutter-last !optional;
+	}
+
+// SIXTH
+
+	.sixth-grid > li {
+		@extend %gridzerogutter-sixth !optional;
+	}
+	.sixth-grid > li:nth-of-type(6n+0) {
+		@extend %columnzerogutter-last !optional;
+	}
+
+// SIXTH
+
+	.eight-grid > li {
+		@extend %gridzerogutter-eight !optional;
+	}
+	.eight-grid > li:nth-of-type(8n+0) {
+		@extend %columnzerogutter-last !optional;
+	}
+
+// TWELVE
+
+	.twelve-grid > li {
+		@extend %gridzerogutter-twelve !optional;
+	}
+	.twelve-grid > li:nth-of-type(12n+0) {
+		@extend %columnzerogutter-last !optional;
+	}

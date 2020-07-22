@@ -1,0 +1,388 @@
+/* SETUP | GRID | 250_SETUPBASIC | COLUMN-ZEROGUTTER - 2018-08-21 */
+
+// -------------------------------------
+// VARIABLES
+
+	$susy-zerogutter: (
+		gutters: 0,
+	);
+
+// -------------------------------------
+// EXTEND
+
+// SPACE-ZERO
+
+	%columnzerogutter-override {
+		margin-right: 0;
+	}
+
+// SPACE-ZERO
+
+	%columnzerogutter-last {
+		margin-right: 0;
+	}
+
+// LISTSTYLE-ZERO
+
+	%gridzerogutter-liststyle {
+		list-style-type: none;
+	}
+
+// FULL
+
+	%columnzerogutter-full {
+		@include with-layout($susy-zerogutter) {
+			width: 100%;
+			@extend %columnzerogutter-guide !optional;
+			@extend %columnzerogutter-override !optional;
+		}
+	}
+	%pushzerogutter-full {
+		@extend %pushzerogutter-guide !optional;
+	}
+
+// HALF
+
+	%columnzerogutter-half {
+		@include with-layout($susy-zerogutter) {
+			@include span(6 of 12);
+			@extend %columnzerogutter-override !optional;
+		}
+		@extend %columnzerogutter-guide !optional;
+	}
+	%pushzerogutter-half {
+		@include with-layout($susy-zerogutter) {
+			@include push(6 of 12);
+			@extend %columnzerogutter-override !optional;
+		}
+		@extend %pushzerogutter-guide !optional;
+	}
+
+// THIRD
+
+	%columnzerogutter-third {
+		@include with-layout($susy-zerogutter) {
+			@include span(4 of 12);
+			@extend %columnzerogutter-override !optional;
+		}
+		@extend %columnzerogutter-guide !optional;
+	}
+	%pushzerogutter-third {
+		@include with-layout($susy-zerogutter) {
+			@include push(4 of 12);
+			@extend %columnzerogutter-override !optional;
+		}
+		@extend %pushzerogutter-guide !optional;
+	}
+
+		%columnzerogutter-twothirds {
+			@include with-layout($susy-zerogutter) {
+				@include span(8 of 12);
+				@extend %columnzerogutter-override !optional;
+			}
+			@extend %columnzerogutter-guide !optional;
+		}
+		%pushzerogutter-twothirds {
+			@include with-layout($susy-zerogutter) {
+				@include push(8 of 12);
+				@extend %columnzerogutter-override !optional;
+			}
+			@extend %pushzerogutter-guide !optional;
+		}
+
+// FOURTH
+
+	%columnzerogutter-fourth {
+		@include with-layout($susy-zerogutter) {
+			@include span(3 of 12);
+			@extend %columnzerogutter-override !optional;
+		}
+		@extend %columnzerogutter-guide !optional;
+	}
+	%pushzerogutter-fourth {
+		@include with-layout($susy-zerogutter) {
+			@include push(3 of 12);
+			@extend %columnzerogutter-override !optional;
+		}
+		@extend %pushzerogutter-guide !optional;
+	}
+
+		%columnzerogutter-threefourths {
+			@include with-layout($susy-zerogutter) {
+				@include span(9 of 12);
+				@extend %columnzerogutter-override !optional;
+			}
+			@extend %columnzerogutter-guide !optional;
+		}
+		%pushzerogutter-threefourths {
+			@include with-layout($susy-zerogutter) {
+				@include push(9 of 12);
+				@extend %columnzerogutter-override !optional;
+			}
+			@extend %pushzerogutter-guide !optional;
+		}
+
+// FIFTH
+
+	%columnzerogutter-fifth {
+		@include with-layout($susy-zerogutter) {
+			@include span(1 of 5);
+			@extend %columnzerogutter-override !optional;
+		}
+		@extend %columnzerogutter-guide !optional;
+	}
+	%pushzerogutter-fifth {
+		@include with-layout($susy-zerogutter) {
+			@include push(1 of 5);
+			@extend %columnzerogutter-override !optional;
+		}
+		@extend %pushzerogutter-guide !optional;
+	}
+
+		%columnzerogutter-twofifths {
+			@include with-layout($susy-zerogutter) {
+				@include span(2 of 5);
+				@extend %columnzerogutter-override !optional;
+			}
+			@extend %columnzerogutter-guide !optional;
+		}
+		%pushzerogutter-twofifths {
+			@include with-layout($susy-zerogutter) {
+				@include push(2 of 5);
+				@extend %columnzerogutter-override !optional;
+			}
+			@extend %pushzerogutter-guide !optional;
+		}
+
+		%columnzerogutter-threefifths {
+			@include with-layout($susy-zerogutter) {
+				@include span(3 of 5);
+				@extend %columnzerogutter-override !optional;
+			}
+			@extend %columnzerogutter-guide !optional;
+		}
+		%pushzerogutter-threefifths {
+			@include with-layout($susy-zerogutter) {
+				@include push(3 of 5);
+				@extend %columnzerogutter-override !optional;
+			}
+			@extend %pushzerogutter-guide !optional;
+		}
+
+		%columnzerogutter-fourfifths {
+			@include with-layout($susy-zerogutter) {
+				@include span(4 of 5);
+				@extend %columnzerogutter-override !optional;
+			}
+			@extend %columnzerogutter-guide !optional;
+		}
+		%pushzerogutter-fourfifths {
+			@include with-layout($susy-zerogutter) {
+				@include push(4 of 5);
+				@extend %columnzerogutter-override !optional;
+			}
+			@extend %pushzerogutter-guide !optional;
+		}
+
+// SIXTH
+
+	%columnzerogutter-sixth {
+		@include with-layout($susy-zerogutter) {
+			@include span(2 of 12);
+			@extend %columnzerogutter-override !optional;
+		}
+		@extend %columnzerogutter-guide !optional;
+	}
+	%pushzerogutter-sixth {
+		@include with-layout($susy-zerogutter) {
+			@include push(2 of 12);
+			@extend %columnzerogutter-override !optional;
+		}
+		@extend %pushzerogutter-guide !optional;
+	}
+
+		%columnzerogutter-fivesixths {
+			@include with-layout($susy-zerogutter) {
+				@include span(10 of 12);
+				@extend %columnzerogutter-override !optional;
+			}
+			@extend %columnzerogutter-guide !optional;
+		}
+		%pushzerogutter-fivesixths {
+			@include with-layout($susy-zerogutter) {
+				@include push(10 of 12);
+				@extend %columnzerogutter-override !optional;
+			}
+			@extend %pushzerogutter-guide !optional;
+		}
+
+// EIGHT
+
+	%columnzerogutter-eight {
+		@include with-layout($susy-zerogutter) {
+			@include span(1 of 8);
+			@extend %columnzerogutter-override !optional;
+		}
+		@extend %columnzerogutter-guide !optional;
+	}
+	%pushzerogutter-eight {
+		@include with-layout($susy-zerogutter) {
+			@include push(1 of 8);
+			@extend %columnzerogutter-override !optional;
+		}
+		@extend %pushzerogutter-guide !optional;
+	}
+
+// TWELVE
+
+	%columnzerogutter-twelve {
+		@include with-layout($susy-zerogutter) {
+			@include span(1 of 12);
+			@extend %columnzerogutter-override !optional;
+		}
+		@extend %columnzerogutter-guide !optional;
+	}
+	%pushzerogutter-twelve {
+		@include with-layout($susy-zerogutter) {
+			@include push(1 of 12);
+			@extend %columnzerogutter-override !optional;
+		}
+		@extend %pushzerogutter-guide !optional;
+	}
+
+		%columnzerogutter-eleventwelves {
+			@include with-layout($susy-zerogutter) {
+				@include span(11 of 12);
+				@extend %columnzerogutter-override !optional;
+			}
+			@extend %columnzerogutter-guide !optional;
+		}
+		%pushzerogutter-eleventwelves {
+			@include with-layout($susy-zerogutter) {
+				@include push(11 of 12);
+				@extend %columnzerogutter-override !optional;
+			}
+			@extend %pushzerogutter-guide !optional;
+		}
+
+// -------------------------------------
+// SELECTORS
+
+// FULL
+
+	.full {
+		@extend %columnzerogutter-full !optional;
+	}
+
+// HALF
+
+	.half {
+		@extend %columnzerogutter-half !optional;
+	}
+	.half-push {
+		@extend %pushzerogutter-half !optional;
+	}
+
+// THIRD
+
+	.third {
+		@extend %columnzerogutter-third !optional;
+	}
+	.third-push {
+		@extend %pushzerogutter-third !optional;
+	}
+
+		.twothirds {
+			@extend %columnzerogutter-twothirds !optional;
+		}
+		.twothirds-push {
+			@extend %pushzerogutter-twothirds !optional;
+		}
+
+// FOURTH
+
+	.fourth {
+		@extend %columnzerogutter-fourth !optional;
+	}
+	.fourth-push {
+		@extend %pushzerogutter-fourth !optional;
+	}
+
+		.threefourths {
+			@extend %columnzerogutter-threefourths !optional;
+		}
+		.threefourths-push {
+			@extend %pushzerogutter-threefourths !optional;
+		}
+
+// FIFTH
+
+	.fifth {
+		@extend %columnzerogutter-fifth-formula !optional;
+		@extend %columnzerogutter-fifth !optional;
+	}
+	.fifth-push {
+		@extend %pushzerogutter-fifth !optional;
+	}
+
+		.twofifths {
+			@extend %columnzerogutter-twofifths !optional;
+		}
+		.twofifths-push {
+			@extend %pushzerogutter-twofifths !optional;
+		}
+
+		.threefifths {
+			@extend %columnzerogutter-threefifths !optional;
+		}
+		.threefifths-push {
+			@extend %pushzerogutter-threefifths !optional;
+		}
+
+		.fourfifths {
+			@extend %columnzerogutter-fourfifths !optional;
+		}
+		.fourfifths-push {
+			@extend %pushzerogutter-fourfifths !optional;
+		}
+
+// SIXTH
+
+	.sixth {
+		@extend %columnzerogutter-sixth !optional;
+	}
+	.sixth-push {
+		@extend %pushzerogutter-sixth !optional;
+	}
+
+		.fivesixths {
+			@extend %columnzerogutter-fivesixths !optional;
+		}
+		.fivesixths-push {
+			@extend %pushzerogutter-fivesixths !optional;
+		}
+
+// SIXTH
+
+	.eight {
+		@extend %columnzerogutter-eight !optional;
+	}
+	.eight-push {
+		@extend %pushzerogutter-eight !optional;
+	}
+
+// TWELVE
+
+	.twelve {
+		@extend %columnzerogutter-twelve !optional;
+	}
+	.twelve-push {
+		@extend %pushzerogutter-twelve !optional;
+	}
+
+		.eleventwelves {
+			@extend %columnzerogutter-eleventwelves !optional;
+		}
+		.eleventwelves-push {
+			@extend %pushzerogutter-eleventwelves !optional;
+		}

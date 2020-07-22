@@ -1,0 +1,126 @@
+/* SETUP | GRID | 250_SETUPBASIC | LIST - 2018-08-21 */
+
+// -------------------------------------
+// EXTEND
+
+	%column-ul {}
+
+	%grid-ul {
+		margin-left: 0;
+	}
+
+// -------------------------------------
+// SELECTORS
+
+// FULL
+
+	.content ul.full {
+		@extend %column-ul !optional;
+	}
+
+// HALF
+
+	.content ul.half {
+		@extend %column-ul !optional;
+	}
+	.content ul.half-grid {
+		@extend %grid-ul !optional;
+	}
+	.content ul.half-push {}
+
+// THIRD
+
+	.content ul.third {
+		@extend %column-ul !optional;
+	}
+	.content ul.third-grid {
+		@extend %grid-ul !optional;
+	}
+	.content ul.third-push {}
+
+		.content ul.twothirds {
+			@extend %column-ul !optional;
+		}
+		.content ul.twothirds-push {
+			@extend %grid-ul !optional;
+		}
+
+// FOURTH
+
+	.content ul.fourth {
+		@extend %column-ul !optional;
+	}
+	.content ul.fourth-grid {
+		@extend %grid-ul !optional;
+	}
+	.content ul.fourth-push {}
+
+		.content ul.threefourths {
+			@extend %column-ul !optional;
+		}
+		.content ul.threefourths-push {}
+
+// FIFTH
+
+	.content ul.fifth {
+		@extend %column-ul !optional;
+	}
+	.content ul.fifth-grid {
+		@extend %grid-ul !optional;
+	}
+	.content ul.fifth-push {}
+
+		.content ul.twofifths {
+			@extend %column-ul !optional;
+		}
+		.content ul.twofifths-push {}
+
+		.content ul.threefifths {
+			@extend %column-ul !optional;
+		}
+		.content ul.threefifths-push {}
+
+		.content ul.fourfifths {
+			@extend %column-ul !optional;
+		}
+		.content ul.fourfifths-push {}
+
+// SIXTH
+
+	.content ul.sixth {
+		@extend %column-ul !optional;
+	}
+	.content ul.sixth-grid {
+		@extend %grid-ul !optional;
+	}
+	.content ul.sixth-push {}
+
+		.content ul.fivesixths {
+			@extend %column-ul !optional;
+		}
+		.content ul.fivesixths-push {}
+
+// SIXTH
+
+	.content ul.eight {
+		@extend %column-ul !optional;
+	}
+	.content ul.eight-grid {
+		@extend %grid-ul !optional;
+	}
+	.content ul.eight-push {}
+
+// TWELVE
+
+	.content ul.twelve {
+		@extend %column-ul !optional;
+	}
+	.content ul.twelve-grid {
+		@extend %grid-ul !optional;
+	}
+	.content ul.twelve-push {}
+
+		.content ul.eleventwelves {
+			@extend %column-ul !optional;
+		}
+		.content ul.eleventwelves-push {}
