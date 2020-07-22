@@ -20,6 +20,7 @@
        url('fonts/lato-v13-latin-300.woff') format('woff'), /* Modern Browsers */
        url('fonts/lato-v13-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
        url('fonts/lato-v13-latin-300.svg#Lato') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 // 400
 @font-face {
@@ -33,6 +34,7 @@
        url('fonts/lato-v13-latin-regular.woff') format('woff'), /* Modern Browsers */
        url('fonts/lato-v13-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
        url('fonts/lato-v13-latin-regular.svg#Lato') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 // 400 itallic
 @font-face {
@@ -46,6 +48,7 @@
        url('fonts/lato-v13-latin-italic.woff') format('woff'), /* Modern Browsers */
        url('fonts/lato-v13-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('fonts/lato-v13-latin-italic.svg#Lato') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 // 700
 @font-face {
@@ -59,6 +62,7 @@
        url('fonts/lato-v13-latin-700.woff') format('woff'), /* Modern Browsers */
        url('fonts/lato-v13-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
        url('fonts/lato-v13-latin-700.svg#Lato') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 // 700 itallic
 @font-face {
@@ -72,6 +76,7 @@
        url('fonts/lato-v13-latin-700italic.woff') format('woff'), /* Modern Browsers */
        url('fonts/lato-v13-latin-700italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('fonts/lato-v13-latin-700italic.svg#Lato') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 // 900
 @font-face {
@@ -85,4 +90,5 @@
        url('fonts/lato-v13-latin-900.woff') format('woff'), /* Modern Browsers */
        url('fonts/lato-v13-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
        url('fonts/lato-v13-latin-900.svg#Lato') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
